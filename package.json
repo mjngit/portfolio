@@ -1,0 +1,66 @@
+{
+  "name": "acme-shopping-2207-fsa-pt",
+  "version": "1.0.0",
+  "description": "- A user should be able to see products\r - A logged in user should be able to\r   - see the items in their cart\r   - add a new product to their cart\r   - remove an item from their cart\r   - create an order\r - A user should be able to see their orders\r - A user should be able to create an account\r - A user should be able to see their past orders\r - A non-logged in user should be able to add to their cart and have those items added to their cart after authenticating\r - A user should be able to review a product\r - A user should be able to update their profile\r - An administrator should be able to add a new product",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:dev": "npm run build -- --watch --mode=development",
+    "test": "JWT=shhhhh mocha",
+    "test:dev": "DATABASE_URL=postgres://localhost/acme_shopping_test_db npm run test -- --watch",
+    "test:dev:quiet": "QUIET=true npm run test:dev",
+    "start:dev": "JWT=felix nodemon server/index.js --ignore dist/ --ignore src/ & npm run build:dev",
+    "windows-start:dev": "nodemon server --ignore dist/ --ignore src/",
+    "windows-dev": "concurrently --kill-others \"npm run windows-start:dev\" \"npm run build:dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.2",
+    "axios": "^1.1.3",
+    "bcrypt": "^5.1.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.8.0",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-react": "^7.18.6",
+    "@mui/system": "^5.12.1",
+    "babel-loader": "^9.0.0",
+    "chai": "^4.3.6",
+    "concurrently": "^8.0.1",
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.20",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.2",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
+    "supertest": "^6.3.1",
+    "swiper": "^9.2.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grace-shopper-2212-JEMR/grace-shopper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grace-shopper-2212-JEMR/grace-shopper/issues"
+  },
+  "homepage": "https://github.com/grace-shopper-2212-JEMR/grace-shopper#readme"
+}
