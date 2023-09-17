@@ -99,7 +99,7 @@ const DrinksCoffees = () =>{
   }
 
   const _moreDetails =(drink)=>{
-    navigate(`/menu/${drink.id}`)
+    navigate(`/java/menu/${drink.id}`)
   }
 
   const _addToCart = (drink, quantity)=>{
@@ -116,7 +116,7 @@ const DrinksCoffees = () =>{
         delete _filter.name
       }
     }
-    navigate(`/menu/search/${JSON.stringify(_filter)}`)
+    navigate(`/java/menu/search/${JSON.stringify(_filter)}`)
   }
 
   if (!drinks){return null}

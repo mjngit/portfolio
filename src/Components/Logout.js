@@ -32,7 +32,7 @@ const Logout = ()=> {
             <div>
                 <h1>You're Not Logged In!</h1>
                 <div>
-                    <Link to={`/register`}>Register Here</Link> or <Link to='/login'> Login </Link>
+                    <Link to={`/capstone/register`}>Register Here</Link> or <Link to='/capstone/login'> Login </Link>
                 </div>
             </div>
         )

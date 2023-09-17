@@ -10,6 +10,7 @@ const Home = ()=> {
   const dispatch = useDispatch();
   return (
     <>
+      <img src='static\images\coffee_cup_illustration_blue.jpeg' style={{width: '100%'}}></img>   
       <SubNavHome/>
 
       

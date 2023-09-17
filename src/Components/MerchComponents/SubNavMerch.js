@@ -35,7 +35,7 @@ function SubNavMerch() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../merch/shirts' element={<MerchShirts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Shirts</Link>
+            <Link to='../java/merch/shirts' element={<MerchShirts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Shirts</Link>
           </Typography>
 
           <Typography
@@ -53,7 +53,7 @@ function SubNavMerch() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../merch/hats' element={<MerchHats/>} style={{ textDecoration: 'none', color: 'inherit' }}>Hats</Link>
+            <Link to='../java/merch/hats' element={<MerchHats/>} style={{ textDecoration: 'none', color: 'inherit' }}>Hats</Link>
           </Typography>
 
           <Typography
@@ -71,7 +71,7 @@ function SubNavMerch() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../merch/mugs' element={<MerchMugs/>} style={{ textDecoration: 'none', color: 'inherit' }}>Mugs</Link>
+            <Link to='../java/merch/mugs' element={<MerchMugs/>} style={{ textDecoration: 'none', color: 'inherit' }}>Mugs</Link>
           </Typography>
 
           <Typography
@@ -89,7 +89,7 @@ function SubNavMerch() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../merch/shirts' element={<MerchShirts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Shirts</Link>
+            <Link to='../java/merch/shirts' element={<MerchShirts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Shirts</Link>
           </Typography>
 
           <Typography
@@ -107,7 +107,7 @@ function SubNavMerch() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../merch/hats' element={<MerchHats/>} style={{ textDecoration: 'none', color: 'inherit' }}>Hats</Link>
+            <Link to='../java/merch/hats' element={<MerchHats/>} style={{ textDecoration: 'none', color: 'inherit' }}>Hats</Link>
           </Typography>
 
           <Typography
@@ -125,7 +125,7 @@ function SubNavMerch() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../merch/mugs' element={<MerchMugs/>} style={{ textDecoration: 'none', color: 'inherit' }}>Mugs</Link>
+            <Link to='../java/merch/mugs' element={<MerchMugs/>} style={{ textDecoration: 'none', color: 'inherit' }}>Mugs</Link>
           </Typography>
 
         </Toolbar>

@@ -31,7 +31,7 @@ const MerchMugs = () =>{
   if (!merches){return null}
 
   const _moreDetails =(merch)=>{
-    navigate(`/merch/${merch.id}`)
+    navigate(`/java/merch/${merch.id}`)
   }
   const _addToCart = (merch, quantity)=>{
     dispatch(addToCart(merch, quantity))
@@ -47,7 +47,7 @@ const MerchMugs = () =>{
         delete _filter.name
       }
     }
-    navigate(`/merch/search/${JSON.stringify(_filter)}`)
+    navigate(`/java/merch/search/${JSON.stringify(_filter)}`)
   }
 
   if (!merches){return null}

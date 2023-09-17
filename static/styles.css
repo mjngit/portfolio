@@ -24,6 +24,32 @@ body {
   text-align: center;
 }
 
+.signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  
+  width: 100%;
+}
+
+.sig-box {
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
+
+.port-display-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .swiper {
   width: 100%;
@@ -64,10 +90,6 @@ form > * {
   margin: .5rem;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-}
 
 #subnav{
   position: sticky;
@@ -206,3 +228,145 @@ select {
   font-family: 'Spartan'
 }
 
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ticker-tape {
+  animation: ticker 20s linear infinite;
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  overflow: visible;
+  /* height: var(--height); */
+  height: 150px;
+  padding-left: 100%;
+
+}
+
+.ticker-tape .ticker {
+  /* height: var(--height); */
+  height: 150px;
+  line-height: var(--height);
+  white-space: nowrap;
+  padding-right: 100%;
+ 
+}
+
+.ticker-tape .ticker__item {
+  display: inline-block;
+  padding: 0 .5rem;
+  font-size: 2rem;
+  font-weight: 250;
+  
+}
+
+.yours {
+  color: aqua;
+}
+
+.mine {
+  color: #EEE;
+}
+
+/* .online {
+  background-color: skyblue;
+} */
+
+div > div > .hidden {
+  display: 'none';
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+#chats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Form Progress */
+.progress {
+  width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+.progress .circle,
+.progress .bar {
+  display: inline-block;
+  background: #fff;
+  width: 40px; height: 40px;
+  border-radius: 40px;
+  border: 1px solid #d5d5da;
+}
+.progress .bar {
+  position: relative;
+  width: 80px;
+  height: 6px;
+  top: -33px;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.progress .circle .label {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 32px;
+  margin-top: 3px;
+  color: #b5b5ba;
+  font-size: 17px;
+}
+.progress .circle .title {
+  color: #b5b5ba;
+  font-size: 13px;
+  line-height: 30px;
+  margin-left: -5px;
+}
+
+/* Done / Active */
+.progress .bar.done,
+.progress .circle.done {
+  background: #eee;
+}
+.progress .bar.active {
+  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+}
+.progress .circle.done .label {
+  color: #FFF;
+  background: green;
+  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progress .circle.done .title {
+  color: #444;
+}
+.progress .circle.active .label {
+  color: white;
+  background: lightgray;
+  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progress .circle.active .title {
+  color: lightgray;
+}

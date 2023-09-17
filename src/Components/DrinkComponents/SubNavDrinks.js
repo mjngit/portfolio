@@ -37,7 +37,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>All Drinks</Link>
+            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>All Drinks</Link>
           </Typography>
         
           <Typography
@@ -55,7 +55,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../menu/coffee' element={<DrinksCoffees/>} style={{ textDecoration: 'none', color: 'inherit' }}>Coffee</Link>
+            <Link to='../java/menu/coffee' element={<DrinksCoffees/>} style={{ textDecoration: 'none', color: 'inherit' }}>Coffee</Link>
           </Typography>
 
           <Typography
@@ -73,7 +73,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../menu/tea' element={<DrinksTeas/>} style={{ textDecoration: 'none', color: 'inherit' }}>Tea</Link>
+            <Link to='../java/menu/tea' element={<DrinksTeas/>} style={{ textDecoration: 'none', color: 'inherit' }}>Tea</Link>
           </Typography>
 
           <Typography
@@ -91,7 +91,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../menu/smoothies' element={<DrinksSmoothies/>} style={{ textDecoration: 'none', color: 'inherit' }}>Smoothies</Link>
+            <Link to='../java/menu/smoothies' element={<DrinksSmoothies/>} style={{ textDecoration: 'none', color: 'inherit' }}>Smoothies</Link>
           </Typography>
 
           <Typography
@@ -109,7 +109,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >           
-            <Link to='../menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>All Drinks</Link>
+            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>All Drinks</Link>
           </Typography>
 
           <Typography
@@ -127,7 +127,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >           
-            <Link to='../menu/coffee' element={<DrinksCoffees/>} style={{ textDecoration: 'none', color: 'inherit' }}>Coffee</Link>
+            <Link to='../java/menu/coffee' element={<DrinksCoffees/>} style={{ textDecoration: 'none', color: 'inherit' }}>Coffee</Link>
           </Typography>
 
           <Typography
@@ -145,7 +145,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../menu/tea' element={<DrinksTeas/>} style={{ textDecoration: 'none', color: 'inherit' }}>Tea</Link>
+            <Link to='../java/menu/tea' element={<DrinksTeas/>} style={{ textDecoration: 'none', color: 'inherit' }}>Tea</Link>
           </Typography>
 
           <Typography
@@ -163,7 +163,7 @@ function SubNavDrinks() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../menu/smoothies' element={<DrinksSmoothies/>} style={{ textDecoration: 'none', color: 'inherit' }}>Smoothies</Link>
+            <Link to='../java/menu/smoothies' element={<DrinksSmoothies/>} style={{ textDecoration: 'none', color: 'inherit' }}>Smoothies</Link>
           </Typography>
 
 

@@ -36,12 +36,12 @@ function SubNavHome() {
 
             }}
           >
-            <Link to='../menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit', }}>Spend a lot? Free shipping!</Link>
+            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit', }}>Spend a lot? Free shipping!</Link>
           </Typography>
 
 
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             sx={{
               mr: 2,
@@ -57,7 +57,7 @@ function SubNavHome() {
               justifyContent: 'center'
             }}
           >           
-            <Link to='../menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Free shipping on orders $50 or more! An additional 10% off for any order over $100!</Link>
+            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Free shipping on orders $50 or more! An additional 10% off for any order over $100!</Link>
           </Typography>
 
 

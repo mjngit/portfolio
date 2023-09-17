@@ -36,7 +36,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../about/' element={<About/>} style={{ textDecoration: 'none', color: 'inherit' }}>About</Link>
+            <Link to='/java/about/' element={<About/>} style={{ textDecoration: 'none', color: 'inherit' }}>About</Link>
           </Typography>
         
           <Typography
@@ -55,7 +55,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../about/locations' element={<AboutLocations/>} style={{ textDecoration: 'none', color: 'inherit' }}>Locations</Link>
+            <Link to='/java/about/locations' element={<AboutLocations/>} style={{ textDecoration: 'none', color: 'inherit' }}>Locations</Link>
           </Typography>
 
           <Typography
@@ -74,7 +74,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../about/contact' element={<AboutContact/>} style={{ textDecoration: 'none', color: 'inherit' }}>Contact</Link>
+            <Link to='/java/about/contact' element={<AboutContact/>} style={{ textDecoration: 'none', color: 'inherit' }}>Contact</Link>
           </Typography>
 
           
@@ -94,7 +94,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../about/careers' element={<AboutCareers/>} style={{ textDecoration: 'none', color: 'inherit' }}>Careers</Link>
+            <Link to='/java/about/careers' element={<AboutCareers/>} style={{ textDecoration: 'none', color: 'inherit' }}>Careers</Link>
           </Typography>
 
 
@@ -114,7 +114,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-          <Link to='../about/' element={<About/>} style={{ textDecoration: 'none', color: 'inherit' }}>About</Link>
+          <Link to='/java/about/' element={<About/>} style={{ textDecoration: 'none', color: 'inherit' }}>About</Link>
           </Typography>
 
           <Typography
@@ -133,7 +133,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../about/locations' element={<AboutLocations/>} style={{ textDecoration: 'none', color: 'inherit' }}>Locations</Link>
+            <Link to='/java/about/locations' element={<AboutLocations/>} style={{ textDecoration: 'none', color: 'inherit' }}>Locations</Link>
           </Typography>
 
 
@@ -153,7 +153,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../about/contact' element={<AboutContact/>} style={{ textDecoration: 'none', color: 'inherit' }}>Contact</Link>
+            <Link to='/java/about/contact' element={<AboutContact/>} style={{ textDecoration: 'none', color: 'inherit' }}>Contact</Link>
           </Typography>
           
           <Typography
@@ -172,7 +172,7 @@ function SubNavAbout() {
               justifyContent: 'center'
             }}
           >
-            <Link to='../about/careers' element={<AboutCareers/>} style={{ textDecoration: 'none', color: 'inherit' }}>Careers</Link>
+            <Link to='/java/about/careers' element={<AboutCareers/>} style={{ textDecoration: 'none', color: 'inherit' }}>Careers</Link>
           </Typography>
 
         </Toolbar>

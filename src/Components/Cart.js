@@ -76,7 +76,7 @@ const Cart = ()=> {
 
           <CardActions  sx={{justifyContent:"flex-end"}}>
             <Button component='span' size="small" sx={{fontSize: 18}}>
-              {getTotal() === 0 ? <Link to='/menu' sx={{color: "black"}}>Add items to your Cart to Checkout</Link> : <Link to='/checkout'>Checkout</Link>}</Button>
+              {getTotal() === 0 ? <Link to='/java/menu' sx={{color: "black"}}>Add items to your Cart to Checkout</Link> : <Link to='/java/checkout'>Checkout</Link>}</Button>
           </CardActions>
         </Card>
       </div>

@@ -28,7 +28,7 @@ const Account = ()=> {
   const _update = async(ev)=> {
     ev.preventDefault();
     dispatch(updateAuth({ firstName, lastName, address, email, phone }));
-    navigate('/menu')
+    navigate('/java/menu')
   };
   return (
     <div style={{ margin: 'auto', maxWidth: '80%' }} >
@@ -56,7 +56,7 @@ const Account = ()=> {
             <div>
                 <h1>Can't Update If You're Not Logged In!</h1>
                 <div>
-                    <Link to={`/register`}>Register Here</Link> or <Link to='/login'> Login </Link>
+                    <Link to={`/java/register`}>Register Here</Link> or <Link to='/java/login'> Login </Link>
                 </div>
             </div>
           )

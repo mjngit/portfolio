@@ -42,7 +42,7 @@ const Checkout = ()=> {
   const pay = async(ev)=> {
     ev.preventDefault();
     const orderNum = Math.floor(Math.random()*1000000)
-    navigate(`/order/${orderNum}`)
+    navigate(`/java/order/${orderNum}`)
   };
   return (
     <div id='checkoutPage'>
