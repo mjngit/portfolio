@@ -1,70 +1,30 @@
-# Site Map
-
 MAIN PAGE
 
-- NAV
-- Main Content
-- FOOTER
-
+NAV
+Main Content
+FOOTER
 NAV
 
-- Home
-- Menu
-- Merch
-- About
-- Login?
-- Search
-- Cart Button
-- FB/IG icon links?
+Home
 
-  - Home
+Menu
 
-    - NAV
-    - Main Content. Description? Pictures of the interior?
-    - Footer
+Merch
 
-  - Menu & Order Page?
+About
 
-    - Nav
-    - Products
-    - Show all products, but have subnav of coffess, teas, pastries
-    - Footer
+Login
 
-  - Merch
+Search
 
-    - Nav
-    - Product cards of our mug, t-shirt, and maybe a gift card or something? Things in 3s look nice
-    - Footer
+Cart Button
 
-  - About
-    - Nav
-    - Content: we're bougie, we have really good and expensive shit
-    - Footer
+Showcasing my projects: UFC Stat App
 
-<!-- ORIGINAL NOTES -->
+AI Trip Planner
 
-# Basic Features
+AI present generator
 
-- A user should be able to see products
-- A logged in user should be able to
-  - see the items in their cart
-  - add a new product to their cart
-  - remove an item from their cart
-  - create an order
-- A user should be able to see their orders
-- A user should be able to create an account
-- A user should be able to see their past orders
-- A non-logged in user should be able to add to their cart and have those items added to their cart after authenticating
-- A user should be able to review a product
-- A user should be able to update their profile
-- An administrator should be able to add a new product
+E-Commerce App
 
-# Bonus Features
-
-- A user should be able to search for products
-- A user should be able to create a wish list
-- A user should be able to checkout using stripe
-- A user should be able to add a shipping address
-- A user should be able to upload an avatar to their profile
-- An administrator should be able to add a coupon code
-- A user should be able to use a coupon code
+Stock Community App
