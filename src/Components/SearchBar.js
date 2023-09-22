@@ -63,7 +63,7 @@ const SearchBar = () => {
             <SearchIcon />
           </SearchIconWrapper>
           <StyledInputBase
-            placeholder="Search…"
+            placeholder="Stock Search…"
             inputProps={{ 'aria-label': 'search' }}
             onChange={ ev => setSearch(ev.target.value.toUpperCase()) }
             value={ search }

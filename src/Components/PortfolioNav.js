@@ -251,7 +251,7 @@ export default function PortfolioNav() {
                 Login
               </Link>
             ) : (
-              <Link to="/java/logout" style={{ color: "white", textDecoration: "none" }}>
+              <Link to="/capstone/logout" style={{ color: "white", textDecoration: "none" }}>
                 Logout
               </Link>
             )}
@@ -277,7 +277,7 @@ export default function PortfolioNav() {
                 Login
               </Link>
             ) : (
-              <Link to="/java/logout" style={{ color: "white", textDecoration: "none" }}>
+              <Link to="/capstone/logout" style={{ color: "white", textDecoration: "none" }}>
                 Logout
               </Link>
             )}
@@ -367,7 +367,7 @@ export default function PortfolioNav() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={() => navigateTo(`java/${setting}`)}>
+                <MenuItem key={setting} onClick={() => navigateTo(`${setting}`)}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}

@@ -16,8 +16,8 @@ const AboutContact = () => {
         maxWidth: '50%'
        }}>
         <h3>Please contact us at:</h3>
-        <li style={{listStyleType: 'none'}}>Phone: <a href="tel:917-867-5309">917-867-5309</a></li>
-        <li style={{listStyleType: 'none'}}>Email: <a href="mailto:mikenorris@gmail.com">mikenorris@gmail.com</a></li>
+        <li style={{listStyleType: 'none'}}>Phone: <a href="tel:617-610-1869">617-610-1869</a></li>
+        <li style={{listStyleType: 'none'}}>Email: <a href="mailto:mnorris6@elon.edu">mnorris6@elon.edu</a></li>
         </Typography>
     </div>
   )

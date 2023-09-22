@@ -1,7 +1,7 @@
 {
-  "name": "acme-shopping-2207-fsa-pt",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "- A user should be able to see products\r - A logged in user should be able to\r   - see the items in their cart\r   - add a new product to their cart\r   - remove an item from their cart\r   - create an order\r - A user should be able to see their orders\r - A user should be able to create an account\r - A user should be able to see their past orders\r - A non-logged in user should be able to add to their cart and have those items added to their cart after authenticating\r - A user should be able to review a product\r - A user should be able to update their profile\r - An administrator should be able to add a new product",
+  "description": "This is Mike Norris' portfolio to showcase his projects",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -69,10 +69,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grace-shopper-2212-JEMR/grace-shopper.git"
+    "url": "git+https://github.com/mjngit/portfolio"
   },
   "bugs": {
-    "url": "https://github.com/grace-shopper-2212-JEMR/grace-shopper/issues"
+    "url": "https://github.com/mjngit/portfolio/issues"
   },
-  "homepage": "https://github.com/grace-shopper-2212-JEMR/grace-shopper#readme"
+  "homepage": "https://github.com/mjngit/portfolio#readme"
 }

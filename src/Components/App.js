@@ -145,6 +145,9 @@ const App = ()=> {
             <Routes>
               <Route path='/' element={ <PortHome /> } />
               <Route path='/portfolio/home' element={ <PortHome /> } />
+              <Route path='/portfolio/account' element={ <CapAccount /> } />
+              <Route path='/portfolio/cart' element={ <Cart /> } />
+              <Route path='/portfolio/login' element={ <CapLogin /> } />
               <Route path='/java/home' element={ <Home /> } />
               <Route path='/portfolio/e-commerce' element={ <Home /> } />
               <Route path='/java/cart' element={ <Cart /> } />

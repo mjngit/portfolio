@@ -547,7 +547,7 @@ export default function FooterNav() {
       <MenuItem>
         <IconButton
           size="large"
-          aria-label="show 17 new notifications"
+          aria-label="show new notifications"
           color="inherit"
         >
           <Badge badgeContent={17} color="error">
@@ -607,153 +607,186 @@ export default function FooterNav() {
     <Box sx={{ flexGrow: 10, maxHeight: 1000 }}>
       <AppBar position="static" style={{ background: '#004C60', display: 'flex'}}>
         <Toolbar>
-       
-          <div style={{ display: 'flex', textDecoration: 'none', flexDirection: 'column', alignItems:"flex-start", marginRight: 100}}>
-          <Typography
-            variant="subtitle2"
-            component="a"
-            href="/#/java/home"
-            sx={{ textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Home
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            href="/#/capstone/login"
-            
-            component="a"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Login
-          </Typography>
-          {/* <Typography
-            variant="subtitle2"
-            
-            href="/#/java/merch"
-            component="a"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            {!auth.id ? (<a href={`https://github.com/login/oauth/authorize?client_id=${window.client_id}`} style={{color: 'white', textDecoration: 'none'  }}>Github Login</a>):(<Link to="/java/logout"  style={{color: 'white', textDecoration: 'none'  }}>Github Logout</Link>)}
-          </Typography> */}
-          <Typography
-            variant="subtitle2"
-            component="a"
-            href="/#/java/about"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            About
-          </Typography>
-          {/* <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/java/account"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Account
-          </Typography> */}
-          </div>
-          <div style={{ display: 'flex', textDecoration: 'none', flexDirection: 'column' }}>
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/java/about/contact"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Contact
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/java/about/careers"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Careers
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/java/about/locations"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Locations
-          </Typography>
-          </div>
-          <div style={{ display: "flex", textDecoration: 'none', flexDirection: "column", marginLeft: 100,  }}>
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/java/menu"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Drinks
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/java/merch"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Merch
-          </Typography>
-          
-          </div>
-
-          <div style={{ display: "flex", textDecoration: 'none', flexDirection: "column", marginLeft: 100,  }}>
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/capstone/home"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Capstone Home
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/capstone/accountSetup"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Account
-          </Typography>
-
-          <Typography
-            variant="subtitle2"
-            
-            component="a"
-            href="/#/capstone/chats"
-            sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
-          >
-            Chats
-          </Typography>
-          
-          </div>
-
-          < SearchBar />
-          <Box sx={{ flexGrow: 1 }} />
-
-          <IconButton size="large" aria-label="show new messages" color="inherit">
-              <Badge  badgeContent={ messagesUnread() } color="error">
-                {/* <MailIcon onClick={(ev) => navigateTo('/capstone/chats')} /> */}
-                <MailIcon onClick={() => getMessagesUnreadClick() } />
-              </Badge>
-            </IconButton>
-          
-          <IconButton
-              size="large"
-              color="inherit"
+          <div style={{ display: "flex", textDecoration: 'none', flexDirection: "column"  }}>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/capstone/home"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
             >
-              <Badge badgeContent={getCartLength()} color="error">
-                <Link to="/java/cart" ><ShoppingCartSharp sx={{ pr: 1, color: 'white'}}/></Link>
-              </Badge>
-            </IconButton>
+              Capstone Home
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/capstone/accountSetup"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Account
+            </Typography>
+
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/capstone/chats"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Chats
+            </Typography>
+            
+            </div>
+
+            <div style={{ display: "flex", textDecoration: 'none', flexDirection: "column", marginLeft: 100  }}>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/stackathon/present"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              AI Present Generator
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/stackathon/trip"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              AI Trip Planner
+            </Typography>
+
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/stackathon/fighters"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              UFC Stats
+            </Typography>
+            
+            </div>
+
+            <div style={{ display: 'flex', textDecoration: 'none', flexDirection: 'column', alignItems:"flex-start", marginRight: 100, marginLeft: 100}}>
+            <Typography
+              variant="subtitle2"
+              component="a"
+              href="/#/java/home"
+              sx={{ textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              E-Comm Home
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              href="/#/capstone/login"
+              
+              component="a"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Login
+            </Typography>
+            {/* <Typography
+              variant="subtitle2"
+              
+              href="/#/java/merch"
+              component="a"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              {!auth.id ? (<a href={`https://github.com/login/oauth/authorize?client_id=${window.client_id}`} style={{color: 'white', textDecoration: 'none'  }}>Github Login</a>):(<Link to="/java/logout"  style={{color: 'white', textDecoration: 'none'  }}>Github Logout</Link>)}
+            </Typography> */}
+            <Typography
+              variant="subtitle2"
+              component="a"
+              href="/#/java/about"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              About
+            </Typography>
+            {/* <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/java/account"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Account
+            </Typography> */}
+            </div>
+            <div style={{ display: 'flex', textDecoration: 'none', flexDirection: 'column' }}>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/java/about/contact"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Contact
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/java/about/careers"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Careers
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/java/about/locations"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Locations
+            </Typography>
+            </div>
+            <div style={{ display: "flex", textDecoration: 'none', flexDirection: "column", marginLeft: 100,  }}>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/java/menu"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Drinks
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/java/merch"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Merch
+            </Typography>
+            
+            </div>
+
+            
+
+              < SearchBar />
+              <Box sx={{ flexGrow: 1 }} />
+
+              <IconButton size="large" aria-label="show new messages" color="inherit">
+                <Badge  badgeContent={ messagesUnread() } color="error">
+                  {/* <MailIcon onClick={(ev) => navigateTo('/capstone/chats')} /> */}
+                  <MailIcon onClick={() => getMessagesUnreadClick() } />
+                </Badge>
+              </IconButton>
+            
+              <IconButton
+                size="large"
+                color="inherit"
+              >
+                <Badge badgeContent={getCartLength()} color="error">
+                  <Link to="/java/cart" ><ShoppingCartSharp sx={{ pr: 1, color: 'white'}}/></Link>
+                </Badge>
+              </IconButton>
         </Toolbar>
 
       </AppBar>

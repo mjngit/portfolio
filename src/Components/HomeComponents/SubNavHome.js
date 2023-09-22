@@ -36,7 +36,7 @@ function SubNavHome() {
 
             }}
           >
-            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit', }}>Spend a lot? Free shipping!</Link>
+            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit', }}>Check out our products here!</Link>
           </Typography>
 
 
@@ -57,7 +57,7 @@ function SubNavHome() {
               justifyContent: 'center'
             }}
           >           
-            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Free shipping on orders $50 or more! An additional 10% off for any order over $100!</Link>
+            <Link to='../java/menu/' element={<DrinkProducts/>} style={{ textDecoration: 'none', color: 'inherit' }}>Free shipping on orders $50 or more! Check out our selection of drinks and merch here!</Link>
           </Typography>
 
 

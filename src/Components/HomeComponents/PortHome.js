@@ -84,7 +84,7 @@ const PortHome = ()=> {
                 },
                 display: 'flex', 
                 flexDirection: 'column',
-                
+                margin: 2
                 }}
             >
               <Link to='/stackathon/trip'>
@@ -112,7 +112,8 @@ const PortHome = ()=> {
                 boxShadow: 5
               },
               display: 'flex', 
-              flexDirection: 'column' 
+              flexDirection: 'column',
+              margin: 2
               }}
              >
               <Link to='/stackathon/fighters'>
@@ -138,7 +139,8 @@ const PortHome = ()=> {
                 boxShadow: 5
               },
               display: 'flex', 
-              flexDirection: 'column' 
+              flexDirection: 'column',
+              margin: 2 
               }}
              >
               <Link to='/stackathon/present'>
@@ -164,7 +166,8 @@ const PortHome = ()=> {
                 boxShadow: 5
               },
               display: 'flex', 
-              flexDirection: 'column' 
+              flexDirection: 'column',
+              margin: 2
               }}
              >
               <Link to='/java/home'>
@@ -190,7 +193,8 @@ const PortHome = ()=> {
                 boxShadow: 5
               },
               display: 'flex', 
-              flexDirection: 'column' 
+              flexDirection: 'column',
+              margin: 2 
               }}
              >
               <Link to='/capstone/home'>
@@ -233,7 +237,7 @@ const PortHome = ()=> {
                   },
                   display: 'flex', 
                   flexDirection: 'column',
-                  
+                  margin: 2
                   }}
               >
                 <Link to='/stackathon/trip'>
@@ -261,7 +265,8 @@ const PortHome = ()=> {
                   boxShadow: 5
                 },
                 display: 'flex', 
-                flexDirection: 'column' 
+                flexDirection: 'column',
+                margin: 2
                 }}
                >
                 <Link to='/stackathon/fighters'>
@@ -287,7 +292,8 @@ const PortHome = ()=> {
                   boxShadow: 5
                 },
                 display: 'flex', 
-                flexDirection: 'column' 
+                flexDirection: 'column',
+                margin: 2
                 }}
                >
                 <Link to='/stackathon/present'>
@@ -313,7 +319,8 @@ const PortHome = ()=> {
                   boxShadow: 5
                 },
                 display: 'flex', 
-                flexDirection: 'column' 
+                flexDirection: 'column',
+                margin: 2
                 }}
                >
                 <Link to='/java/home'>
@@ -339,7 +346,8 @@ const PortHome = ()=> {
                   boxShadow: 5
                 },
                 display: 'flex', 
-                flexDirection: 'column' 
+                flexDirection: 'column',
+                margin: 2
                 }}
                >
                 <Link to='/capstone/home'>
