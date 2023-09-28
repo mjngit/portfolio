@@ -5,13 +5,13 @@ const  Review  = require('./Review');
 const Order = require('./Order');
 const LineItem  = require('./LineItem');
 const Fighter = require('./Fighter');
-// const User = require('./User');
 const Assessment = require('./Assessment');
 const Message = require('./Message')
 const Stock = require('./Stock')
 const Friend = require('./Friend')
 const Hype = require('./Hype')
 const Transaction = require('./Transaction');
+const HappyNote = require('./HappyNote');
 const axios = require('axios');
 require('dotenv').config()
 
@@ -22,6 +22,7 @@ LineItem.belongsTo(Product);
 Product.hasMany(Review)
 Review.belongsTo(Product)
 Review.belongsTo(User)
+HappyNote.belongsTo(User)
 
 Message.belongsTo(User, { as: 'from' });
 Message.belongsTo(User, { as: 'to' });
@@ -35,7 +36,7 @@ Assessment.belongsTo(User);
 
 const fighterOptions = {
   method: 'GET',
-  url: 'https://mma-stats.p.rapidapi.com/September_16_2023',
+  url: 'https://mma-stats.p.rapidapi.com/October_07_2023',
   params: {offset: '0', limit: '15'},
   headers: {
     'X-RapidAPI-Key': process.env.UFC_API_KEY,
@@ -450,5 +451,6 @@ module.exports = {
   Stock,
   Transaction,
   Friend,
-  Hype
+  Hype,
+  HappyNote
 };
