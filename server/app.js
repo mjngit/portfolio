@@ -25,6 +25,7 @@ app.use('/api/stocks', require('./api/stocks'));
 app.use('/api/transactions', require('./api/transactions'));
 app.use('/api/friends', require('./api/friends'));
 app.use('/api/hypes', require('./api/hypes'));
+app.use('/api/happyNotes', require('./api/happyNotes'));
 
 const socketMap = require('./socketMap')
 const { isLoggedIn } = require('./api/middleware');

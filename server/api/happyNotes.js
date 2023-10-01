@@ -1,0 +1,26 @@
+const express = require('express');
+const app = express.Router();
+const { HappyNote } = require('../db');
+
+const { isLoggedIn } = require('./middleware.js');
+
+module.exports = app;
+
+// prefix is /api/happyNotes
+app.get('/', async(req, res, next)=> {
+  try {
+    res.send(await HappyNote.findAll()); 
+  }
+  catch(ex){
+    next(ex);
+  }
+});
+
+app.post('/', isLoggedIn, async (req, res, next) => {
+    try {
+      res.status(201).send(await HappyNote.create({ ...req.body, userId: req.user.id}))
+    } 
+    catch (ex) {
+      next(ex);
+    }
+  });
