@@ -17,6 +17,7 @@ import stocks from './stocks';
 import transactions from './transactions';
 import friends from './friends';
 import hypes from './hypes';
+import happyNotes from './happyNotes'
 
 const reducer = combineReducers({
   auth,
@@ -33,7 +34,8 @@ const reducer = combineReducers({
   stocks,
   transactions,
   friends,
-  hypes
+  hypes,
+  happyNotes
 });
 
 const store = createStore(reducer, applyMiddleware(thunk, logger));
@@ -56,3 +58,4 @@ export * from './users';
 export * from './transactions';
 export * from './friends';
 export * from './hypes';
+export * from './happyNotes';

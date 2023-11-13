@@ -50,7 +50,6 @@ const Chats = ()=> {
     }
 
     const denyFriend = (friendId) => {
-      console.log()
       dispatch(destroyFriend(friendId)) 
     }
 

@@ -16,23 +16,24 @@ app.get('/', async(req, res, next)=> {
   }
 });
 
-app.post('/', isLoggedIn, async (req, res, next) => {
+app.post('/', async (req, res, next) => {
     try {
-      res.status(201).send(await HappyNote.create({ ...req.body, userId: req.user.id}))
+      res.status(201).send(await HappyNote.create({ ...req.body}))
     } 
     catch (ex) {
       next(ex);
     }
   });
 
-// app.put('/:id)', async(req,res,next) => {
-//     try {
-//         const happyNote = await HappyNote.findByPk(req.params.id)
-//         res.send(await happyNote.update(req.body))
-//     } catch (error) {
-//         next(error)
-//     }
-// })
+
+app.put('/:id', async(req, res, next) => {
+  try {
+    const happyNote = await HappyNote.findByPk(req.params.id)
+    res.send(await happyNote.update(req.body))
+  } catch (error) {
+    next(error)
+  }
+})
 
 // app.delete('/:id', async(req, res, next) => {
 //     try {

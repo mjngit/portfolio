@@ -31,6 +31,8 @@ import ReviewsAll from './ReviewsAll';
 import FightersOfTheWeek from './FightersOfTheWeek'
 import Present from './Present'
 import TripAi from './TripAi'
+import HappyNotes from './HappyNotes'
+import HappyNoteAdd from './HappyNoteAdd'
 
 import Admin from './Admin/Admin';
 import NotAdmin from './Admin/NotAdmin';
@@ -66,6 +68,7 @@ import { loginWithToken, fetchAssessments, fetchOnlineUsers, fetchMessages, fetc
 import { Link, Routes, Route } from 'react-router-dom';
 
 import { fetchCart, fetchDrinks, fetchMerches, fetchUserReviews, fetchFighters } from '../store';
+import { fetchHappyNotes } from '../store/happyNotes';
 
 
 
@@ -85,7 +88,8 @@ const App = ()=> {
     dispatch(fetchAssessments());
     dispatch(fetchStocks());
     dispatch(fetchUsers());
-    dispatch(fetchTransactions())
+    dispatch(fetchTransactions());
+    dispatch(fetchHappyNotes());
   }, [])
   
   useEffect(()=>{
@@ -153,6 +157,8 @@ const App = ()=> {
               <Route path='/java/cart' element={ <Cart /> } />
               <Route path='/java/checkout' element={ <Checkout /> } />
               <Route path='/java/order/:id' element={ <Order /> } />
+              <Route path='/portfolio/happyNotes' element={ <HappyNotes /> } />
+              <Route path='/portfolio/addHappyNote' element={ <HappyNoteAdd /> } />
 
               {auth.adminStatus === true ? <Route path='/admin' element= { <Admin /> }/> : <Route path='/admin' element= { <NotAdmin /> }/>}
               <Route path='/admin/drinks' element= { <AdminDrinksMain />} />

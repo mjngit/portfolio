@@ -1,3 +1,4 @@
+
 const conn = require('./conn');
 const { STRING, TEXT, UUID, UUIDV4, INTEGER } = conn.Sequelize;
 
@@ -14,10 +15,14 @@ const HappyNote = conn.define('happyNote', {
   subject: {
         type: STRING,
   },
-  description: {
+  content: {
     type: TEXT,
     required: true,
   }, 
+  happies: {
+    type: INTEGER,
+    defaultValue: 0
+  }
 });
 
 module.exports = HappyNote;

@@ -65,17 +65,36 @@ const PortHome = ()=> {
       
        { (!auth.id) ? 
      (
-      <div id="portfolio-home">   
+      // <div id="portfolio-home">   
 
-        <div> 
-          <h2>Welcome to My Portfolio!</h2>
-          <div className='center'>
-            <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here </Link></Button>  or  <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
+      //   <div> 
+      //     <h2>Welcome to My Portfolio!</h2>
+      //     <div className='center'>
+      //       <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here </Link></Button>  or  <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
+      //     </div>
+      //   <h4 className='center'>Have a look at a few of my projects! An Ecommerce Platform, a Stock Trading App, and an AI and UFC Stat tool!</h4>
+      //   </div>
+      //   <div className='port-display-box'>
+      <div id="portfolio-home" style={{ padding: '20px', textAlign: 'center' }}>
+
+        <div>
+          <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Welcome to My Portfolio!</h2>
+          <div style={{ marginBottom: '20px' }}>
+            <Button variant='outlined' style={{ fontSize: '1.2rem', fontWeight: '500', marginRight: '10px' }}>
+              <Link to={`/capstone/register`}>Register Here</Link>
+            </Button>
+            <span style={{ fontSize: '1.2rem', fontWeight: '500' }}>or</span>
+            <Button variant='outlined' style={{ fontSize: '1.2rem', fontWeight: '500', marginLeft: '10px' }}>
+              <Link to='/capstone/login'>Login</Link>
+            </Button>
           </div>
-        <h4 className='center'>Have a look at a few of my projects! An Ecommerce Platform, a Stock Trading App, and an AI and UFC Stat tool!</h4>
+          <h4 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>
+            Have a look at a few of my projects! An Ecommerce Platform, a Stock Trading App, and an AI and UFC Stat tool!
+          </h4>
         </div>
-        <div className='port-display-box'>
-            
+
+        <div className='port-display-box' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+                  
             <Card 
               sx={{ 
                 maxWidth: 375,
@@ -220,7 +239,7 @@ const PortHome = ()=> {
 
         )  : (
 
-          <div id="homepage">           
+        <div id="homepage">           
           <h1>Welcome, {auth.username}!</h1>
           <div>
 

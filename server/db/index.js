@@ -158,6 +158,9 @@ try {
   const lucy2 = await Message.create({ txt: 'good without your financial advice!', fromId: lucy.id, toId: moe.id })
   const ethyl2 = await Message.create({ txt: "Yea that's cause you gave me bad financial advice!!" , fromId: ethyl.id, toId: moe.id })
 
+  const happy1 = await HappyNote.create({ userId: moe.id, subject: 'Walk', content: 'I went for a walk today and it was lovely' })
+  const happy2 = await HappyNote.create({ userId: moe.id, subject: 'Run', content: 'I ran instead of walking and it was incredible' })
+
   await Assessment.create({score: 25, userId: moe.id});
 
   for(let i = 0; i < fighterResponse.data.length; i++){

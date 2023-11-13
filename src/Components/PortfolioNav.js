@@ -118,7 +118,7 @@ export default function PortfolioNav() {
         <LaptopChromebookIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
         <Typography
             variant="h6"
-            noWrap
+            
             component="a"
             href="/"
             sx={{
@@ -126,7 +126,7 @@ export default function PortfolioNav() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -145,18 +145,18 @@ export default function PortfolioNav() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            E-Commerce
+            E-Comm
           </Typography>
 
           <SportsKabaddiIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
-            noWrap
+            
             component="a"
             href="#/stackathon/fighters"
             sx={{
@@ -164,7 +164,7 @@ export default function PortfolioNav() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -175,7 +175,7 @@ export default function PortfolioNav() {
           <FlightTakeoffIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
-            noWrap
+            
             component="a"
             href="#/stackathon/trip"
             sx={{
@@ -183,7 +183,7 @@ export default function PortfolioNav() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -194,7 +194,7 @@ export default function PortfolioNav() {
           <CardGiftcardIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
-            noWrap
+            
             component="a"
             href="#/stackathon/present"
             sx={{
@@ -202,7 +202,7 @@ export default function PortfolioNav() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -221,7 +221,7 @@ export default function PortfolioNav() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -317,8 +317,8 @@ export default function PortfolioNav() {
           >
             {auth.id ? <div style={{color: 'white', textDecoration: 'none'  }}>{auth.username}</div> : ''}
           </Typography>
-
-          <Typography
+        
+          {/* <Typography
             variant="h6"
             noWrap
             sx={{
@@ -333,8 +333,8 @@ export default function PortfolioNav() {
               justifyContent: "center",
             }}
           >
-            {/* {!auth.id ? (<a href={`https://github.com/login/oauth/authorize?client_id=${window.client_id}`} style={{color: 'white', textDecoration: 'none'  }}>Github Login</a>):''} */}
-          </Typography>
+             {!auth.id ? (<a href={`https://github.com/login/oauth/authorize?client_id=${window.client_id}`} style={{color: 'white', textDecoration: 'none'  }}>Github Login</a>):''} 
+          </Typography> */}
 
           <IconButton size="large" color="inherit">
             <Badge badgeContent={getCartLength()} color="error">
