@@ -64,6 +64,7 @@ const syncAndSeed = async ()=> {
   
   const seventh = 'CJES,CKH,CKP,CL,CLA,CLB,CLC,CLD,CLDT,CLF,CLGX,CLH,CLI,CLNY,CLNY$A,CLNY$B,CLR,CLS,CLV,CLW,CLX,CM,CMA,CMA.W,CMC,CMCM,CMG,CMI,CMK,CMLP,CMN,CMO,CMO$E,CMP,CMRE,CMRE$B,CMRE$C,CMS,CMS$B,CMU,CNA,CNC,CNCO,CNHI,CNI,CNK,CNL,CNNX,CNO,CNP,CNQ,CNS,CNW,CNX,CO,CODE,CODI,COF,COF$C,COF$D,COF$P,COF.W,COG,COH,COL,COO,COP,COR,COR$A,CORR,COT,COTY,COUP,COV,CP,CPA,CPAC,CPB,CPE,CPE$A,CPF,CPG,CPK,CPL,CPN,CPS,CPT,CR,CRC,CRCM,CRD.A,CRD.B,CRH,CRI,CRK,CRL,CRM,CRR,CRS,CRT,CRY,CS,CSC,CSG,CSH,CSI,CSL,CSLT,CSS,CST,CSTM,CSU,CSV,CSX,CTB,CTL,CTLT,CTQ,CTR,CTS,CTT,CTU,CTV,CTW,CTX,CTY,CUB,CUBE,CUBE$A,CUBI,CUBS,CUDA,CUK,CUZ,CVA,CVB,CVC,CVD,CVE,CVEO,CVG,CVI,CVO,CVRR,CVS,CVT,CVX,CW,CWEI,CWT,CX,CXE,CXH,CXO,CXP,CXW,CYD,CYH,CYN,CYN$C,CYN$D,CYNI,CYS,CYS$A,CYS$B,CYT,CZZ,D,DAC,DAL,DAN,DANG,DAR'
 
+  const note1 = 'Hey friends! 🌸✨ \n \ Today, I wanted to share a little burst of happiness with you all. 🤗 This morning, I found a tiny caterpillar in my garden, and I decided to create a cozy home for it in a jar with some leaves. 🐛💚 Watching it wiggle around and munch on its leafy feast brought so much joy to my day! \n \ Life can be hectic, but sometimes it is the small, simple moments that make everything brighter. What is something little that brought a smile to your face recently? Spread some positivity and share your heartwarming stories! 🌻💕 \n \ Remember, your joy might just be the sunshine someone else needs today. ☀️✨ \n \ #SpreadJoy #LittleMoments #Gratitude #PositiveVibes'
 
   const options = {
   method: 'GET',
@@ -136,7 +137,7 @@ try {
 
   try {
     const fighterResponse = await axios.request(fighterOptions);
-    const [moe, larry, lucy, ethyl, admin] = await Promise.all([
+    const [moe, lucy, larry, ethyl, admin] = await Promise.all([
     
     User.create({ username: 'moe', password: '123' }),
     User.create({ username: 'lucy', password: '123' }),
@@ -158,10 +159,11 @@ try {
   const lucy2 = await Message.create({ txt: 'good without your financial advice!', fromId: lucy.id, toId: moe.id })
   const ethyl2 = await Message.create({ txt: "Yea that's cause you gave me bad financial advice!!" , fromId: ethyl.id, toId: moe.id })
 
-  const happy1 = await HappyNote.create({ userId: moe.id, subject: 'Walk', content: 'I went for a walk today and it was lovely' })
-  const happy2 = await HappyNote.create({ userId: moe.id, subject: 'Run', content: 'I ran instead of walking and it was incredible' })
+  const happy1 = await HappyNote.create({ userId: moe.id, subject: '🌈 Celebrating Small Joys in Life! 🌟', content: 'Hey friends! 🌸✨ \n \ Today, I wanted to share a little burst of happiness with you all. 🤗 This morning, I found a tiny caterpillar in my garden, and I decided to create a cozy home for it in a jar with some leaves. 🐛💚 Watching it wiggle around and munch on its leafy feast brought so much joy to my day! \n \ Life can be hectic, but sometimes it is the small, simple moments that make everything brighter. What is something little that brought a smile to your face recently? Spread some positivity and share your heartwarming stories! 🌻💕 \n \ Remember, your joy might just be the sunshine someone else needs today. ☀️✨ \n \ #SpreadJoy #LittleMoments #Gratitude #PositiveVibes' })
+  const happy2 = await HappyNote.create({ userId: lucy.id, subject: '🚀 Exciting News! 🌐 Introducing Happy Notes! 🎉', content: 'Hello, wonderful community! 🌈✨ \n \ We are absolutely thrilled to share some exciting updates with you! 🚀 Today, we have added a brand-new section to our website, and we cannot wait for you to explore it!' })
+  const happy3 = await HappyNote.create({ userId: larry.id, subject: "🌻 A Gratitude Post - Let's Count Our Blessings! 🌈", content: "Hello, lovely souls! 🌸💖 In the spirit of spreading joy and gratitude, let's take a moment to reflect on the beautiful things in our lives. ✨💕 Today I am thankful for a surprise call from a friend that turned a regular day into something extraordinary." })
 
-  await Assessment.create({score: 25, userId: moe.id});
+  await Assessment.create({score: 25, userId: moe.id})
 
   for(let i = 0; i < fighterResponse.data.length; i++){
     let first = fighterResponse.data[i].matchup[0]

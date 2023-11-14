@@ -232,6 +232,33 @@ const PortHome = ()=> {
                 </Typography>
               </CardContent>
             </Card>
+
+            <Card sx={{ 
+              maxWidth: 375,
+              ':hover':{
+                boxShadow: 5
+              },
+              display: 'flex', 
+              flexDirection: 'column',
+              margin: 2 
+              }}
+             >
+              <Link to='/portfolio/happyNotes'>
+              <CardMedia
+                sx={{ height: 140 }}
+                image="/static/images/happynotegrab.jpeg"
+                title="Happy Notes Thumbnail"
+              />
+              </Link>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Happy Notes
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  This is a place to share happy things with others to appreciate joyful experiences
+                </Typography>
+              </CardContent>
+            </Card>
         </div>
         
 
@@ -382,6 +409,33 @@ const PortHome = ()=> {
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.
+                  </Typography>
+                </CardContent>
+              </Card>
+
+              <Card sx={{ 
+              maxWidth: 375,
+              ':hover':{
+                boxShadow: 5
+              },
+              display: 'flex', 
+              flexDirection: 'column',
+              margin: 2 
+              }}
+             >
+                <Link to='/portfolio/happyNotes'>
+                <CardMedia
+                  sx={{ height: 140 }}
+                  image="/static/images/happynotegrab.jpeg"
+                  title="Happy Notes Thumbnail"
+                />
+                </Link>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Happy Notes
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    This is a place to share happy things with others to appreciate joyful experiences
                   </Typography>
                 </CardContent>
               </Card>

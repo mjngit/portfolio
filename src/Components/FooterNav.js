@@ -764,6 +764,15 @@ export default function FooterNav() {
             >
               Merch
             </Typography>
+            <Typography
+              variant="subtitle2"
+              
+              component="a"
+              href="/#/portfolio/happyNotes"
+              sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
+            >
+              Happy Notes
+            </Typography>
             
             </div>
 

@@ -9,15 +9,17 @@ const HappyNote = conn.define('happyNote', {
     defaultValue: UUIDV4
   },
   userId: {
-        type: UUID,
-        allowNull: false
+    type: UUID,
+    allowNull: false
   },
   subject: {
-        type: STRING,
+    type: STRING,
+    allowNull: false
   },
   content: {
     type: TEXT,
     required: true,
+    allowNull: false
   }, 
   happies: {
     type: INTEGER,
