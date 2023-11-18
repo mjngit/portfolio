@@ -255,7 +255,7 @@ const PortHome = ()=> {
                   Happy Notes
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  This is a place to share happy things with others to appreciate joyful experiences
+                  This is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times
                 </Typography>
               </CardContent>
             </Card>
@@ -435,7 +435,7 @@ const PortHome = ()=> {
                     Happy Notes
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    This is a place to share happy things with others to appreciate joyful experiences
+                    This is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times
                   </Typography>
                 </CardContent>
               </Card>

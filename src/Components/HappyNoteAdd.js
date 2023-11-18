@@ -16,8 +16,6 @@ const PostAdd = () => {
     const [content, setContent] = useState('')
     const userId = auth.id
 
-
-
     const createNote = async (ev) => {
         ev.preventDefault()
         await dispatch(createHappyNote({userId, subject, content}))

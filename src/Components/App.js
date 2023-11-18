@@ -27,6 +27,7 @@ import AboutContact from './About/AboutContact';
 import Logout from './Logout';
 import Review from './Review'
 import ReviewsAll from './ReviewsAll';
+import HomeV2 from './HomeComponents/HomeV2';
 
 import FightersOfTheWeek from './FightersOfTheWeek'
 import Present from './Present'
@@ -43,7 +44,6 @@ import AdminMerch from './Admin/AdminMerchesMain';
 import CreateMerch from './Admin/AdminMerchsCreate';
 import AdminMerchesMerch from './Admin/AdminMerchesMerch';
 import AdminOther from './Admin/AdminOther';
-
 
 import CapLogin from './CapLogin';
 import CapLogout from './CapLogout';
@@ -63,6 +63,7 @@ import Chats from './Chats';
 import NavBar from './NavBar';
 import Portfolio from './Portfolio';
 import Deposit from './Deposit';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { loginWithToken, fetchAssessments, fetchOnlineUsers, fetchMessages, fetchStocks, fetchUsers,fetchPortfolio, fetchTransactions, fetchFriends, fetchHypes } from '../store';
 import { Link, Routes, Route } from 'react-router-dom';
@@ -190,7 +191,11 @@ const App = ()=> {
               <Route path='/capstone/logout' element={ <CapLogout /> } />
               <Route path='/capstone/home' element={ <CapHome /> } />
               <Route path='/portfolio/capstone' element={ <CapHome /> } />
+              <Route path='/portfolio/homev2' element={ <HomeV2 /> } />
+
               {/* <Route path='/home' element={ <Home /> } /> */}
+
+              
               <Route path='/capstone/account' element={ <Profile /> } />
               <Route path='/capstone/accountSetup' element={ <CapAccount /> } />
               <Route path='/capstone/employment' element={ <Employment /> } />

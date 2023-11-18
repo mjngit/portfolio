@@ -6,7 +6,6 @@ import SubNavAbout from './SubNavAbout'
 const About = () => {
   return (
     <div>
-    <SubNavAbout/>
 
     <Typography
        sx={{
@@ -19,7 +18,7 @@ const About = () => {
         marginBottom: '1rem',
         maxWidth: '70%'
        }}>
-        Let me tell you, there's nothing quite like a good cup of coffee to get the brain humming and the ideas flowing. 
+        About Michael J Norris
     </Typography>
       <Typography
        sx={{
@@ -31,13 +30,9 @@ const About = () => {
           marginBottom: '1rem',
           maxWidth: '90%'
        }}>
-         When you add technology to the mix, well, you've got something truly special. As shown by the most current studies, the human race needs a prescription for coffee! That's where we come in.
-
-        At Script For Java, we're not just brewing up a tasty cup of joe, oh no. We're combining the best of two worlds, the world of coffee and the world of tech, to create something truly remarkable.
-
-        Every cup of coffee we serve is made with the finest beans, roasted to perfection, and brewed with care. Every customer who walks through our door is treated like a valued member of the community.
-
-        But that's not all, my friend. Our coffee company is more than just a place to grab a cup of coffee. It's a hub for tech enthusiasts, a place where they can come together to exchange ideas, discuss the latest trends, and work on their projects.
+         I'm a software developer / sales engineer / project manager / tutor who thrives on working with others. Collaborating with people, getting the best results out of a team, facilitating cooperation, and finishing projects that serve the greater good are all things that get me fired up. 
+         
+         I love bridging the gaps between technology and people with empathy and communication while finding efficient solutions to complex problems.
         </Typography>
         <Typography
           sx={{
@@ -49,9 +44,19 @@ const About = () => {
             marginBottom: '1rem',
             maxWidth: '95%'
           }}>
-        So if you're looking for a place to fuel your mind and body, look no further than Script for Java. With every sip of our delicious brew, you'll be inspired to tackle the challenges of the day. With every visit, you'll be part of a vibrant community of like-minded individuals.
+        Some of my personal highlights include:
 
-        Our company is the perfect blend of coffee and technology, and I can't think of a better way to start your day.
+Connecting with stakeholders to design and build the company's online presence, most notably their website with interactive product catalog.
+
+Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.
+
+Tutoring 50+ students toward academic success, achieving a 90+% acceptance rate into the colleges of their choice.
+
+Presenting my computational chemistry research thesis at two American Chemical Society conferences.
+
+Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.
+
+Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.
         </Typography>
         <Typography
        sx={{
@@ -64,8 +69,10 @@ const About = () => {
         marginBottom: '1rem',
         maxWidth: '70%'
        }}>
-        So come on in! Stop by any of our locations and feel free to hang out, get some work done, and drink some great coffee. 
-    </Typography>
+        Outside of work you will likely find me: traveling around looking for new hiking trails or musicians that will allow me to sit in on the drums
+
+        Please reach out to talk about Javascript | React-Redux | HTML | CSS | SQL | Axios | Project Management | Technical Sales | Data Analysis | Education    
+        </Typography>
     </div>
   )
 }

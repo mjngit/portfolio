@@ -10,17 +10,17 @@ const Home = ()=> {
   const dispatch = useDispatch();
   return (
     <>
-      <img src='static\images\coffee_cup_illustration_blue.jpeg' style={{width: '100%'}}></img>   
+      <img src='static\images\coffee_cup_illustration_blue.jpeg' style={{width: '110%'}}></img>   
       <SubNavHome/>
 
       
        { (!auth.id) ? 
      (
-      <div id="homepage">   
+      <div >   
 
-        <div> 
+        <div id="homepage"> 
           <h2>Welcome! Please log in to place an order, but feel free to browse!</h2>
-        <Button variant='outlined'><Link to={`/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
+        <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
         </div>
 
         <div id="homepageImage"/>
