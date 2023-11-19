@@ -15,6 +15,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import PortfolioNav from "../PortfolioNav";
+import FooterNav from "../FooterNav";
 
 
 const MerchMugs = () =>{
@@ -117,6 +119,7 @@ const Merch = ({merch}) => {
 
   return (
     <>
+    <PortfolioNav/>
       < SubNavMerch />
          <form onSubmit={ ev => ev.preventDefault() } style={{padding:"1rem", maxWidth: 275 }}>
             <input value={ filter.name ? filter.name : '' } autoComplete='off' name='name' onChange={ search } placeholder='Search'/>
@@ -144,6 +147,7 @@ const Merch = ({merch}) => {
         return <Merch merch = {merch} key={ merch.id } />
       })}
     </Box>
+    <FooterNav/>
   </>
   )
 }

@@ -5,6 +5,9 @@ import AssessmentPrompt from './AssessmentPrompt'
 import { submitAssessment } from '../store';
 import Button from '@mui/material/Button';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const RiskAssessment = () => {
   const { auth } = useSelector(state => state);
   const dispatch = useDispatch();
@@ -28,6 +31,7 @@ const RiskAssessment = () => {
     dispatch(submitAssessment(id, sum));
     navigate('/capstone/home');
   };
+  // TODO: CHECK ON NAVIGATION AFTER SUBMIT 
 
   const promptResponse = (question, promptValue) => {
     if(promptValue){
@@ -46,6 +50,7 @@ const RiskAssessment = () => {
 
   return (
     <div>
+      <PortfolioNav/>
       <h2>RISK ASSESSMENT</h2>
       <form onSubmit={ submit }>
         <AssessmentPrompt
@@ -171,7 +176,9 @@ const RiskAssessment = () => {
           Submit
         </Button>
       </form>
+      <FooterNav/>
     </div>
+    // TODO: CHECK ON OTHER BUTTONS FOR SUBMISSION
   );
 };
 

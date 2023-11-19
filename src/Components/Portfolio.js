@@ -16,6 +16,9 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import StarIcon from '@mui/icons-material/Star';
 import transaction from '../store/transactions';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -152,13 +155,6 @@ for(let i = 0; i < myTransactions.length; i++){
   )
 }
 
-
-
-// const myPortfolioGraph = () => {
-//   // Update the graph state
-//   setGraph('show')
-// };
-
 const getPortValue = () => {
   let total = 0
 
@@ -207,6 +203,7 @@ const portfolioGraph = [
 
   return (
     <div>
+      <PortfolioNav/>
       {
         auth.id && myTransactions.length ? (
             <div>
@@ -307,7 +304,7 @@ const portfolioGraph = [
             </div>
           )
         } 
-     
+     <FooterNav/>
     </div>
   );
 };

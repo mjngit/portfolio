@@ -16,6 +16,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
+
 const Merch = () =>{
   const dispatch = useDispatch()
   const {id} = useParams();
@@ -46,6 +49,8 @@ const Merch = () =>{
   }
 
   return (
+    <>
+    <PortfolioNav/>
     <div id="productDiv" >
     <div id="productDivLeft">
     <Card sx={{ maxWidth: 345 }}>
@@ -100,6 +105,8 @@ const Merch = () =>{
     </Card>
     </div>
     </div>
+    <FooterNav/>
+    </>
   )
 }
 

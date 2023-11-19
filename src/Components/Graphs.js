@@ -23,6 +23,9 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Alert from '@mui/material/Alert';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -681,6 +684,7 @@ const options = {
 
   return (
     <div>
+
       {
         auth.id ? (
             <div>
@@ -932,7 +936,7 @@ const options = {
             </div>
           )
         } 
-     
+     <FooterNav/>
     </div>
   );
 };
@@ -940,78 +944,3 @@ const options = {
 export default Graphs;
 
 
-
-
-
-
-         // for(let i = 0; i <= weekDates.length - 1; i++){
-        //     lastMonthArrayForGraph.push(
-        //         {
-        //         "x": weekDates[weekDates.length - 1 - i].split('23-0')[1],
-        //         "y": tickerResponse.data['Time Series (Daily)'][`${weekDates[weekDates.length - 1 - i]}`]['4. close']
-        //     }
-        //     )
-        // }
-
-    
-      
-//const dat = [
-//     {
-//       "id": "AAPL",
-//       "color": "hsl(55, 70%, 50%)",
-//       "data": [
-//         {
-//           "x": "May 09",
-//           "y": 171.77
-//         },
-//         {
-//           "x": "May 10",
-//           "y": 173.56
-//         },
-//         {
-//           "x": "May 11",
-//           "y": 173.75
-//         },
-//         {
-//           "x": "May 12",
-//           "y": 172.57
-//         },
-//         {
-//           "x": "May 15",
-//           "y": 172.07
-//         },
-//         {
-//           "x": "May 16",
-//           "y": 172.07
-//         },
-//         {
-//           "x": "May 17",
-//           "y": 172.69
-//         },
-//         {
-//           "x": "May 18",
-//           "y": 175.05
-//         },
-//         {
-//           "x": "May 19",
-//           "y": 175.96
-//         },
-//         {
-//           "x": "May 22",
-//           "y": 174.20
-//         },
-//         {
-//           "x": "May 23",
-//           "y": 171.56
-//         },
-//         {
-//           "x": "May 24",
-//           "y": 171.30
-//         }
-//       ]
-//     },
-//   ]
-
-
-
-   

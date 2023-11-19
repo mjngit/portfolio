@@ -1,12 +1,15 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 import SubNavAbout from './SubNavAbout'
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 
 const About = () => {
   return (
+    
     <div>
-
+    <PortfolioNav />
     <Typography
        sx={{
         textAlign: 'center',
@@ -45,18 +48,19 @@ const About = () => {
             maxWidth: '95%'
           }}>
         Some of my personal highlights include:
+          <ul>
+            <li>Connecting with stakeholders to design and build the company's online presence, most notably their website with interactive product catalog.</li>
 
-Connecting with stakeholders to design and build the company's online presence, most notably their website with interactive product catalog.
+            <li>Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</li>
 
-Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.
+            <li>Tutoring 50+ students toward academic success, achieving a 90+% acceptance rate into the colleges of their choice.</li>
 
-Tutoring 50+ students toward academic success, achieving a 90+% acceptance rate into the colleges of their choice.
+            <li>Presenting my computational chemistry research thesis at two American Chemical Society conferences.</li>
 
-Presenting my computational chemistry research thesis at two American Chemical Society conferences.
+            <li>Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</li>
 
-Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.
-
-Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.
+            <li>Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</li>
+          </ul>
         </Typography>
         <Typography
        sx={{
@@ -69,10 +73,18 @@ Creating and executing the itinerary, budget, and logistics of 2 trips around th
         marginBottom: '1rem',
         maxWidth: '70%'
        }}>
-        Outside of work you will likely find me: traveling around looking for new hiking trails or musicians that will allow me to sit in on the drums
-
+        Other hobbies of mine include: 
+          <ul>
+            <li>Playing the drums</li>
+            <li>Hiking</li>
+            <li>Travel</li>
+            <li>Sports</li>
+            <li>Painting</li>
+            <li>Arts</li>
+          </ul>
         Please reach out to talk about Javascript | React-Redux | HTML | CSS | SQL | Axios | Project Management | Technical Sales | Data Analysis | Education    
         </Typography>
+        <FooterNav/>
     </div>
   )
 }

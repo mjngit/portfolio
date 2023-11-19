@@ -21,6 +21,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
 
 
 const Chats = ()=> {
@@ -58,6 +60,7 @@ const Chats = ()=> {
     
     return (
     <div>
+      <PortfolioNav/>
         <h1 style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>Chats</h1>
 
 {
@@ -276,6 +279,7 @@ const Chats = ()=> {
                 })
             }
         </div>
+        <FooterNav/>
     </div>
     )
 }

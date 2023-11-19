@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const CapRegister = ()=> {
   const [username, setUsername ] = useState('');
   const [password, setPassword ] = useState('');
@@ -28,6 +31,8 @@ const CapRegister = ()=> {
     }
   };
   return (
+    <>
+    <PortfolioNav/>
     <div style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
     <form onSubmit={ _register }>
         <h1 style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>Registration</h1>
@@ -39,6 +44,8 @@ const CapRegister = ()=> {
         <Button style={{ width: 300 }} onClick={ _register } disabled={ !username || !password}>Register</Button>
     </form>
     </div>
+    <FooterNav/>
+    </>
   );
 };
 

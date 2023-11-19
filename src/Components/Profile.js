@@ -16,6 +16,9 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import Switch from '@mui/material/Switch';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Profile = ()=> {
   const { auth } = useSelector(state => state);
   const dispatch = useDispatch();
@@ -58,6 +61,7 @@ const Profile = ()=> {
 
   return (
     <div>
+      <PortfolioNav/>
       {
         auth.id ? (
           <div style={{}}>
@@ -145,7 +149,7 @@ const Profile = ()=> {
             </div>
           )
         } 
-     
+      <FooterNav/>
     </div>
   );
 };

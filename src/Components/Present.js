@@ -5,6 +5,9 @@ import Button from '@mui/material/Button';
 import { OPENAI_API_KEY } from '../../secrets';
 import { Audio } from  'react-loader-spinner';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 
 const Present = () => {
     const [age, setAge] = useState('')
@@ -63,7 +66,9 @@ setLoading(false)
 
     return (
         <>
-        <div>
+          <PortfolioNav/>
+          <div>
+          
                 {/* <h1 style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>Birthday Present Generator</h1> */}
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h1>Birthday Present Generator</h1></div>
                 <form onSubmit={ submit } style={{ display: 'flex' }}>
@@ -102,7 +107,8 @@ setLoading(false)
                     </div>
                 {gift.map((gift, idx) => <div key={idx}><a href={gift.url}  target={'_blank'}>{gift.name}</a></div>)
                 }
-            </div>
+          </div>
+          <FooterNav/>
         </>
     )
 }

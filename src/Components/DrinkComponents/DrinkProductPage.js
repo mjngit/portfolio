@@ -20,7 +20,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 const DrinkProductPage = () =>{
   const dispatch = useDispatch()
@@ -56,6 +57,8 @@ const DrinkProductPage = () =>{
   console.log(filtered);
 
   return (
+    <>
+    <PortfolioNav/>
     <div id="ProductDiv" >
       <div id="productDivLeft">
         <Card>
@@ -137,7 +140,8 @@ const DrinkProductPage = () =>{
     </div>
     
     </div>
-   
+    <FooterNav/>
+   </>
 
   )
 }

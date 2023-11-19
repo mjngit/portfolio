@@ -11,6 +11,9 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import Typography from '@mui/material/Typography';
 
+import PortfolioNav from './PortfolioNav'
+import FooterNav from './FooterNav'
+
 
 const CapAccount = ()=> {
   const [firstName, setFirstName] = useState('');
@@ -83,7 +86,7 @@ const CapAccount = ()=> {
       {
         auth.id ? (
             <div>
-              
+              <PortfolioNav/>
               <div className="progress">
                 <div className="circle active">
                   <span className="label">1</span>
@@ -158,15 +161,21 @@ const CapAccount = ()=> {
                   <Button sx={{ display: 'flex', justifyContent:'center', alignItems: 'center', marginTop: 2, backgroundColor: 'darkgray', ":hover": {backgroundColor: 'green', color: "white"}}} component="div" variant="contained"  onClick={ _submit } >Submit & Proceed</Button>
                 </form>
               </div>
+              <FooterNav/>
             </div>
         
         )  : (
+          <>
+          
+          <PortfolioNav/>
             <div style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
                 <h1>Can't Update If You're Not Logged In!</h1>
                 <div>
                     <Link to={`/capstone/register`}>Register Here</Link> or <Link to='/capstone/login'> Login </Link>
                 </div>
             </div>
+            <FooterNav/>
+          </>
           )
         } 
      

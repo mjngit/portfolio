@@ -1,10 +1,13 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 import SubNavAbout from './SubNavAbout'
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 const AboutContact = () => {
   return (
     <div>
+      <PortfolioNav/>
       <SubNavAbout/>
        <Typography
        sx={{
@@ -19,6 +22,7 @@ const AboutContact = () => {
         <li style={{listStyleType: 'none'}}>Phone: <a href="tel:617-610-1869">617-610-1869</a></li>
         <li style={{listStyleType: 'none'}}>Email: <a href="mailto:mnorris6@elon.edu">mnorris6@elon.edu</a></li>
         </Typography>
+        <FooterNav/>
     </div>
   )
 }

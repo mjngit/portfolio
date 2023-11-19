@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../store';
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from 'react-router-dom'
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
 
 
 
@@ -17,6 +19,8 @@ const CapLogout = ()=> {
     }
 
   return (
+    <>
+    <PortfolioNav/>
     <div style={{display: 'flex', justifyContent:'center', alignItems: 'center'}}>
         {
         auth.id ? (
@@ -46,6 +50,8 @@ const CapLogout = ()=> {
         } 
     
     </div>
+    <FooterNav/>
+    </>
   );
 };
 

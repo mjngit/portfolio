@@ -11,6 +11,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 
 
 const Checkout = ()=> {
@@ -46,6 +49,7 @@ const Checkout = ()=> {
   };
   return (
     <div id='checkoutPage'>
+      <PortfolioNav/>
       <div id="checkoutPageCart">
       <h1>Shopping Cart</h1>
 
@@ -76,7 +80,7 @@ const Checkout = ()=> {
       </form>
       </div>
 
-
+      <FooterNav/>
     </div>
   )
 }

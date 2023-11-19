@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 
 const PostAdd = () => {
     const { auth, users, happyNotes } = useSelector(state => state)
@@ -24,6 +27,7 @@ const PostAdd = () => {
 
     return (
         <>
+        <PortfolioNav/>
         { (!auth.id) ? 
             (
              <div id="homepage">   
@@ -79,6 +83,7 @@ const PostAdd = () => {
            
                )
                } 
+        <FooterNav/>
        </>
     )
 }

@@ -13,6 +13,9 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import { Typography } from '@mui/material';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const FightersOfTheWeek = () => {
     const { fighters } = useSelector(state => state)
 
@@ -185,6 +188,7 @@ const FightersOfTheWeek = () => {
 
   return (
     <>
+    <PortfolioNav/>
      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h1>Fighters Of This Week</h1></div>
 
     <TableContainer component={Paper}>
@@ -415,6 +419,7 @@ const FightersOfTheWeek = () => {
           
     </List>
     <Divider /> */}
+    <FooterNav/>
     </>
    
   )

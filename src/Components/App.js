@@ -21,6 +21,7 @@ import MerchHats from './MerchComponents/MerchHats';
 import MerchMugs from './MerchComponents/MerchMugs';
 import Account from './Account';
 import About from './About/About';
+import AboutV2 from './About/AboutV2';
 import AboutLocations from './About/AboutLocations';
 import AboutCareers from './About/AboutCareers';
 import AboutContact from './About/AboutContact';
@@ -138,17 +139,19 @@ const App = ()=> {
   useEffect(()=> {
     prevAuth.current = auth
   })
+
   return (
     <div >
-      <PortfolioNav />
-      {/* <Nav /> */}
-          
+      
+      
+      
+      {/* <PortfolioNav />     */}
         {/* original color of this image is #7CC9D1 */}
 
         <div className='app-body'>  
 
             <Routes>
-              <Route path='/' element={ <PortHome /> } />
+              <Route path='/' element={ <HomeV2 /> } />
               <Route path='/portfolio/home' element={ <PortHome /> } />
               <Route path='/portfolio/account' element={ <CapAccount /> } />
               <Route path='/portfolio/cart' element={ <Cart /> } />
@@ -217,13 +220,13 @@ const App = ()=> {
       !!auth.id && <Route path='/java/reviews' element={ <Review />} />
     }
             <Route path='/java/reviews/all' element={ <ReviewsAll />} />
-             <Route path='/java/reviews/:id' element={ <Review />} />
+              <Route path='/java/reviews/:id' element={ <Review />} />
 
               <Route path='/java/register' element={ <Register />} />
               <Route path='/java/login' element={ <CapLogin />} />
               <Route path='/java/logout' element={ <CapLogout /> } />
               <Route path='/java/account' element={ <Account /> } />
-              <Route path='/java/about' element={ <About /> } />
+              <Route path='/java/about' element={ <AboutV2 /> } />
               <Route path='/java/about/locations' element={<AboutLocations />}/>
               <Route path='/java/about/careers' element={<AboutCareers />}/>
               <Route path='/java/about/contact' element={<AboutContact />}/>
@@ -233,7 +236,7 @@ const App = ()=> {
             
           </div>
     
-         <FooterNav />
+         {/* <FooterNav /> */}
     </div>
     // </div>  
   );

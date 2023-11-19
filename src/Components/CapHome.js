@@ -22,6 +22,8 @@ import Grid from '@mui/material/Grid';
 import Carousel from './Carousel';
 import assessments from '../store/assessments';
 import users from '../store/users';
+import PortfolioNav from './PortfolioNav'
+import FooterNav from './FooterNav'
 
 
 const CapHome = ()=> {
@@ -126,6 +128,7 @@ const CapHome = ()=> {
 
     
     <>
+    <PortfolioNav/>
     { auth.id ? <>
     
     <div className='ticker-tape' style={{padding: 'none', margin: 'none', height: 100}}>
@@ -339,6 +342,7 @@ const CapHome = ()=> {
                               ))}
                             </Grid>
                           </Box>
+                          <FooterNav/>
                           </> }
     
     </>

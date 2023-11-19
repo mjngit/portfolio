@@ -7,6 +7,8 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Button from '@mui/material/Button';
 import SubNavAbout from './SubNavAbout'
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 const jobs = [
   {
@@ -40,6 +42,7 @@ const jobs = [
 
 const AboutCareers = () => {  return (
   <div>
+    <PortfolioNav/>
     <SubNavAbout/>
     <h1 style={{textAlign:"center"}}>Available Positions:</h1>
   <Box
@@ -94,6 +97,7 @@ const AboutCareers = () => {  return (
       )
     })}
   </Box>
+  <FooterNav/>
 </div>
 )
 }

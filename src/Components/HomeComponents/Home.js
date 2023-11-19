@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom'
 import SubNavHome from './SubNavHome';
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 
 const Home = ()=> {
@@ -10,6 +12,7 @@ const Home = ()=> {
   const dispatch = useDispatch();
   return (
     <>
+      <PortfolioNav/>
       <img src='static\images\coffee_cup_illustration_blue.jpeg' style={{width: '110%'}}></img>   
       <SubNavHome/>
 
@@ -24,7 +27,7 @@ const Home = ()=> {
         </div>
 
         <div id="homepageImage"/>
-
+      <FooterNav/>
       </div>
 
         )  : (
@@ -46,6 +49,7 @@ const Home = ()=> {
                 }
 
           </div>
+          <FooterNav/>
         </div>
     
         )

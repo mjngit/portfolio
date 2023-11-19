@@ -5,6 +5,9 @@ import Button from '@mui/material/Button';
 import { RAPIDAI_API_KEY } from '../../secrets';
 import { Audio } from  'react-loader-spinner'
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Present = () => {
     const [plans, setPlans] = useState([])
     const [days, setDays] = useState('')
@@ -42,7 +45,8 @@ const Present = () => {
 
     return (
         <>
-        <div>
+            <PortfolioNav/>
+            <div>
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h1>AI Trip Planner</h1></div>
                 <form onSubmit={ getTrip } style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
                   <div style={{ marginBottom: 8 }}/>
@@ -83,6 +87,7 @@ const Present = () => {
                 
                     : ''}
             </div>
+            <FooterNav/>
         </>
     )
 }

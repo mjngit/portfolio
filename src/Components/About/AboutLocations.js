@@ -8,6 +8,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Button from '@mui/material/Button';
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 
 const locations = [
@@ -54,6 +56,7 @@ const locations = [
 const AboutLocations = () => {
   return (
     <div>
+      <PortfolioNav/>
       <SubNavAbout/>
     <Box
       sx={{
@@ -109,6 +112,7 @@ const AboutLocations = () => {
         )
       })}
     </Box>
+    <FooterNav/>
   </div>
   )
 }

@@ -16,7 +16,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import CardActions from '@mui/material/CardActions';
 
-
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 
 const DrinksSmoothies = () =>{
@@ -124,6 +125,7 @@ const DrinksSmoothies = () =>{
 
   return (
     <>
+      <PortfolioNav/>
       < SubNavDrinks />          
         <form onSubmit={ ev => ev.preventDefault() } style={{padding: "1rem", maxWidth: 275 }}>
             <input value={ filter.name ? filter.name : '' } autoComplete='off' name='name' onChange={ search } placeholder='Search'/>
@@ -151,7 +153,7 @@ const DrinksSmoothies = () =>{
             return <Drink drink = {drink} key={ drink.id } />
           })}
         </Box>
-
+        <FooterNav/>
     </>
   )
 } 

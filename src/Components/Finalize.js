@@ -12,6 +12,9 @@ import Select from '@mui/material/Select';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 
 const Finalize = ()=> {
 
@@ -24,6 +27,7 @@ const Finalize = ()=> {
 
   return (
     <div>
+      <PortfolioNav/>
       {
         auth.id ? (
             <div>
@@ -105,7 +109,7 @@ const Finalize = ()=> {
             </div>
           )
         } 
-     
+     <FooterNav/>
     </div>
   );
 };

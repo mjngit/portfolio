@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { createReview, deleteReview } from '../store'; 
 import { useNavigate } from 'react-router-dom';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Review = ({ match }) => {
   
   const navigate = useNavigate();
@@ -41,6 +44,7 @@ const Review = ({ match }) => {
   return (
     
     <div>
+      <PortfolioNav/>
       <h2>Write A Review!</h2>
 
       <div className="formBlock">
@@ -172,6 +176,7 @@ const Review = ({ match }) => {
       </div>
       </div>
       </div>
+      <FooterNav/>
     </div>
 
     

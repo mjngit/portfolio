@@ -2,13 +2,15 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import { useLocation, Link } from 'react-router-dom'
 
-
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
 
 const Order = () => {
   const location = useLocation();
   console.log(location)
   return (
     <div>
+      <PortfolioNav/>
       <Typography
        sx={{
         textAlign: 'center',
@@ -24,6 +26,7 @@ const Order = () => {
         Your order number is {location.pathname.slice(7)}<br/>
         <Link to='/home'>Home</Link>
     </Typography>
+    <FooterNav/>
     </div>
   )
       }

@@ -5,6 +5,9 @@ import { useNavigate, Link } from 'react-router-dom';
 
 import { Typography } from '@mui/material';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 
 const Launch = ()=> {
   const { auth } = useSelector(state => state);
@@ -14,6 +17,7 @@ const Launch = ()=> {
 
   return (
     <div>
+      <PortfolioNav/>
       {
         auth.id ? (
             <div>
@@ -53,7 +57,7 @@ const Launch = ()=> {
             </div>
           )
         } 
-     
+     <FooterNav/>
     </div>
   );
 };

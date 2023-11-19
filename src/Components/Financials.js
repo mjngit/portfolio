@@ -12,6 +12,9 @@ import Select from '@mui/material/Select';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Financials = ()=> {
   const [approximateAnnualIncome, setApproximateAnnualIncome] = useState('');
   const [approximateTotalNetWorth, setApproximateTotalNetWorth] = useState('')
@@ -51,6 +54,7 @@ const Financials = ()=> {
   
   return (
     <div>
+      <PortfolioNav/>
       {
         auth.id ? (
             <div>
@@ -225,7 +229,7 @@ const Financials = ()=> {
             </div>
           )
         } 
-     
+     <FooterNav/>
     </div>
   );
 };

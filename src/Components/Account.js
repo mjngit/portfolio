@@ -5,6 +5,9 @@ import { useNavigate, Link } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
+import PortfolioNav from './PortfolioNav'
+import FooterNav from './FooterNav'
+
 const Account = ()=> {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('')
@@ -31,6 +34,8 @@ const Account = ()=> {
     navigate('/java/menu')
   };
   return (
+    <>
+    <PortfolioNav/>
     <div style={{ margin: 'auto', maxWidth: '80%' }} >
       {
         auth.id ? (
@@ -63,6 +68,8 @@ const Account = ()=> {
         } 
      
     </div>
+    <FooterNav/>
+    </>
   );
 };
 

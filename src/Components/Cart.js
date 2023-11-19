@@ -15,6 +15,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Cart = ()=> {
   const { cart } = useSelector(state => state);
   const dispatch = useDispatch();
@@ -37,6 +40,8 @@ const Cart = ()=> {
   }
 
   return (
+    <>
+    <PortfolioNav/>
     <div id="cart">
       <h1>Shopping Cart</h1>
 
@@ -81,6 +86,8 @@ const Cart = ()=> {
         </Card>
       </div>
     </div>
+    <FooterNav/>
+    </>
   );
 };
 

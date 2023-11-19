@@ -16,6 +16,9 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import Card from '@mui/material/Card';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Employment = ()=> {
   const [employmentStatus, setEmploymentStatus] = useState('');
   const [affiliationNYSE, setAffiliationNYSE] = useState(false);
@@ -49,6 +52,7 @@ const Employment = ()=> {
   };
   return (
     <div>
+    <PortfolioNav/>
       {
         auth.id ? (
             <div>
@@ -130,7 +134,7 @@ const Employment = ()=> {
             </div>
           )
         } 
-     
+    <FooterNav/>
     </div>
   );
 };

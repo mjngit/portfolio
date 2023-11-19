@@ -5,6 +5,9 @@ import { updateAuth } from '../store';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Deposit = ()=> {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -33,6 +36,7 @@ const Deposit = ()=> {
 
   return (
     <div>
+      <PortfolioNav/>
       <h2 style={{display: 'flex', justifyContent:'center'}}>Deposit Funds</h2>
       <div style={{display: 'flex', justifyContent:'center'}}>
       <form>
@@ -48,6 +52,7 @@ const Deposit = ()=> {
         <Link style={{ paddingLeft: 65}} to={`/register`} >Not a Member? Register Here</Link>
       </form>
       </div>
+      <FooterNav/>
     </div>
   );
 };

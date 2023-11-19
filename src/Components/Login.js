@@ -69,6 +69,9 @@ import {GoogleOAuthProvider, GoogleLogin} from '@react-oauth/google';
 import jwt_decode from 'jwt-decode';
 import { googleOAuthLogin } from '../store';
 
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
+
 const Login = ()=> {
   const dispatch = useDispatch();
   const navigate = useNavigate()
@@ -88,6 +91,7 @@ const Login = ()=> {
   };
   return (
     <div>
+      <PortfolioNav/>
       <h2 style={{display: 'flex', justifyContent:'center'}}>Login</h2>
       <div style={{display: 'flex', justifyContent:'center'}}>
       <form onSubmit={ login } >
@@ -116,6 +120,7 @@ const Login = ()=> {
         <Link style={{ paddingLeft: 15}}to={`/capstone/register`} >Not a Member? Register Here</Link>
       </form>
       </div>
+      <FooterNav/>
     </div>
   );
 };

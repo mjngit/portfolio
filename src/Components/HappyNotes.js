@@ -9,19 +9,38 @@ import Typography from '@mui/material/Typography';
 import { useDispatch, useSelector } from 'react-redux';
 import { addHappy } from '../store';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+import FooterNav from './FooterNav';
+import PortfolioNav from './PortfolioNav';
 
 
 
 const HappyNotes = () => {
     const { happyNotes, users } = useSelector(state => state)
+    const [isDisabled, setIsDisabled] = useState(false); 
     const dispatch = useDispatch();
 
     const like = async(happyNote) => {
+        setIsDisabled(true)
         await dispatch(addHappy(happyNote))
+
     }
+
+    const styles = {
+        button: {
+          padding: '10px 30px',
+          cursor: 'pointer',
+        },
+        buttonDisabled: {
+          padding: '10px 30px',
+          cursor: 'not-allowed',
+        },
+      };
 
     return (
     <div>
+        <PortfolioNav/>
     <h1 style={{display: 'flex', justifyContent:'center', alignItems:'center', marginBottom: 10}}>Happy Notes</h1>
         <ul>
             {
@@ -45,6 +64,14 @@ const HappyNotes = () => {
                             <CardActions>
                                 <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'right' }}>
                                     <Button size="small" onClick={(ev) => { like(happyNote); ev.target.disabled = true }}>Lovely!</Button>
+                                    {/* <button style={isDisabled ? styles.buttonDisabled : styles.plusButton} disabled={isDisabled} size="small" tabindex="0" className="plusButton" onClick={(ev) => { like(happyNote); ev.target.disabled = true }}>
+                                        <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                            <g mask="url(#mask0_21_345)">
+                                            <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+                                            </g>
+                                        </svg>
+                                    </button> */}
+                                   
                                     <span style={{ marginLeft: '10px', fontSize: '14px', color: '#777' }}>
                                         {happyNote.happies === 1 ? `This has made ${happyNote.happies} person happy so far` : `This has made ${happyNote.happies} people happy so far`}
                                     </span>
@@ -60,6 +87,7 @@ const HappyNotes = () => {
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10}}>
             <Button variant='outlined'><Link to={`/portfolio/addHappyNote`} style={{fontSize: '1.2rem', fontWeight:'500' }}>Add Happy Note</Link></Button>
         </div>
+        <FooterNav/>
     </div>
     )
 }
