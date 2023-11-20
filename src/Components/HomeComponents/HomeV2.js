@@ -242,7 +242,7 @@ function HomeV2() {
                     </div> */}
                 </div>
             </section>
-            <section>
+            {/* <section>
                 <div className="container px-6 py-12 mx-auto">
                     <div className="grid items-center gap-4 xl:grid-cols-5">
                         <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
@@ -323,7 +323,7 @@ function HomeV2() {
                     </div>
                     <button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-lime-400 dark:text-gray-900">Send Message</button>
                 </form>
-            </div>
+            </div> */}
             <footer>
                 <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row">
                     <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">

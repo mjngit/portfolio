@@ -60,35 +60,35 @@ const AboutV2 = () => {
                         </div>
                     </div>
                     <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-                        <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:dark:bg-gray-700">
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400">
+                        <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:dark:bg-gray-700 before:bg-gray-700">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">Elon University</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400">January 2010</time>
                                 <p className="mt-3">Was chosen to be an Organic Chemistry Teaching Assistant where I led office hours and lab, graded assignments, and mentored students.</p>
                                 <p className="mt-3">This led me to begin my undergraduate research thesis in computational chemistry, I was able to hone my love of data analytics by studying the age old relationship between resonance vs. inductive effects on hydrogen bonding using computational models to analyze complex data.</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">Boston Children's Hospital</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400">January 2014</time>
                                 <p className="mt-3">Assisted research in the pain department for a new anesthetic hoping to alleviate nausea rates during longer surgeries</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">World Tour #1</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400">January 2017</time>
                                 <p className="mt-3">Planned and executed a 10 month solo trip around the world (India to Southeast Asia to Australia to New Zealand to Chile) on a tight budget</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">Northeast Air Solutions</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400">July 2018</time>
                                 <p className="mt-3">Started as a Sales Engineer for a manufacturer's representative in the HVAC industry in Boston. Sold many different technical products and helped mechanical engineers and sheetmetal contractors complete construction projects. Gave presentations to engineers on innovative technologies to develop new business and built relationships with existing business accounts as well.   </p>
                                 <p className="mt-3">Promoted to Head of Media and Marketing where along with keeping up my existing accounts and projects, I was in charge of creating the website and online presence of the company and attending conferences and trade shows as the representative of the company.</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">ModernGrid</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400">April 2022</time>
                                 <p className="mt-3">Developed new business as the sole BDR for the team where I also assisted in building out their sales pipeline and onboarding materials </p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">Fullstack Academy</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400">November 2022</time>
                                 <p className="mt-3">Began working towards Fullstack Academy's Software Engineering Bootcamp Certification, building apps with React, Redux, Express, Node, and PostgreSQL. </p>
