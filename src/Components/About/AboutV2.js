@@ -3,6 +3,7 @@ import { Typography } from '@mui/material'
 import SubNavAbout from './SubNavAbout'
 import PortfolioNav from '../PortfolioNav'
 import FooterNav from '../FooterNav'
+import { Link } from 'react-router-dom'
 
 
 
@@ -15,7 +16,7 @@ const AboutV2 = () => {
     setInterval(() => {
         carouselImages[currentImageIndex].classList.add('hidden')
         currentImageIndex += 1
-        if(currentImageIndex === 7){
+        if(currentImageIndex === 12){
             currentImageIndex = 0
         }
         carouselImages[currentImageIndex].classList.remove('hidden')
@@ -47,6 +48,13 @@ const AboutV2 = () => {
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lake-bled.jpeg" />
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/rafting.jpeg" />
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/wedding.jpeg" />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/moto.jpeg" />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/surfer.jpeg" />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/waterfall.jpeg" />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/waterfallnz.jpeg" />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/ice.jpeg" />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/auspillars.jpeg" />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lombok.jpeg" />
                 </section>
         </div>
 
@@ -93,6 +101,22 @@ const AboutV2 = () => {
                                 <time className="text-xs tracki uppercase dark:text-gray-400">November 2022</time>
                                 <p className="mt-3">Began working towards Fullstack Academy's Software Engineering Bootcamp Certification, building apps with React, Redux, Express, Node, and PostgreSQL. </p>
                             </div>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
+                                <h3 className="text-xl font-semibold tracki">Script for Java</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400">April 2023</time>
+                                <p className="mt-3">Worked with 3 other developers to create an e-commerce website for a fictional coffee shop <Link to="/java/home">Script For Java</Link>  </p>
+                            </div>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
+                                <h3 className="text-xl font-semibold tracki">Stackathon</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400">May 2023</time>
+                                <p className="mt-3">Solo Project: I created an app using a few different APIs including Open AI's Chat GPT so you can get AI generated birthday present ideas and personalized trip plans, as well as up to date statistics about the UFC fighters of the week  <Link to="/portfolio/capstone">Script For Java</Link>  </p>
+                            </div>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
+                                <h3 className="text-xl font-semibold tracki">C Trade, Graduation & Wedding</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400">June 2023</time>
+                                <p className="mt-3">Led a team of 3 developers to create a stock research and trading community<Link to="/portfolio/capstone">app.</Link>  </p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -27,35 +27,36 @@ const Home = ()=> {
         </div>
 
         <div id="homepageImage"/>
-      <FooterNav/>
+      
       </div>
 
         )  : (
 
-          <div id="homepage">           
+          
+        <div id="homepage">           
           <h1>Welcome, {auth.username}!</h1>
-          <div>
-            
-              {
-                auth.adminStatus === true? 
-                (<div><Link to='/admin'>Admin Tools</Link></div>): 
-                (<div>
-                  Please browse amongst our delicious selection of drinks or our fashionable merch.
-                  <br/>
-                  <Link to='/reviews'>Create And See Your Reviews</Link>
-                  <br/>
-                  <Link to='/reviews/all'>Read Our Reviews({reviews.length})</Link>
-                  </div>)
-                }
+            <div>
+              
+                {
+                  auth.adminStatus === true? 
+                  (<div><Link to='/admin'>Admin Tools</Link></div>): 
+                  (<div className='py-40'>
+                    Please browse amongst our delicious selection of drinks or our fashionable merch.
+                    <br/>
+                    <Link to='/reviews'>Create And See Your Reviews</Link>
+                    <br/>
+                    <Link to='/reviews/all'>Read Our Reviews({reviews.length})</Link>
+                    </div>)
+                  }
 
-          </div>
-          <FooterNav/>
+            </div>
+          
         </div>
-    
+        
         )
         } 
 
-  
+      <FooterNav/>
     </>
   );
 };

@@ -50,16 +50,16 @@ function HomeV2() {
                     </a>
                     <ul className="items-stretch hidden space-x-3 md:flex">
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#/java/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">About</a>
+                            <a rel="noopener noreferrer" href="#/java/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400">About</a>
                         </li>
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400">Projects</a>
+                            <a rel="noopener noreferrer" href="#/portfolio/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400">Projects</a>
                         </li>
-                        <li className="flex">
+                        {/* <li className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Projects</a>
-                        </li>
+                        </li> */}
                         <li className="flex">
-                            <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Contact</a>
+                            <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400">Email Me</a>
                         </li>
                     </ul>
                     {/* <button className="flex justify-end p-4 md:hidden">
@@ -67,7 +67,7 @@ function HomeV2() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button> */}
-                    <span className='flex items-center'>Darkmode</span>
+                    <span className='flex items-center'>Darkmode?</span>
                     <label class="rocker rocker-small">
                         <input type="checkbox" onClick={toggleDarkMode}/>
                         <span class="switch-left">Yes</span>
@@ -129,13 +129,13 @@ function HomeV2() {
                         translating complex concepts for nontechnical stakeholders.  </p>
                     </div>
                     <div className="grid grid-cols-5 p-4 md:p-8">
-                        <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
+                        {/* <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
                             <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Mucius</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-lime-400 dark:text-gray-50">Fabellas</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Aperiam</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Nonumy</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Propriae</button>
-                        </div>
+                        </div> */}
                         <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left">
                             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400">
@@ -326,11 +326,11 @@ function HomeV2() {
             </div> */}
             <footer>
                 <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row">
-                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-                        <li href="#/java/about">About</li>
+                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400">
+                        <li className='dark:text-lime-400 dark:border-lime-400' href="#/java/about">About</li>
                         {/* <li href="#/java/about">Blog</li> */}
-                        <li href="#">Projects</li>
-                        <li> <Link to="/java/about/contact">Contact</Link></li>
+                        <li className='dark:text-lime-400 dark:border-lime-400' href="#/portfolio/home">Projects</li>
+                        <li className='dark:text-lime-400 dark:border-lime-400'> <Link to="/java/about/contact">Contact</Link></li>
                     </ul>
                     <div className="flex flex-col justify-center pt-6 lg:pt-0">
                         <div className="flex justify-center space-x-4">
