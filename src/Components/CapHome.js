@@ -24,6 +24,7 @@ import assessments from '../store/assessments';
 import users from '../store/users';
 import PortfolioNav from './PortfolioNav'
 import FooterNav from './FooterNav'
+import { Padding } from '@mui/icons-material';
 
 
 const CapHome = ()=> {
@@ -302,7 +303,7 @@ const CapHome = ()=> {
                                 </FormControl>
                               </Box>
                               
-                          <Button sx={{ minWidth: 300, display: 'flex', justifyContent: 'center'  }}  onClick={ marketTrendsAPICall } >Tell Me More</Button>
+                          <Button sx={{ minWidth: 300, display: 'flex', justifyContent: 'center', paddingBottom: 50  }}  onClick={ marketTrendsAPICall } >Tell Me More</Button>
                         </form>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center'}}>
@@ -342,7 +343,7 @@ const CapHome = ()=> {
                               ))}
                             </Grid>
                           </Box>
-                          <div className='pt-75'></div>
+                          <div className='py-30'></div>
                           <FooterNav/>
                           </> }
     

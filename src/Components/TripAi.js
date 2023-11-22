@@ -181,10 +181,10 @@ const Present = () => {
                         <div key={idx}>{
                             `Day ${plan.day} Plan:` 
                         }
-                        <ul className='text-white'>
+                        <ul>
                             {plan.activities.map((activity, idx1) => {
                                 return (
-                                    <li key={idx1}>{activity.time}: {activity.description}</li>
+                                    <li className='text-white' key={idx1}>{activity.time}: {activity.description}</li>
                                 )
                             })}
                         </ul>
