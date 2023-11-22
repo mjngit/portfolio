@@ -86,8 +86,8 @@ function HomeV2() {
                     </h1>
                     <p className="px-8 mt-8 mb-12 text-lg">Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
                     <div className="flex flex-wrap justify-center">
-                        <button className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900">Get started</button>
-                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700">Learn more</button>
+                        <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900"><Link to='/portfolio/home'>Get started</Link></button>
+                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"><Link to='/java/about'>Learn more</Link></button>
                     </div>
                 </div>
             </section>

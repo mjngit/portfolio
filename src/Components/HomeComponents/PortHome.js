@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom'
 import SubNavHome from './SubNavHome';
 import { motion } from 'framer-motion';
 
+import PortfolioNav from '../PortfolioNav'
+import FooterNav from '../FooterNav'
 
 const PortHome = ()=> {
   const { auth } = useSelector(state => state);
@@ -30,6 +32,7 @@ const PortHome = ()=> {
 
   return (
     <>
+    <PortfolioNav/>
       <motion.div className='signature'>
       <motion.svg 
         width="729" 
@@ -65,16 +68,6 @@ const PortHome = ()=> {
       
        { (!auth.id) ? 
      (
-      // <div id="portfolio-home">   
-
-      //   <div> 
-      //     <h2>Welcome to My Portfolio!</h2>
-      //     <div className='center'>
-      //       <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here </Link></Button>  or  <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
-      //     </div>
-      //   <h4 className='center'>Have a look at a few of my projects! An Ecommerce Platform, a Stock Trading App, and an AI and UFC Stat tool!</h4>
-      //   </div>
-      //   <div className='port-display-box'>
       <div id="portfolio-home" style={{ padding: '20px', textAlign: 'center' }}>
 
         <div>
@@ -95,7 +88,7 @@ const PortHome = ()=> {
 
         <div className='port-display-box' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                   
-            <Card 
+            {/* <Card 
               sx={{ 
                 maxWidth: 375,
                 ':hover':{
@@ -258,7 +251,110 @@ const PortHome = ()=> {
                   This is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times
                 </Typography>
               </CardContent>
-            </Card>
+            </Card> */}
+            <article className="pcard">
+                <Link to='/stackathon/trip'>
+                  <CardMedia
+                    sx={{ height: 400 }}
+                    image="/static/images/trip-planner.jpeg"
+                  title="trip-planner-thumbnail"
+                  />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">AI Trip Planner</span>
+                        <span className="pcard_subtitle pb-5">This is a part of my first solo project, stackathon, at Fullstack Academy </span>
+                        <p className="pcard_description">Pressed for time and don't have the money for a travel agent? Harness the Power of AI to plan your upcoming trip for you! It utilizes OpenAI's ChatGPT3.5 API to obtain data and relays them into easy to follow itineraries for your vacation.</p>
+                    
+                </div>
+              </article>
+          
+            
+
+              <article className="pcard">
+                <Link to='/stackathon/fighters'>
+                  <CardMedia
+                    sx={{ height: 400 }}
+                    image="/static/images/fighter-stats.jpeg"
+                    title="fighter-stats-thumbnail"
+                  />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">UFC Fighters of The Week Stat Tool</span>
+                        <span className="pcard_subtitle pb-5">This is another part of my first solo project, stackathon, at Fullstack Academy </span>
+                        <p className="pcard_description">Need help identifying stat discrepencies in the matchups for this week? Here is a perfect starting point for your research. Now go beat down those bookies! It utilizes a few different UFC stat API's according to UFCstats.com</p>
+                    
+                </div>
+              </article>
+            
+             
+
+              <article className="pcard">
+                <Link to='/stackathon/present'>
+                  <CardMedia
+                    sx={{ height: 400 }}
+                    image="/static/images/bday-present.jpeg"
+                    title="present-generator-thumbnail"
+                  />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">AI Birthday Present Generator</span>
+                        <span className="pcard_subtitle pb-5">This is the third part of my first solo project, stackathon, at Fullstack Academy </span>
+                        <p className="pcard_description">Birthday coming up for a special someone and need some gift ideas? Let Chat-GPT help you out (keep in mind links might be outdated but the ideas remain helpful!) It utilizes Open AI's ChatGPT3.5 API</p>
+                    
+                </div>
+              </article>
+
+             
+              <article className="pcard">
+                <Link to='/java/home'>
+                <CardMedia
+                  sx={{ height: 400 }}
+                  image="/static/images/SFJ-thumbnail.jpeg"
+                  title="coffee-company-thumbnail"
+                />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">Script for Java Coffee Shop</span>
+                        <span className="pcard_subtitle pb-5">This is my first group project at Fullstack Academy where we made an E-commerce website. </span>
+                        <p className="pcard_description">Take a stroll through our E-commerce coffee shop. Have a look at all the coffees, smoothies, and other merchandise to fill your heart, and your cart!</p>
+                    
+                </div>
+                </article>
+
+              
+              <article className="pcard">
+              <Link to='/capstone/home'>
+                <CardMedia
+                  sx={{ height: 400 }}
+                  image="/static/images/capstone-thumbnail.jpeg"
+                  title="C-trade-thumbnail"
+                />
+                </Link>
+              <div className="pcard_content">
+                  <span className="pcard_title">C-Trade</span>
+                      <span className="pcard_subtitle pb-5">This is my capstone project from Fullstack Academy </span>
+                      <p className="pcard_description">I worked with 2 other developers to design and build C-Trade, a trading community to research, discuss, buy, and sell stocks. I was the lead engineer and manager on this project.</p>
+                  
+              </div>
+              </article>
+
+             
+
+              <article className="pcard">
+              <Link to='/portfolio/happyNotes'>
+                <CardMedia
+                  sx={{ height: 400 }}
+                  image="/static/images/happynotegrab.jpeg"
+                  title="Happy Notes Thumbnail"
+                />
+                </Link>
+              <div className="pcard_content">
+                  <span className="pcard_title">Happy Notes</span>
+                      <span className="pcard_subtitle pb-5">This is a simple app to hopefully make your day a little brighter.</span>
+                      <p className="pcard_description">Happy Notes is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times. You can also let fellow posters that their note brought you joy</p>
+                  
+              </div>
+              </article>
         </div>
         
 
@@ -275,7 +371,7 @@ const PortHome = ()=> {
           </div>
           <div className='port-display-box'>
             
-              <Card 
+              {/* <Card 
                 sx={{ 
                   maxWidth: 375,
                   ':hover':{
@@ -302,10 +398,128 @@ const PortHome = ()=> {
                   </Typography>
                 </CardContent>
                
-              </Card>
-           
+              </Card> */}
+              <article className="pcard">
+                <Link to='/stackathon/trip'>
+                  <CardMedia
+                    sx={{ height: 400 }}
+                    image="/static/images/trip-planner.jpeg"
+                  title="trip-planner-thumbnail"
+                  />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">AI Trip Planner</span>
+                        <span className="pcard_subtitle pb-5">This is a part of my first solo project, stackathon, at Fullstack Academy </span>
+                        <p className="pcard_description">Pressed for time and don't have the money for a travel agent? Harness the Power of AI to plan your upcoming trip for you! It utilizes OpenAI's ChatGPT3.5 API to obtain data and relays them into easy to follow itineraries for your vacation.</p>
+                    
+                </div>
+              </article>
           
-              <Card sx={{ 
+            
+
+              <article className="pcard">
+                <Link to='/stackathon/fighters'>
+                  <CardMedia
+                    sx={{ height: 400 }}
+                    image="/static/images/fighter-stats.jpeg"
+                    title="fighter-stats-thumbnail"
+                  />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">UFC Fighters of The Week Stat Tool</span>
+                        <span className="pcard_subtitle pb-5">This is another part of my first solo project, stackathon, at Fullstack Academy </span>
+                        <p className="pcard_description">Need help identifying stat discrepencies in the matchups for this week? Here is a perfect starting point for your research. Now go beat down those bookies! It utilizes a few different UFC stat API's according to UFCstats.com</p>
+                    
+                </div>
+              </article>
+            
+             
+
+              <article className="pcard">
+                <Link to='/stackathon/present'>
+                  <CardMedia
+                    sx={{ height: 400 }}
+                    image="/static/images/bday-present.jpeg"
+                    title="present-generator-thumbnail"
+                  />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">AI Birthday Present Generator</span>
+                        <span className="pcard_subtitle pb-5">This is the third part of my first solo project, stackathon, at Fullstack Academy </span>
+                        <p className="pcard_description">Birthday coming up for a special someone and need some gift ideas? Let Chat-GPT help you out (keep in mind links might be outdated but the ideas remain helpful!) It utilizes Open AI's ChatGPT3.5 API</p>
+                    
+                </div>
+              </article>
+
+             
+              <article className="pcard">
+                <Link to='/java/home'>
+                <CardMedia
+                  sx={{ height: 400 }}
+                  image="/static/images/SFJ-thumbnail.jpeg"
+                  title="coffee-company-thumbnail"
+                />
+                </Link>
+                <div className="pcard_content">
+                    <span className="pcard_title">Script for Java Coffee Shop</span>
+                        <span className="pcard_subtitle pb-5">This is my first group project at Fullstack Academy where we made an E-commerce website. </span>
+                        <p className="pcard_description">Take a stroll through our E-commerce coffee shop. Have a look at all the coffees, smoothies, and other merchandise to fill your heart, and your cart!</p>
+                    
+                </div>
+                </article>
+
+              
+              <article className="pcard">
+              <Link to='/capstone/home'>
+                <CardMedia
+                  sx={{ height: 400 }}
+                  image="/static/images/capstone-thumbnail.jpeg"
+                  title="C-trade-thumbnail"
+                />
+                </Link>
+              <div className="pcard_content">
+                  <span className="pcard_title">C-Trade</span>
+                      <span className="pcard_subtitle pb-5">This is my capstone project from Fullstack Academy </span>
+                      <p className="pcard_description">I worked with 2 other developers to design and build C-Trade, a trading community to research, discuss, buy, and sell stocks. I was the lead engineer and manager on this project.</p>
+                  
+              </div>
+              </article>
+
+             
+
+              <article className="pcard">
+              <Link to='/portfolio/happyNotes'>
+                <CardMedia
+                  sx={{ height: 400 }}
+                  image="/static/images/happynotegrab.jpeg"
+                  title="Happy Notes Thumbnail"
+                />
+                </Link>
+              <div className="pcard_content">
+                  <span className="pcard_title">Happy Notes</span>
+                      <span className="pcard_subtitle pb-5">This is a simple app to hopefully make your day a little brighter.</span>
+                      <p className="pcard_description">Happy Notes is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times. You can also let fellow posters that their note brought you joy</p>
+                  
+              </div>
+              </article>
+          </div>
+
+        </div>
+    
+        )
+        } 
+
+    <FooterNav/>
+    </>
+  );
+};
+
+export default PortHome;
+
+
+
+
+  {/* <Card sx={{ 
                 maxWidth: 375,
                 ':hover':{
                   boxShadow: 5
@@ -330,36 +544,8 @@ const PortHome = ()=> {
                     Need help identifying stat discrepencies in the matchups for this week? Here is a perfect starting point for your research. Now go beat down those bookies!
                   </Typography>
                 </CardContent>
-              </Card>
-            
-              <Card sx={{ 
-                maxWidth: 375,
-                ':hover':{
-                  boxShadow: 5
-                },
-                display: 'flex', 
-                flexDirection: 'column',
-                margin: 2
-                }}
-               >
-                <Link to='/stackathon/present'>
-                <CardMedia
-                  sx={{ height: 140 }}
-                  image="/static/images/bday-present.jpeg"
-                  title="present-generator-thumbnail"
-                />
-                </Link>
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    AI Birthday Present Generator
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Birthday coming up for a special someone and need some gift ideas? Let Chat-GPT help you out (keep in mind links might be outdated but the ideas remain helpful!)
-                  </Typography>
-                </CardContent>
-              </Card>
-
-              <Card sx={{ 
+              </Card> */}
+ {/* <Card sx={{ 
                 maxWidth: 375,
                 ':hover':{
                   boxShadow: 5
@@ -384,9 +570,35 @@ const PortHome = ()=> {
                     This is my first group project at Fullstack Academy where we made an E-commerce website. Have a look at our products and fill your cart!
                   </Typography>
                 </CardContent>
-              </Card>
+              </Card> */}
+ {/* <Card sx={{ 
+                maxWidth: 375,
+                ':hover':{
+                  boxShadow: 5
+                },
+                display: 'flex', 
+                flexDirection: 'column',
+                margin: 2
+                }}
+               >
+                <Link to='/stackathon/present'>
+                <CardMedia
+                  sx={{ height: 140 }}
+                  image="/static/images/bday-present.jpeg"
+                  title="present-generator-thumbnail"
+                />
+                </Link>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    AI Birthday Present Generator
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Birthday coming up for a special someone and need some gift ideas? Let Chat-GPT help you out (keep in mind links might be outdated but the ideas remain helpful!)
+                  </Typography>
+                </CardContent>
+              </Card> */}
 
-              <Card sx={{ 
+{/* <Card sx={{ 
                 maxWidth: 375,
                 ':hover':{
                   boxShadow: 5
@@ -411,9 +623,9 @@ const PortHome = ()=> {
                     This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.
                   </Typography>
                 </CardContent>
-              </Card>
+              </Card> */}
 
-              <Card sx={{ 
+ {/* <Card sx={{ 
               maxWidth: 375,
               ':hover':{
                 boxShadow: 5
@@ -438,16 +650,4 @@ const PortHome = ()=> {
                     This is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times
                   </Typography>
                 </CardContent>
-              </Card>
-          </div>
-        </div>
-    
-        )
-        } 
-
-  
-    </>
-  );
-};
-
-export default PortHome;
+              </Card> */}

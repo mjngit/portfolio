@@ -5,6 +5,9 @@ import PortfolioNav from '../PortfolioNav'
 import FooterNav from '../FooterNav'
 import { Link } from 'react-router-dom'
 
+import GitHubIcon from '@mui/icons-material/GitHub';
+import GoogleIcon from '@mui/icons-material/Google';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 
@@ -21,7 +24,7 @@ const AboutV2 = () => {
         }
         carouselImages[currentImageIndex].classList.remove('hidden')
         
-    }, 4000);   
+    }, 3500);   
 
   return (
 
@@ -38,7 +41,17 @@ const AboutV2 = () => {
 						<p className="my-8">
 							<span className="font-medium dark:text-gray-50">Adventurer, Developer, Project Manager, Sales Engineer</span>
 						</p>
-						
+                        <div className='flex items-center justify-center'>
+                        <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
+                                <GitHubIcon />
+                            </a>
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
+                                <LinkedInIcon />
+                            </a>
+                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
+                                <GoogleIcon />  
+                            </button>
+                        </div>
 					</div>
 					
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image" src="static/images/capri-boat.jpeg" />
@@ -114,7 +127,7 @@ const AboutV2 = () => {
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">C Trade, Graduation & Wedding</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400">June 2023</time>
-                                <p className="mt-3">Led a team of 3 developers to create a stock research and trading community<Link to="/portfolio/capstone">app.</Link>  </p>
+                                <p className="mt-3">Led a team of 3 developers to create a stock research and trading community <Link to="/portfolio/capstone">app.</Link> Graduated from Fullstack Academy's Software Engineering Program and got married in the same week.  </p>
                             </div>
                             
                         </div>
@@ -123,36 +136,6 @@ const AboutV2 = () => {
             </div>
         </section>
 
-
-
-        {/* <div>
-        <section id="carousel">
-            <div id="carousel-text">
-                <h1>About Michael J Norris</h1>
-                <h2>Learn More</h2>
-            </div>
-            <img class="carousel-image" src="static/images/capri-boat.jpeg" />
-            <img class="carousel-image hidden" src="static/images/capri-boat.jpeg" />
-            <img class="carousel-image hidden" src="static/images/chiang-mai.jpeg" />
-            <img class="carousel-image hidden" src="static/images/montenegro.jpeg" />
-            <img class="carousel-image hidden" src="static/images/lake-bled.jpeg" />
-            <img class="carousel-image hidden" src="static/images/rafting.jpeg" />
-            <img class="carousel-image hidden" src="static/images/wedding.jpeg" />
-        </section>
-</div> */}
-    {/* <Typography
-       sx={{
-        textAlign: 'center',
-        fontFamily: 'verdana',
-        fontSize: '1.5rem',
-        fontWeight: '500',
-        mx: 'auto',
-        marginTop: '2rem',
-        marginBottom: '1rem',
-        maxWidth: '70%'
-       }}>
-        About Michael J Norris
-    </Typography> */}
       <Typography
        sx={{
           textIndent: '3rem',

@@ -342,6 +342,7 @@ const CapHome = ()=> {
                               ))}
                             </Grid>
                           </Box>
+                          <div className='pt-75'></div>
                           <FooterNav/>
                           </> }
     

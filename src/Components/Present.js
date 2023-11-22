@@ -108,6 +108,7 @@ setLoading(false)
                 {gift.map((gift, idx) => <div key={idx}><a href={gift.url}  target={'_blank'}>{gift.name}</a></div>)
                 }
           </div>
+          <div className='pt-44'></div>
           <FooterNav/>
         </>
     )

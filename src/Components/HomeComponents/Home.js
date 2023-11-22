@@ -43,9 +43,9 @@ const Home = ()=> {
                   (<div className='py-40'>
                     Please browse amongst our delicious selection of drinks or our fashionable merch.
                     <br/>
-                    <Link to='/reviews'>Create And See Your Reviews</Link>
+                    <Link to='/java/reviews'>Create And See Your Reviews</Link>
                     <br/>
-                    <Link to='/reviews/all'>Read Our Reviews({reviews.length})</Link>
+                    <Link to='/java/reviews/all'>Read Our Reviews({reviews.length})</Link>
                     </div>)
                   }
 
