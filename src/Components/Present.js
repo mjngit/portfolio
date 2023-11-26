@@ -101,30 +101,30 @@ setLoading(false)
                     <form onSubmit={ submit } novalidate="" className="space-y-6">
                         <div>
                             <label for="name" className="text-sm">Age</label>
-                            <input value={ age } onChange={ev => setAge(ev.target.value)} id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800" />
+                            <input value={ age } onChange={ev => setAge(ev.target.value)} id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800 text-white" />
                             {/* <TextField label="Age" variant="outlined" value={ age } onChange={ev => setAge(ev.target.value)} /> */}
                         </div>
                         <div>
                             <label for="minPrice" className="text-sm">Min Price</label>
-                            <input value={ minPrice } onChange={ev => setMinPrice(ev.target.value)} id="minPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800" />
+                            <input value={ minPrice } onChange={ev => setMinPrice(ev.target.value)} id="minPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800 text-white" />
 
                             <label for="maxPrice" className="text-sm">Max Price</label>
-                            <input value={ maxPrice } onChange={ev => setMaxPrice(ev.target.value)} id="maxPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800" />
+                            <input value={ maxPrice } onChange={ev => setMaxPrice(ev.target.value)} id="maxPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800 text-white" />
                             {/* <TextField label="Min Price" variant="outlined" value={ minPrice } onChange={ev => setMinPrice(ev.target.value)} style={{ justifyContent: 'space-between', width: "50%" }}/>
                   
                             <TextField label="Max Price" variant="outlined" value={ maxPrice } onChange={ev => setMaxPrice(ev.target.value)} style={{ justifyContent: 'space-between',  width: "50%" }}/> */}
                         </div>
                         <div>
                             <label for="interest1" className="text-sm">Interest 1</label>
-                            <textarea value={ interest1 } onChange={ev => setInterest1(ev.target.value)} id="interest1" rows="1" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
+                            <textarea value={ interest1 } onChange={ev => setInterest1(ev.target.value)} id="interest1" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white"></textarea>
                         </div>
                         <div>
                             <label for="interest2" className="text-sm">Interest 2</label>
-                            <textarea value={ interest2 } onChange={ev => setInterest2(ev.target.value)} id="interest2" rows="1" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
+                            <textarea value={ interest2 } onChange={ev => setInterest2(ev.target.value)} id="interest2" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white"></textarea>
                         </div>
                         <div>
                             <label for="interest3" className="text-sm">Interest 3</label>
-                            <textarea value={ interest3 } onChange={ev => setInterest3(ev.target.value)} id="interest3" rows="1" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
+                            <textarea value={ interest3 } onChange={ev => setInterest3(ev.target.value)} id="interest3" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white"></textarea>
                         </div>
                         <button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-lime-400 dark:text-gray-900">Generate Gift Ideas</button>
                     </form>

@@ -150,7 +150,7 @@ const AboutV2 = () => {
          
          I love bridging the gaps between technology and people with empathy and communication while finding efficient solutions to complex problems.
         </Typography>
-        <Typography
+        {/* <Typography
           sx={{
             textIndent: '3rem',
             fontFamily: 'verdana',
@@ -174,7 +174,139 @@ const AboutV2 = () => {
 
             <li>Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</li>
           </ul>
-        </Typography>
+        </Typography> */}
+
+            <div className="dark:bg-gray-800 dark:text-gray-100">
+                <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="max-w-3xl mx-auto text-center">
+                        <h2 className="text-3xl font-extrabold sm:text-4xl">Career Highlights</h2>
+                        <p className="mt-4 text-lg dark:text-gray-400">Here are a few of my personal achievements that I'm proud to have been a part of.</p>
+                    </div>
+                    <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
+                        <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium">NAS Media Presence</dt>
+                                <dd className="mt-2 dark:text-gray-400">Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium">HVAC Sales</dt>
+                                <dd className="mt-2 dark:text-gray-400">Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium">Tutoring Business</dt>
+                                <dd className="mt-2 dark:text-gray-400">Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium"> Technical Research Presentations</dt>
+                                <dd className="mt-2 dark:text-gray-400">Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium">Fullstack Academy Capstone & Wedding</dt>
+                                <dd className="mt-2 dark:text-gray-400">Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium">2 World Tours</dt>
+                                <dd className="mt-2 dark:text-gray-400">Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
+                            </div>
+                        </div>
+                        {/* TODO: 2 More Career Achievements */}
+                        {/* <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium">Cras vel bibendum tellus</dt>
+                                <dd className="mt-2 dark:text-gray-400">Curabitur molestie neque ac massa pulvinar, nec sollicitudin nunc consequat. Donec mattis orci eros, vitae porttitor risus pretium eget.</dd>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div className="ml-3">
+                                <dt className="text-lg font-medium">Dignissim magna</dt>
+                                <dd className="mt-2 dark:text-gray-400">Cras ac lectus erat. Curabitur condimentum luctus nisi, non lacinia ipsum.</dd>
+                            </div>
+                        </div> */}
+                    </dl>
+                </div>
+            </div>
+
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 dark:bg-gray-800 dark:text-gray-100">
+        <h2 className="mb-8 text-4xl font-bold leadi text-center">Other Hobbies</h2>
+        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            <li className="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                    <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                    <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                </svg>
+                <span>Painting</span>
+            </li>
+            <li className="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                    <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                    <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                </svg>
+                <span>Playing the drums </span>
+            </li>
+            <li className="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                    <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                    <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                </svg>
+                <span>Hiking</span>
+            </li>
+            <li className="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                    <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                    <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                </svg>
+                <span>Travel</span>
+            </li>
+            <li className="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                    <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                    <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                </svg>
+                <span>Sports</span>
+            </li>
+            <li className="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                    <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                    <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                </svg>
+                <span>Art </span>
+            </li>
+        </ul>
+    </div>
         <Typography
        sx={{
         textAlign: 'center',
@@ -186,17 +318,13 @@ const AboutV2 = () => {
         marginBottom: '1rem',
         maxWidth: '70%'
        }}>
-        Other hobbies of mine include: 
-          <ul>
-            <li>Playing the drums</li>
-            <li>Hiking</li>
-            <li>Travel</li>
-            <li>Sports</li>
-            <li>Painting</li>
-            <li>Arts</li>
-          </ul>
+
+
         Please reach out to talk about Javascript | React-Redux | HTML | CSS | SQL | Axios | Project Management | Technical Sales | Data Analysis | Education    
         </Typography>
+
+    
+
         <FooterNav/>
     </div>
   )

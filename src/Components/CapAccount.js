@@ -168,13 +168,16 @@ const CapAccount = ()=> {
           <>
           
           <PortfolioNav/>
-            <div style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
+            <div className='flex-col' style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
                 <h1>Can't Update If You're Not Logged In!</h1>
                 <div>
                     <Link to={`/capstone/register`}>Register Here</Link> or <Link to='/capstone/login'> Login </Link>
                 </div>
             </div>
-            <FooterNav/>
+            <div className='pt-40'>
+              <FooterNav/>
+            </div>
+            
           </>
           )
         } 

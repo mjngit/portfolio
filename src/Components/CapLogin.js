@@ -30,7 +30,7 @@ const CapLogin = ()=> {
   return (
     <>
       <PortfolioNav/>
-      <div>
+      {/* <div>
         <h2 style={{display: 'flex', justifyContent:'center'}}>Login</h2>
         <div style={{display: 'flex', justifyContent:'center'}}>
         <form onSubmit={ login } >
@@ -59,7 +59,62 @@ const CapLogin = ()=> {
           <Link style={{ paddingLeft: 15}}to={`/capstone/register`} >Not a Member? Register Here</Link>
         </form>
         </div>
+
+       
       </div>
+       */}
+{/*         
+        <div className=" px-8 py-6 rounded-lg bg-gray-800 w-72">
+          <h1 className="text-center font-bold text-3xl text-white">Login</h1>
+          <form className="my-6">
+            <input  value={ credentials.username } onChange={onChange} className="p-2 my-2 rounded w-[100%] focus:outline-blue-600" placeholder="Username" type="text" />
+            
+            <input value={ credentials.password } onChange={onChange} className="p-2 my-2 rounded w-[100%] focus:outline-blue-600" placeholder="Password" type="password" />
+              <GoogleOAuthProvider clientId = "18136828756-l5ol7p0u1f928hapfa4fr3pubvclahje.apps.googleusercontent.com">
+
+                <GoogleLogin
+                  style={{paddingLeft: 200}}
+                  onSuccess={credentialResponse => {
+                  const decoded = jwt_decode(credentialResponse.credential);
+                  dispatch(googleOAuthLogin(decoded));
+                  navigate('/capstone/home');
+
+                }}
+                  onError={() => {
+                  console.log('Login Failed');
+                }}
+                />
+              </GoogleOAuthProvider>
+            <button onClick={ login } disabled={ !credentials } className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]">Login</button>
+          </form>
+        </div> */}
+      <div className='flex justify-center pt-20'>
+        <div className=" px-8 py-6 rounded-lg bg-gray-800 w-72">
+          <h1 className="text-center font-bold text-3xl text-white">Login</h1>
+          <form onSubmit={ login } className="my-6">
+            <TextField label="Username" name = 'username' variant="filled" value={ credentials.username } onChange={onChange} className='bg-white'/>
+
+            <TextField type='password' label="Password" name = 'password' variant="filled" value={ credentials.password } onChange={onChange} className='bg-white'/>
+              <GoogleOAuthProvider clientId = "18136828756-l5ol7p0u1f928hapfa4fr3pubvclahje.apps.googleusercontent.com">
+
+                <GoogleLogin
+                  style={{paddingLeft: 200}}
+                  onSuccess={credentialResponse => {
+                  const decoded = jwt_decode(credentialResponse.credential);
+                  dispatch(googleOAuthLogin(decoded));
+                  navigate('/capstone/home');
+
+                }}
+                  onError={() => {
+                  console.log('Login Failed');
+                }}
+                />
+              </GoogleOAuthProvider>
+            <button disabled={ !credentials } className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]">Login</button>
+          </form>
+        </div>
+      </div>
+      <div  className='py-36'></div>
       <FooterNav/>
     </>
   );
