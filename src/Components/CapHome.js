@@ -344,9 +344,9 @@ const CapHome = ()=> {
                             </Grid>
                           </Box>
                           <div className='py-30'></div>
-                          <FooterNav/>
+                          
                           </> }
-    
+    <FooterNav/>
     </>
   );
 };

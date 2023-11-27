@@ -14,6 +14,8 @@ import TextField from '@mui/material/TextField';
 import FooterNav from './FooterNav';
 import PortfolioNav from './PortfolioNav';
 
+import { removeFromCart, addToCart } from '../store';
+
 
 
 const Checkout = ()=> {
@@ -42,13 +44,19 @@ const Checkout = ()=> {
   }
 
 
+
   const pay = async(ev)=> {
     ev.preventDefault();
     const orderNum = Math.floor(Math.random()*1000000)
+    products.forEach(product => {
+      dispatch(removeFromCart(product,product.quantity))
+    })
+
     navigate(`/java/order/${orderNum}`)
   };
+  
   return (
-    <div id='checkoutPage'>
+    <div>
       <PortfolioNav/>
       <div id="checkoutPageCart">
       <h1>Shopping Cart</h1>

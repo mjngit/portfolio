@@ -35,7 +35,7 @@ const CapLogout = ()=> {
                 
                 </div>
                 </div>
-                <div  className='py-36'></div>
+                <div  className='py-40'></div>
             </div>
         )  : (
 

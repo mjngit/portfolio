@@ -234,7 +234,7 @@ const Chats = ()=> {
                 chats.map( (chat, idx) => {
                     return (
                         <div sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around'}} key={ idx } className={ chat.online ? 'online' : ''}>
-                            <h3 style={{ marginLeft: 210 }}>{ chat.withUser.username }</h3>
+                            <h3 className='flex justify-center'>{ chat.withUser.username }</h3>
                             <ul style={{ listStyle: 'none' }}>
                                 {
                                     chat.messages.map( message => {
@@ -271,7 +271,7 @@ const Chats = ()=> {
                                 }
                             }>
                                 
-                                <TextField label="Message" variant="outlined" style={{ width: 400, marginLeft: 40 }}/>
+                                <TextField label="Message" variant="outlined" style={{ width: 400 }}/>
                                   
                             </form>
                         </div>

@@ -23,8 +23,8 @@ const Order = () => {
         maxWidth: '70%'
        }}>
         Thank you for your order!
-        Your order number is {location.pathname.slice(7)}<br/>
-        <Link to='/home'>Home</Link>
+        Your order number is {location.pathname.slice(12)}<br/>
+        <Link to='/'>Home</Link>
     </Typography>
     <FooterNav/>
     </div>
