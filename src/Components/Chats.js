@@ -279,6 +279,7 @@ const Chats = ()=> {
                 })
             }
         </div>
+        <div className='pb-96'></div>
         <FooterNav/>
     </div>
     )
