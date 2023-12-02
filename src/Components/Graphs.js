@@ -944,3 +944,83 @@ const options = {
 export default Graphs;
 
 
+
+// {
+//   "name": "portfolio",
+//   "version": "1.0.0",
+//   "description": "This is Mike Norris' portfolio to showcase his projects",
+//   "main": "index.js",
+//   "scripts": {
+//     "build": "webpack",
+//     "build:dev": "npm run build -- --watch --mode=development",
+//     "test": "JWT=shhhhh mocha",
+//     "test:dev": "DATABASE_URL=postgres://localhost/portfolio_db npm run test -- --watch",
+//     "test:dev:quiet": "QUIET=true npm run test:dev",
+//     "start:dev": "JWT=felix nodemon server/index.js --ignore dist/ --ignore src/ & npm run build:dev",
+//     "windows-start:dev": "nodemon server --ignore dist/ --ignore src/",
+//     "windows-dev": "concurrently --kill-others \"npm run windows-start:dev\" \"npm run build:dev\""
+//   },
+//   "keywords": [],
+//   "author": "",
+//   "license": "ISC",
+//   "dependencies": {
+//     "@emotion/react": "^11.10.6",
+//     "@emotion/styled": "^11.10.6",
+//     "@mui/icons-material": "^5.11.16",
+//     "@mui/material": "^5.12.2",
+//     "@mui/x-date-pickers": "^6.12.1",
+//     "@nivo/core": "^0.83.0",
+//     "@nivo/line": "^0.83.0",
+//     "@react-oauth/google": "^0.11.1",
+//     "axios": "^1.1.3",
+//     "bcrypt": "^5.1.0",
+//     "dayjs": "^1.11.9",
+//     "dotenv": "^16.3.1",
+//     "ejs": "^3.1.9",
+//     "express": "^4.18.2",
+//     "framer-motion": "^10.16.2",
+//     "fs": "^0.0.1-security",
+//     "jsonwebtoken": "^9.0.0",
+//     "jwt-decode": "^3.1.2",
+//     "pg": "^8.8.0",
+//     "react-loader-spinner": "^5.4.5",
+//     "react-swipeable-views-react-18-fix": "^0.14.1",
+//     "react-swipeable-views-utils": "^0.14.0",
+//     "sequelize": "^6.25.3",
+//     "ws": "^8.13.0"
+//   },
+//   "devDependencies": {
+//     "@babel/core": "^7.19.6",
+//     "@babel/preset-react": "^7.18.6",
+//     "@mui/system": "^5.12.1",
+//     "babel-loader": "^9.0.0",
+//     "chai": "^4.3.6",
+//     "concurrently": "^8.0.1",
+//     "mocha": "^10.1.0",
+//     "nodemon": "^2.0.20",
+//     "prop-types": "^15.8.1",
+//     "react": "^18.2.0",
+//     "react-dom": "^18.2.0",
+//     "react-redux": "^8.0.4",
+//     "react-router-dom": "^6.4.2",
+//     "redux": "^4.2.0",
+//     "redux-logger": "^3.0.6",
+//     "redux-thunk": "^2.4.1",
+//     "supertest": "^6.3.1",
+//     "swiper": "^9.2.4",
+//     "tailwindcss": "^3.3.5",
+//     "webpack": "^5.74.0",
+//     "webpack-cli": "^4.10.0"
+//   },
+//   "directories": {
+//     "test": "test"
+//   },
+//   "repository": {
+//     "type": "git",
+//     "url": "git+https://github.com/mjngit/portfolio"
+//   },
+//   "bugs": {
+//     "url": "https://github.com/mjngit/portfolio/issues"
+//   },
+//   "homepage": "https://github.com/mjngit/portfolio#readme"
+// }
