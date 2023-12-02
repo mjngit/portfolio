@@ -194,7 +194,8 @@ const App = ()=> {
               <Route path='/capstone/logout' element={ <CapLogout /> } />
               <Route path='/capstone/home' element={ <CapHome /> } />
               <Route path='/portfolio/capstone' element={ <CapHome /> } />
-              <Route path='/portfolio/homev2' element={ <HomeV2 /> } />
+              <Route path='/portfolio/homev2' element={ <PortHome /> } />
+              {/* SWITCH BACK TO HOMEV2 ONCE TAILWIND BACK */}
 
               {/* <Route path='/home' element={ <Home /> } /> */}
 
