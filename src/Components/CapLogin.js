@@ -54,6 +54,8 @@ const CapLogin = ()=> {
                 />
               </GoogleOAuthProvider>
             <button disabled={ !credentials } className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]">Login</button>
+            <div className='flex justify-center text-white'><Link to={'/capstone/register'}>Register</Link></div>
+            <div className='flex justify-center text-white'>Or Use: moe | 123</div>
           </form>
         </div>
       </div>

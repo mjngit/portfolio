@@ -74,7 +74,7 @@ function HomeV2() {
                     </h1>
                     <p className="px-8 mt-8 mb-12 text-lg">Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
                     <div className="flex flex-wrap justify-center">
-                        <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900"><Link to='/portfolio/home'>Get started</Link></button>
+                        <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900"><Link to='/capstone/login'>Get started</Link></button>
                         <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"><Link to='/java/about'>Learn more</Link></button>
                     </div>
                 </div>
@@ -228,9 +228,7 @@ function HomeV2() {
                             </div>
                         </a>  
                     </div>
-                    {/* <div className="flex justify-center">
-                        <button className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">Load more posts...</button>
-                    </div> */}
+                    
                 </div>
             </section>
             {/* <section>
@@ -350,12 +348,9 @@ function HomeV2() {
                                 </svg>
                             </a> */}
                             <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
-                                <GitHubIcon />
-                                {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-4 h-4">
-                                    <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
-                                </svg> */}
+                                <GitHubIcon />                               
                             </a>
-                            {/* Facebook */}
+
                             <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
                                 <LinkedInIcon />
                             </a>
@@ -374,52 +369,3 @@ function HomeV2() {
 export default HomeV2
 
 
-// <a rel="noopener noreferrer" href="#/stackathon/trip" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
-//                         <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
-//                         <div className="p-6 space-y-2 lg:col-span-5">
-//                             <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">AI Trip Planner</h3>
-//                             <span className="text-xs dark:text-gray-400">May 15, 2023</span>
-//                             <p>Plan Your Next Trip in StAIle</p>
-//                         </div>
-//                     </a>
-//                     <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-//                         <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-//                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/fighter-stats.jpeg" />
-//                             <div className="p-6 space-y-2">
-//                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">UFC Stat Tool</h3>
-//                                 <span className="text-xs dark:text-gray-400">May 15, 2021</span>
-//                                 <p>Need help identifying stat discrepencies in the matchups for this week? Here is a perfect starting point for your research. Now go beat down those bookies!</p>
-//                             </div>
-//                         </a>
-//                         <a rel="noopener noreferrer" href="#/stackathon/present" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-//                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/bday-present.jpeg" />
-//                             <div className="p-6 space-y-2">
-//                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">AI Birthday Present Generator</h3>
-//                                 <span className="text-xs dark:text-gray-400">May 15, 2021</span>
-//                                 <p>Birthday coming up for a special someone and need some gift ideas? Let Chat-GPT help you out (keep in mind links might be outdated but the ideas remain helpful!)</p>
-//                             </div>
-//                         </a>
-//                         <a rel="noopener noreferrer" href="#/java/home" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-//                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/SFJ-thumbnail.jpeg" />
-//                             <div className="p-6 space-y-2">
-//                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Script for Java Coffee Shop</h3>
-//                                 <span className="text-xs dark:text-gray-400">April 20, 2023</span>
-//                                 <p>This is my first group project at Fullstack Academy where we made an E-commerce website. Have a look at our products and fill your cart!</p>
-//                             </div>
-//                         </a>
-//                         <a rel="noopener noreferrer" href="#/capstone/home" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900">
-//                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/capstone-thumbnail.jpeg" />
-//                             <div className="p-6 space-y-2">
-//                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Capstone: C-Trade</h3>
-//                                 <span className="text-xs dark:text-gray-400">June 20, 2023</span>
-//                                 <p>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
-//                             </div>
-//                         </a>
-//                         <a rel="noopener noreferrer" href="#/portfolio/happyNotes" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900">
-//                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/happynotegrab.jpeg" />
-//                             <div className="p-6 space-y-2">
-//                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Happy Notes</h3>
-//                                 <span className="text-xs dark:text-gray-400">Nov 15, 2023</span>
-//                                 <p>This is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times</p>
-//                             </div>
-//                         </a>

@@ -52,7 +52,7 @@ import CapAccount from './CapAccount';
 import CapHome from './CapHome';
 import Profile from './Profile';
 import Employment from './Employment';
-// import Register from './Register';
+import CapRegister from './CapRegister';
 // import Stocks from './Stocks';
 import Launch from './Launch'
 import Graphs from './Graphs'
@@ -202,7 +202,7 @@ const App = ()=> {
               <Route path='/capstone/account' element={ <Profile /> } />
               <Route path='/capstone/accountSetup' element={ <CapAccount /> } />
               <Route path='/capstone/employment' element={ <Employment /> } />
-              <Route path='/capstone/register' element={ <Register /> } />
+              <Route path='/capstone/register' element={ <CapRegister /> } />
               {/* <Route path='/capstone/stocks' element={ <Stocks /> } /> */}
               <Route path='/capstone/financials' element={ <Financials />} />
               <Route path='/capstone/finalize' element={ <Finalize />} />

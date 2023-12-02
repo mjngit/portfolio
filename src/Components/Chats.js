@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { destroyFriend, logout, updateFriend } from '../store';
-import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -15,11 +14,6 @@ import DoNotDisturbOnIcon from '@mui/icons-material/DoNotDisturbOn';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
 import Alert from '@mui/material/Alert';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 
 import FooterNav from './FooterNav';
 import PortfolioNav from './PortfolioNav';

@@ -16,12 +16,12 @@ const AboutContact = () => {
   return (
     <div>
       <PortfolioNav/>
-      <div class="flex justify-center pt-20 group duration-500 hover:-skew-x-0 skew-x-6 hover:translate-x-2">
+      {/* <div class="flex justify-center pt-20 group duration-500 hover:-skew-x-0 skew-x-6 hover:translate-x-2">
           <div class="group-hover:duration-400 relative rounded-2xl w-72 h-36 bg-zinc-800 text-gray-50 flex flex-col justify-center items-center gap-1 before:-skew-x-12  before:rounded-2xl  before:absolute before:content['']  before:bg-neutral-700 before:right-3 before:top-0 before:w-72 before:h-32 before:-z-10">
             <span class="text-5xl font-bold">MN</span>
             <p class="text-amber-300 font-thin">- Fullstack Developer -</p>
           </div>
-        </div>
+        </div> */}
       <div className="relative h-full w-full flex items-center justify-center">
         <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
           <button href="https://github.com/mjngit" className="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
