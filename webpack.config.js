@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   devtool: 'source-map',
   module: {
@@ -15,6 +17,7 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       }
+      
     ]
   }
 };

@@ -944,7 +944,7 @@ const options = {
 export default Graphs;
 
 
-
+// package.json
 // {
 //   "name": "portfolio",
 //   "version": "1.0.0",
@@ -1024,3 +1024,21 @@ export default Graphs;
 //   },
 //   "homepage": "https://github.com/mjngit/portfolio#readme"
 // }
+
+//webpack.config.js
+// module.exports = {
+//   devtool: 'source-map',
+//   module: {
+//     rules: [
+//       {
+//         test: /\.js$/,
+//         exclude: /node_modules/,
+//         loader: 'babel-loader',
+//         options: {
+//           presets: ['@babel/preset-react']
+//         }
+//       }
+      
+//     ]
+//   }
+// };
