@@ -126,41 +126,41 @@ function HomeV2() {
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Nonumy</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Propriae</button>
                         </div> */}
-                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'center', gridColumn: 'auto' }}>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '.75rem'}}>
+                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'center', gridColumn: '1' }}>
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                                 </svg>
-                                <h5 className="text-xl font-semibold">Comprehensive Optimization</h5>
+                                <h5 className="text-xl font-semibold" style={{ fontSize: '1.125rem', lineHeight: '1.75rem'}}>Comprehensive Optimization</h5>
                                 <p>I streamline workflows and processes for enhanced productivity. Happy to assist with training programs to enhance technical skills and project management capabilities</p>
                             </div>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '.75rem'}}>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem', color:'limegreen', }}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
                                 </svg>
-                                <h5 className="text-xl font-semibold">Collaboration and Communication</h5>
+                                <h5 className="text-xl font-semibold" style={{ fontSize: '1.125rem', lineHeight: '1.75rem'}}>Collaboration and Communication</h5>
                                 <p>I bridge the gap between technical and sales teams, translating complex concepts for nontechnical stakeholders. I can develop and deliver compelling technical presentations to clients, while collaborating with sales teams to understand client needs and propose tailored solutions.</p>
                             </div>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '.75rem'}}>
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
                                 </svg>
-                                <h5 className="text-xl font-semibold">Continuous Learning</h5>
+                                <h5 className="text-xl font-semibold" style={{ fontSize: '1.125rem', lineHeight: '1.75rem'}}>Continuous Learning</h5>
                                 <p>I stay abreast of industry trends and advancements and have demonstrated adaptability by quickly learning and implementing new technologies</p>
                             </div>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '.75rem'}}>
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                                 </svg>
-                                <h5 className="text-xl font-semibold">Customer Service</h5>
+                                <h5 className="text-xl font-semibold" style={{ fontSize: '1.125rem', lineHeight: '1.75rem'}}>Customer Service</h5>
                                 <p>I build and maintain strong client relationships through effective communication to understand their needs.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
-                <div className="container flex flex-col justify-center p-4 mx-auto space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row">
+            <section className="py-6 dark:bg-gray-800 dark:text-gray-50" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem' }}>
+                <div className="container flex flex-col justify-center p-4 mx-auto space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', padding: ".75rem", marginLeft: '2rem' }}>
                     <div className="flex flex-col space-y-4 text-center lg:text-left">
                         <h1 className="text-5xl font-bold leadi">Connect with me on LinkedIn</h1>
                         <p className="text-lg">Connect with me and shoot me a message to talk about anything and everything!</p>
@@ -178,54 +178,54 @@ function HomeV2() {
                 </div>
             </section>
             <section>
-                <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12">
-                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
-                        <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
-                        <div className="p-6 space-y-2 lg:col-span-5">
-                            <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Capstone: C-Trade</h3>
-                            <span className="text-xs dark:text-gray-400">June 20, 2023</span>
+                <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12" style={{ maxWidth: '72rem', padding: '1rem' }}>
+                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{ display: 'block', maxWidth: '24rem', gap: '.75rem' }}>
+                        <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '16rem'   }} />
+                        <div className="p-6 space-y-2 lg:col-span-5" style={{ padding: '1.5rem' }}>
+                            <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>Capstone: C-Trade</h3>
+                            <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>June 20, 2023</span>
                             
                             <p>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
                         </div>
                     </a>
-                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/fighter-stats.jpeg" />
-                            <div className="p-6 space-y-2">
-                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">UFC Stat Tool</h3>
-                                <span className="text-xs dark:text-gray-400">May 15, 2023</span>
+                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gap: '1.5rem' }}>
+                        <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ maxWidth: '24rem' }}>
+                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/fighter-stats.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }} />
+                            <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
+                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>UFC Stat Tool</h3>
+                                <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>May 15, 2023</span>
                                 <p>Need help identifying stat discrepencies in the matchups for this week? Here is a perfect starting point for your research. Now go beat down those bookies!</p>
                             </div>
                         </a>
-                        <a rel="noopener noreferrer" href="#/stackathon/present" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/bday-present.jpeg" />
-                            <div className="p-6 space-y-2">
-                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">AI Birthday Present Generator</h3>
-                                <span className="text-xs dark:text-gray-400">May 15, 2023</span>
+                        <a rel="noopener noreferrer" href="#/stackathon/present" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ maxWidth: '24rem' }}>
+                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/bday-present.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
+                            <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
+                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>AI Birthday Present Generator</h3>
+                                <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>May 15, 2023</span>
                                 <p>Birthday coming up for a special someone and need some gift ideas? Let Chat-GPT help you out (keep in mind links might be outdated but the ideas remain helpful!)</p>
                             </div>
                         </a>
-                        <a rel="noopener noreferrer" href="#/java/home" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/SFJ-thumbnail.jpeg" />
-                            <div className="p-6 space-y-2">
-                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Script for Java Coffee Shop</h3>
-                                <span className="text-xs dark:text-gray-400">April 20, 2023</span>
+                        <a rel="noopener noreferrer" href="#/java/home" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ maxWidth: '24rem' }}>
+                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/SFJ-thumbnail.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
+                            <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
+                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>Script for Java Coffee Shop</h3>
+                                <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>April 20, 2023</span>
                                 <p>This is my first group project at Fullstack Academy where we made an E-commerce website. Have a look at our products and fill your cart!</p>
                             </div>
                         </a>
-                        <a rel="noopener noreferrer" href="#/stackathon/trip" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900">
-                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/capstone-thumbnail.jpeg" />
-                            <div className="p-6 space-y-2">
-                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">AI Trip Planner</h3>
-                                <span className="text-xs dark:text-gray-400">May 15, 2023</span>
+                        <a rel="noopener noreferrer" href="#/stackathon/trip" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900" style={{ maxWidth: '24rem' }}>
+                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/capstone-thumbnail.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
+                            <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
+                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>AI Trip Planner</h3>
+                                <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>May 15, 2023</span>
                                 <p>Plan Your Next Trip in StAIle</p>
                             </div>
                         </a>
                         <a rel="noopener noreferrer" href="#/portfolio/happyNotes" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900">
-                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/happynotegrab.jpeg" />
-                            <div className="p-6 space-y-2">
-                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Happy Notes</h3>
-                                <span className="text-xs dark:text-gray-400">Nov 15, 2023</span>
+                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/happynotegrab.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
+                            <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
+                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>Happy Notes</h3>
+                                <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>Nov 15, 2023</span>
                                 <p>This is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times</p>
                             </div>
                         </a>  
@@ -316,8 +316,8 @@ function HomeV2() {
                 </form>
             </div> */}
             <footer>
-                <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row">
-                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400">
+                <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row" style={{ display: 'flex', flexDirection: 'column', padding: '1rem' }}>
+                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem', alignSelf: 'center', textAlign: 'center', display: 'flex', }}>
                         {/* <li className='dark:text-lime-400 dark:border-lime-400' href="#/java/about">About</li>
                         <li href="#/java/about">Blog</li> 
                         <li className='dark:text-lime-400 dark:border-lime-400' href="#/portfolio/home">Projects</li>
@@ -332,8 +332,8 @@ function HomeV2() {
                             <a rel="noopener noreferrer" href="#/java/about/contact" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">Contact</a>
                         </li>
                     </ul>
-                    <div className="flex flex-col justify-center pt-6 lg:pt-0">
-                        <div className="flex justify-center space-x-4">
+                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '1.5rem'}}>
+                        <div className="flex justify-center space-x-4" style={{ display: 'flex', justifyContent: 'space-between'  }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
                                 <InstagramIcon />
                             </a>
