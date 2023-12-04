@@ -67,7 +67,7 @@ setLoading(false)
           <div>
           
                 {/* <h1 style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>Birthday Present Generator</h1> */}
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold'}}><h1>Birthday Present Generator</h1></div>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.0 rem', lineHeight: '2.25rem', fontWeight: 'bold', paddingTop: '2rem'}}><h1>Birthday Present Generator</h1></div>
                 {/* <form onSubmit={ submit } style={{ display: 'flex' }}>
                   <div style={{ marginBottom: 8 }}/>
                   <TextField label="Age" variant="outlined" value={ age } onChange={ev => setAge(ev.target.value)} />
@@ -87,7 +87,7 @@ setLoading(false)
                   <Button onClick={ submit } disabled={ !age || !minPrice || !maxPrice || !interest1 || !interest2}>Generate Birthday Present</Button>
                 </form> */}
 
-                <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32" style={{ display: 'grid', maxWidth: '100%', gap: '2rem', paddingTop: '2rem', paddingBottom: '2rem', paddingLeft: '4rem', paddingRight: '4rem', borderRadius: '1rem', gridTemplateColumns: 'auto'}}>
+                <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32" style={{ display: 'grid', maxWidth: '1280px', gap: '2rem', paddingTop: '2rem', paddingBottom: '2rem', paddingLeft: '4rem', paddingRight: '4rem', borderRadius: '1rem', gridTemplateColumns: `'15rem' '15rem`}}>
                     <div className="flex flex-col justify-between" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                         <div className="space-y-2" style={{ justifyContent: 'space-evenly', paddingTop: '.5rem', paddingBottom: '.5rem'}}>
                             <h2 className="text-4xl font-bold leadi lg:text-5xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>Drawing a Blank?</h2>
@@ -95,7 +95,7 @@ setLoading(false)
                         </div>
                         <img src="static/images/cakepresents.png" alt="Birthday Cake & Presents" className="p-6 h-52 md:h-64" style={{ padding: '1.5rem',height: '12rem'}} />
                     </div>
-                    <form onSubmit={ submit } novalidate="" className="space-y-6" >
+                    <form onSubmit={ submit } novalidate="" className="space-y-6" style={{ marginLeft:' 1.5rem'}} >
                         <div>
                             <label for="name" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Age</label>
                             <input value={ age } onChange={ev => setAge(ev.target.value)} id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1.5rem', borderRadius: '.5rem'}} />
