@@ -58,7 +58,7 @@ function HomeV2() {
                         </li>
                     </ul>
                     <span className='flex items-center' style={{ display: 'flex', alignItems: 'center'}}>Darkmode?</span>
-                    <label class="rocker rocker-small" style={{ display: 'flex', alignItems: 'center'}}>
+                    <label class="rocker rocker-small" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                         <input type="checkbox" onClick={toggleDarkMode}/>
                         <span class="switch-left">Yes</span>
                         <span class="switch-right">No</span>
@@ -76,32 +76,32 @@ function HomeV2() {
                     </h1>
                     <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '48px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
                     <div className="flex flex-wrap justify-center" style={{ display: 'flex', flexDirection: 'wrap', justifyContent: 'center'}}>
-                        <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900" style={{scrollMargin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/capstone/login'>Get started</Link></button>
-                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{scrollMargin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button>
+                        <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/capstone/login'>Get started</Link></button>
+                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button>
                     </div>
                 </div>
             </section>
             <section className="p-6 dark:bg-gray-800 dark:text-gray-100" style={{ padding: '1.5rem'}}>
                 <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', textAlign: 'center' }}>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leadi lg:text-6xl">50+</p>
-                        <p className="text-sm sm:text-base">Students Tutored</p>
+                    <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
+                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>50+</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Students Tutored</p>
                     </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leadi lg:text-6xl">1M+</p>
-                        <p className="text-sm sm:text-base">Sales in HVAC Industry</p>
+                    <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
+                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>1M+</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Sales in HVAC Industry</p>
                     </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leadi lg:text-6xl">100+</p>
-                        <p className="text-sm sm:text-base">Newsletters Published</p>
+                    <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
+                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>100+</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Newsletters Published</p>
                     </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leadi lg:text-6xl">6</p>
-                        <p className="text-sm sm:text-base">Projects</p>
+                    <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
+                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>6</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Projects</p>
                     </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leadi lg:text-6xl">12</p>
-                        <p className="text-sm sm:text-base">Years of overall experience</p>
+                    <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
+                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>12</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Years of overall experience</p>
                     </div>
                     {/* <div className="flex flex-col justify-start m-2 lg:m-6">
                         <p className="text-4xl font-bold leadi lg:text-6xl">10+</p>
@@ -109,16 +109,16 @@ function HomeV2() {
                     </div> */}
                 </div>
             </section>
-            <section className="py-8">
+            <section className="py-8" style={{ paddingTop: '8px', paddingBottom: '8px'}}>
                 <div className="container mx-auto">
-                    <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl">
-                        <h2 className="text-2xl font-bold leadi sm:text-4xl">What can I offer to you?</h2>
-                        <p className="px-8 my-4">I will effectively lead and/or manage projects from conception to completion while implementing 
+                    <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl" style={{ padding: '4px', textAlign: 'center'}}>
+                        <h2 className="text-2xl font-bold leadi sm:text-4xl" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: 'bold'}}>What can I offer to you?</h2>
+                        <p className="px-8 my-4" style={{ paddingLeft: '32px', paddingRight: '32px', marginBottom: '48px', marginTop: '16px', marginBottom: '16px'}}>I will effectively lead and/or manage projects from conception to completion while implementing 
                         best practives to ensure timely delivery and resource optimization. I will provide technical leadership and guidance to 
                         development teams to foster innovation and implement emerging technologies. I would love to bridge the gap between technical and sales teams, 
                         translating complex concepts for nontechnical stakeholders.  </p>
                     </div>
-                    <div className="grid grid-cols-5 p-4 md:p-8">
+                    <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, minmax(0, 1fr))', padding: '8px' }}>
                         {/* <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
                             <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Mucius</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-lime-400 dark:text-gray-50">Fabellas</button>
@@ -126,30 +126,30 @@ function HomeV2() {
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Nonumy</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Propriae</button>
                         </div> */}
-                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left">
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400">
+                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'center' }}>
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '.75rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                                 </svg>
                                 <h5 className="text-xl font-semibold">Comprehensive Optimization</h5>
                                 <p>I streamline workflows and processes for enhanced productivity. Happy to assist with training programs to enhance technical skills and project management capabilities</p>
                             </div>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400">
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '.75rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
                                 </svg>
                                 <h5 className="text-xl font-semibold">Collaboration and Communication</h5>
                                 <p>I bridge the gap between technical and sales teams, translating complex concepts for nontechnical stakeholders. I can develop and deliver compelling technical presentations to clients, while collaborating with sales teams to understand client needs and propose tailored solutions.</p>
                             </div>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400">
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '.75rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
                                 </svg>
                                 <h5 className="text-xl font-semibold">Continuous Learning</h5>
                                 <p>I stay abreast of industry trends and advancements and have demonstrated adaptability by quickly learning and implementing new technologies</p>
                             </div>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400">
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '.75rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                                 </svg>
                                 <h5 className="text-xl font-semibold">Customer Service</h5>
