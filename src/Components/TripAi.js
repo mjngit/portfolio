@@ -117,23 +117,23 @@ const Present = () => {
 			</button>
 		</header> */}
 		<main>
-			<div className="container mx-auto space-y-16">
-                            <section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5">
-                                <div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900">
-                                    <span className="block mb-2 dark:text-lime-400">Smart GAI Trip Planner</span>
-                                    <h1 className="text-5xl font-extrabold dark:text-gray-50">Itineraries Just a Click AwAI!</h1>
-                                    <p className="my-8">
-                                        <span className="font-medium dark:text-gray-50">Custom & Spectacular.</span> Save yourself the time and money on travel agents and researching yourself. Let me be your best friend on your next vacation!
+			<div className="container mx-auto space-y-16" style={{ maxWidth: 'auto', justifyContent: 'space-around', paddingTop: '2rem', paddingBottom: '2rem'}}>
+                            <section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: '-ms-grid', gap: '1.5rem', textAlign: 'center'}}>
+                                <div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '1.5rem', borderRadius: '1.5rem'}}>
+                                    <span className="block mb-2 dark:text-lime-400" style={{ display: 'block'}}>Smart GAI Trip Planner</span>
+                                    <h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>Itineraries Just a Click AwAI!</h1>
+                                    <p className="my-8" style={{ margin: '2rem'}}>
+                                        <span className="font-medium dark:text-gray-50" style={{  fontSize: '1.25rem', lineHeight: '1.5rem'}} >Custom & Spectacular.</span> Save yourself the time and money on travel agents and researching yourself. Let me be your best friend on your next vacation!
                                     </p>
-                                    <form onSubmit={ getTrip } className="self-stretch space-y-3">
+                                    <form onSubmit={ getTrip } className="self-stretch space-y-3" style={{ alignSelf: 'stretch', justifyContent: 'space-around', paddingTop: '.75rem', paddingBottom: '.75rem'}}>
                                         <div>
-                                            <TextField label="City" variant="filled" value={ city } onChange={ev => setCity(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white"/>
+                                            <TextField label="City" variant="filled" value={ city } onChange={ev => setCity(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', borderRadius: '1.5rem', background: 'white'}}/>
                                         </div>
                                         <div>                                    
-                                            <TextField label="Country" variant="filled" value={ country } onChange={ev => setCountry(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" /> 
+                                            <TextField label="Country" variant="filled" value={ country } onChange={ev => setCountry(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', borderRadius: '1.5rem', background: 'white'}} /> 
                                         </div>
                                         <div>
-                                            <TextField label="Days" variant="filled" value={ days } onChange={ev => setDays(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" /> 
+                                            <TextField label="Days" variant="filled" value={ days } onChange={ev => setDays(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', borderRadius: '1.5rem', background: 'white'}} /> 
                                         </div>
                                         {/* <button className="w-full py-2 font-semibold rounded dark:bg-lime-400 dark:text-gray-900">Plan My Trip!</button> */}
                                         <button class="btn">
@@ -146,7 +146,7 @@ const Present = () => {
                                         </button>
                                     </form>
                                 </div>
-                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" />
+                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '1.5rem'}}/>
                             </section>
                             
                         </div>
@@ -195,7 +195,9 @@ const Present = () => {
                     
                 </div>
             </div>
-            {/* <div>
+            {/* OG form trip form
+            
+            <div>
                 <div className='py-10' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h1>AI Trip Planner</h1></div>
                 <form onSubmit={ getTrip } style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
                   <div style={{ marginBottom: 20 }}/>
