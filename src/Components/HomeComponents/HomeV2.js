@@ -46,18 +46,18 @@ function HomeV2() {
                      <a rel="noopener noreferrer" href="#/capstone/home" aria-label="Back to homepage" className="flex items-center p-2">
                         <ShowChartIcon />
                     </a>
-                    <ul className="items-stretch hidden space-x-3 md:flex">
+                    <ul className="items-stretch hidden space-x-3 md:flex" style={{ display: 'flex', alignItems: 'stretch',  marginLeft: '12px'}}>
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#/java/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 ">About</a>
+                            <a rel="noopener noreferrer" href="#/java/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 " style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px' }}>About</a>
                         </li>
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#/portfolio/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400">Projects</a>
+                            <a rel="noopener noreferrer" href="#/portfolio/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px' }}>Projects</a>
                         </li>
                         <li className="flex">
-                            <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 ">Email Me</a>
+                            <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px' }}>Email Me</a>
                         </li>
                     </ul>
-                    <span className='flex items-center'>Darkmode?</span>
+                    <span className='flex items-center' style={{ display: 'flex', alignItems: 'center'}}>Darkmode?</span>
                     <label class="rocker rocker-small">
                         <input type="checkbox" onClick={toggleDarkMode}/>
                         <span class="switch-left">Yes</span>
@@ -67,22 +67,22 @@ function HomeV2() {
             </header>
             <Signature />
             <section>
-                <div className="container flex flex-col items-center px-4 py-8 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl">
+                <div className="container flex flex-col items-center px-4 py-8 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingLeft: '4px', paddingRight: '4px', paddingTop: '8px', paddingBottom: '8px' }}>
                     <h1 className="text-4xl font-bold leadi sm:text-5xl">
                         <div>Michael Norris </div>
                         <span className="dark:text-lime-400">Developer </span>
                         <div>Sales Engineer</div>
                         <span> Project Manager</span>
                     </h1>
-                    <p className="px-8 mt-8 mb-12 text-lg">Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
-                    <div className="flex flex-wrap justify-center">
-                        <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900"><Link to='/capstone/login'>Get started</Link></button>
-                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"><Link to='/java/about'>Learn more</Link></button>
+                    <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '48px', marginTop: '32px' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
+                    <div className="flex flex-wrap justify-center" style={{ display: 'flex', flexDirection: 'wrap', justifyContent: 'center'}}>
+                        <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900" style={{scrollMargin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/capstone/login'>Get started</Link></button>
+                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{scrollMargin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button>
                     </div>
                 </div>
             </section>
-            <section className="p-6 dark:bg-gray-800 dark:text-gray-100">
-                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3">
+            <section className="p-6 dark:bg-gray-800 dark:text-gray-100" style={{ padding: '1.5rem'}}>
+                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', textAlign: 'center' }}>
                     <div className="flex flex-col justify-start m-2 lg:m-6">
                         <p className="text-4xl font-bold leadi lg:text-6xl">50+</p>
                         <p className="text-sm sm:text-base">Students Tutored</p>
