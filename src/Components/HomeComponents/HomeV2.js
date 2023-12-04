@@ -13,6 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Signature from './Signature'
 import { Link } from 'react-router-dom';
+import { grey } from '@mui/material/colors';
 
 function HomeV2() {
     const [isDarkMode, setIsDarkMode] = useState(false)
@@ -23,10 +24,11 @@ function HomeV2() {
 
   return (
     <>
-        <div className={isDarkMode ? 'dark-mode space-y-12 dark:bg-gray-800 dark:text-gray-100' : 'light-mode space-y-12 dark:bg-gray-800 dark:text-gray-100'} >
-            <header className="p-4">
-                <div className="container flex justify-between h-16 mx-auto">
-                    <a rel="noopener noreferrer" href="#/portfolio/homeV2" aria-label="Back to homepage" className="flex items-center p-2">
+        <div className={isDarkMode ? 'dark-mode space-y-12 dark:bg-gray-800 dark:text-gray-100' : 'light-mode space-y-12 dark:bg-gray-800 dark:text-gray-100'} style={{marginTop: 12 }} >
+            {/* TODO: DARK MODE AND LIGHT MODE backgroundColor: 'darkgray'. color: 'white' */}
+            <header className="p-4" style={{padding: 8}}>
+                <div className="container flex justify-between h-16 mx-auto" id='container' style={{ display: 'flex', justifyContent:'space-between', height:'16px' }}>
+                    <a rel="noopener noreferrer" href="#/portfolio/homeV2" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2' }}>
                         <CottageIcon />
                     </a>
                      <a rel="noopener noreferrer" href="/#/java/home" aria-label="Back to homepage" className="flex items-center p-2">
