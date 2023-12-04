@@ -82,7 +82,7 @@ function HomeV2() {
                 </div>
             </section>
             <section className="p-6 dark:bg-gray-800 dark:text-gray-100" style={{ padding: '1.5rem'}}>
-                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', textAlign: 'center' }}>
+                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `'350px' '350px' '350px'`, textAlign: 'center' }}>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>50+</p>
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Students Tutored</p>
@@ -118,7 +118,7 @@ function HomeV2() {
                         development teams to foster innovation and implement emerging technologies. I would love to bridge the gap between technical and sales teams, 
                         translating complex concepts for nontechnical stakeholders.  </p>
                     </div>
-                    <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, minmax(0, 1fr))', padding: '8px' }}>
+                    <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: `'350px' '350px'`, padding: '8px' }}>
                         {/* <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
                             <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Mucius</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-lime-400 dark:text-gray-50">Fabellas</button>
@@ -126,7 +126,7 @@ function HomeV2() {
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Nonumy</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Propriae</button>
                         </div> */}
-                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'center', gridColumn: '1' }}>
+                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'start', gridColumn: '1' }}>
                             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
@@ -332,7 +332,7 @@ function HomeV2() {
                             <a rel="noopener noreferrer" href="#/java/about/contact" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">Contact</a>
                         </li>
                     </ul>
-                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '1.5rem'}}>
+                    <div className="flex flex-col justify-center pt-6 lg:pt-0" >
                         <div className="flex justify-center space-x-4" style={{ display: 'flex', justifyContent: 'space-between'  }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
                                 <InstagramIcon />
