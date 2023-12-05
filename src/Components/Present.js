@@ -107,7 +107,7 @@ setLoading(false)
                         </div>
                         <img src="static/images/cakepresents.png" alt="Birthday Cake & Presents" className="p-6 h-52 md:h-64" style={{ padding: '1.5rem',height: '12rem'}} />
                     </div>
-                    <form onSubmit={ submit } novalidate="" className="space-y-6" style={{ marginLeft:' 1.5rem', width: '35rem', colum}} >
+                    <form onSubmit={ submit } novalidate="" className="space-y-6" style={{ marginLeft:' 1.5rem', width: '35rem', column: '2'}} >
                         <div>
                             <label for="name" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Age</label>
                             <input value={ age } onChange={ev => setAge(ev.target.value)} id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem'}} />
