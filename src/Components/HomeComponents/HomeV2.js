@@ -69,7 +69,7 @@ function HomeV2() {
             </header>
             <Signature />
             <section>
-                <div className="container flex flex-col items-center px-4 py-8 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingLeft: '4px', paddingRight: '4px', paddingTop: '8px', paddingBottom: '8px', textAlign: 'center' }}>
+                <div className="container flex flex-col items-center px-4 py-8 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl" style={{ display: 'flex', flexDirection: 'column', paddingLeft: '4px', paddingRight: '4px', paddingTop: '8px', paddingBottom: '8px', textAlign: 'center' }}>
                     <h1 className="text-4xl font-bold leadi sm:text-5xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }} >
                         <div>Michael Norris </div>
                         <span className="dark:text-lime-400" style={{ color: 'lime'}}>Developer </span>
