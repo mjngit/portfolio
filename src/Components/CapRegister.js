@@ -49,13 +49,13 @@ const CapRegister = ()=> {
     </div> */}
 
 
-    <div className='flex justify-center pt-20'>
-        <div className=" px-8 py-6 rounded-lg bg-gray-800 w-72">
-          <h1 className="text-center font-bold text-3xl text-white">Register</h1>
+    <div className='flex justify-center pt-20' style={{ display: 'flex', justifyContent: 'center', paddingTop: '5rem'}}>
+        <div className=" px-8 py-6 rounded-lg bg-gray-800 w-72" style={{ paddingLeft: '2rem', paddingRight: '2rem', paddingTop: '1.5rem', paddingBottom: '1.5rem', width: '18rem', backgroundColor: 'gray'}}>
+          <h1 className="text-center font-bold text-3xl text-white" style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.875rem', lineHeight: '2.25rem' }}>Register</h1>
           <form onSubmit={ _register } className="my-6">
-            <TextField label="Username" name = 'username' variant="filled" value={ username } onChange={ev => setUsername(ev.target.value)} className='bg-white'/>
+            <TextField label="Username" name = 'username' variant="filled" value={ username } onChange={ev => setUsername(ev.target.value)} className='bg-white' style={{ backgroundColor: 'white'}}/>
 
-            <TextField type='password' label="Password" name = 'password' variant="filled" value={ password } onChange={ev => setPassword(ev.target.value)}  className='bg-white'/>
+            <TextField type='password' label="Password" name = 'password' variant="filled" value={ password } onChange={ev => setPassword(ev.target.value)}  className='bg-white' style={{ backgroundColor: 'white'}}/>
               {/* <GoogleOAuthProvider clientId = "18136828756-l5ol7p0u1f928hapfa4fr3pubvclahje.apps.googleusercontent.com">
 
                 <GoogleLogin
@@ -71,7 +71,7 @@ const CapRegister = ()=> {
                 }}
                 />
               </GoogleOAuthProvider> */}
-            <button disabled={ !password || !username } className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]">Register</button>
+            <button disabled={ !password || !username } className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]" style={{ backgroundColor: 'blue', color: 'white', fontWeight: 'bold', padding: '.5rem', marginTop: '.75rem', borderRadius: '.5rem'}}>Register</button>
           </form>
         </div>
       </div>
