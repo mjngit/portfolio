@@ -118,8 +118,8 @@ const Present = () => {
 		</header> */}
 		<main>
 			<div className="container mx-auto space-y-16" style={{ justifyContent: 'space-around', paddingTop: '2rem', paddingBottom: '2rem'}}>
-                            <section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',gridTemplateRows: '1fr 1fr 1fr' , gap: '1.5rem', textAlign: 'center', gridTemplateAreas: `"Info Info Photo Photo Photo" "Info Info Photo Photo Photo""Info Info Photo Photo Photo"`}}>
-                                <div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '1.5rem', borderRadius: '1.5rem', gridArea: 'Info'}}>
+                            <section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gridTemplateColumns: '30rem 40rem' , gap: '1.5rem', textAlign: 'center'}}>
+                                <div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '30rem', padding: '1.5rem', borderRadius: '1.5rem', gridArea: 'Info'}}>
                                     <span className="block mb-2 dark:text-lime-400" style={{ display: 'block'}}>Smart GAI Trip Planner</span>
                                     <h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>Itineraries Just a Click AwAI!</h1>
                                     <p className="my-8" style={{ margin: '2rem'}}>
@@ -146,7 +146,7 @@ const Present = () => {
                                         </button>
                                     </form>
                                 </div>
-                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '1.5rem', gridArea: 'TripForm'}}/>
+                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" style={{ objectFit: 'cover', width: '40rem', height: '100%', borderRadius: '1.5rem'}}/>
                             </section>
                             
                         </div>
