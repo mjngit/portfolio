@@ -31,13 +31,13 @@ const CapLogin = ()=> {
     <>
       <PortfolioNav/>
      
-      <div className='flex justify-center pt-20'>
-        <div className=" px-8 py-6 rounded-lg bg-gray-800 w-72">
-          <h1 className="text-center font-bold text-3xl text-white">Login</h1>
-          <form onSubmit={ login } className="my-6">
-            <TextField label="Username" name = 'username' variant="filled" value={ credentials.username } onChange={onChange} className='bg-white'/>
+      <div className='flex justify-center pt-20' style={{ display: 'flex', justifyContent: 'center', paddingTop: '5rem'}}>
+        <div className=" px-8 py-6 rounded-lg bg-gray-800 w-72" style={{ paddingLeft: '2rem', paddingRight: '2rem', paddingTop: '1.5rem', paddingBottom: '1.5rem', width: '18rem', backgroundColor: 'gray'}}>
+          <h1 className="text-center font-bold text-3xl text-white" style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.875rem', lineHeight: '2.25rem' }}>Login</h1>
+          <form onSubmit={ login } className="my-6" style={{ marginTop: '1.5rem', marginBottom: '1.5rem'}}>
+            <TextField label="Username" name = 'username' variant="filled" value={ credentials.username } onChange={onChange} className='bg-white' style={{ backgroundColor: 'white'}}/>
 
-            <TextField type='password' label="Password" name = 'password' variant="filled" value={ credentials.password } onChange={onChange} className='bg-white'/>
+            <TextField type='password' label="Password" name = 'password' variant="filled" value={ credentials.password } onChange={onChange} className='bg-white' style={{ backgroundColor: 'white'}}/>
               <GoogleOAuthProvider clientId = "18136828756-l5ol7p0u1f928hapfa4fr3pubvclahje.apps.googleusercontent.com">
 
                 <GoogleLogin
@@ -54,12 +54,12 @@ const CapLogin = ()=> {
                 />
               </GoogleOAuthProvider>
             <button disabled={ !credentials } className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]">Login</button>
-            <div className='flex justify-center text-white'><Link to={'/capstone/register'}>Register</Link></div>
-            <div className='flex justify-center text-white'>Or Use: moe | 123</div>
+            <div className='flex justify-center text-white' style={{ display: 'flex', justifyContent: 'center', color: 'white'}}><Link to={'/capstone/register'}>Register</Link></div>
+            <div className='flex justify-center text-white' style={{ display: 'flex', justifyContent: 'center', color: 'white'}}>Or Use: moe | 123</div>
           </form>
         </div>
       </div>
-      <div  className='py-36'></div>
+      <div  className='py-36' style={{ paddingTop: '12rem'}}></div>
       <FooterNav/>
     </>
   );
