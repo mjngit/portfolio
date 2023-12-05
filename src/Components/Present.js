@@ -103,7 +103,7 @@ setLoading(false)
                     <div className="flex flex-col justify-between" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '35rem'}}>
                         <div className="space-y-2" style={{  paddingTop: '.5rem', paddingBottom: '.5rem'}}>
                             <h2 className="text-4xl font-bold leadi lg:text-5xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>Drawing a Blank?</h2>
-                            <div className="dark:text-gray-400" style={{ display: 'flex', width: '20rem', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>Fill in the info about your friend or loved one and let AI do the rest! Keep in mind the present links are likely outdated but the ideas remain top notch and great starting points for your brainstorm!</div>
+                            <h4 className="dark:text-gray-400" style={{ display: 'flex', width: '20rem', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>Fill in the info about your friend or loved one and let AI do the rest! Keep in mind the present links are likely outdated but the ideas remain top notch and great starting points for your brainstorm!</h4>
                         </div>
                         <img src="static/images/cakepresents.png" alt="Birthday Cake & Presents" className="p-6 h-52 md:h-64" style={{ display: 'flex', padding: '1.5rem', height: '12rem', width: '50%', alignItems: 'center', justifyContent: 'center', alignSelf: 'center'}} />
                     </div>
