@@ -127,13 +127,13 @@ const Present = () => {
                                     </p>
                                     <form onSubmit={ getTrip } className="self-stretch space-y-3" style={{ alignSelf: 'stretch', justifyContent: 'space-around', paddingTop: '.75rem', paddingBottom: '.75rem'}}>
                                         <div>
-                                            <TextField label="City" variant="filled" value={ city } onChange={ev => setCity(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', borderRadius: '1.5rem', background: 'white'}}/>
+                                            <TextField label="City" variant="filled" value={ city } onChange={ev => setCity(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', background: 'white'}}/>
                                         </div>
                                         <div>                                    
-                                            <TextField label="Country" variant="filled" value={ country } onChange={ev => setCountry(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', borderRadius: '1.5rem', background: 'white'}} /> 
+                                            <TextField label="Country" variant="filled" value={ country } onChange={ev => setCountry(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', background: 'white'}} /> 
                                         </div>
                                         <div>
-                                            <TextField label="Days" variant="filled" value={ days } onChange={ev => setDays(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', borderRadius: '1.5rem', background: 'white'}} /> 
+                                            <TextField label="Days" variant="filled" value={ days } onChange={ev => setDays(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', background: 'white'}} /> 
                                         </div>
                                         {/* <button className="w-full py-2 font-semibold rounded dark:bg-lime-400 dark:text-gray-900">Plan My Trip!</button> */}
                                         <button class="btn">

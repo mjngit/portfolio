@@ -22,8 +22,8 @@ const AboutContact = () => {
             <p class="text-amber-300 font-thin">- Fullstack Developer -</p>
           </div>
         </div> */}
-      <div className="relative h-full w-full flex items-center justify-center">
-        <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
+      <div className="relative h-full w-full flex items-center justify-center" style={{ position: 'relative', height: '100%', width: '100%', display: 'flex', alignItems: 'center'}}>
+        <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50" style={{ position: 'relative', padding: '2.5rem', borderWidth: '2px', borderStyle: "dashed", borderRadius: '9999px', borderSpacing: '1rem 1rem'  }}>
           <button href="https://github.com/mjngit" className="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <a href="https://github.com/mjngit">
