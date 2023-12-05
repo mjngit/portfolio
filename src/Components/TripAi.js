@@ -92,9 +92,9 @@ const Present = () => {
         // </>
 
         <>
-        <div className="min-h-screen bg-gray-800 text-gray-100">
+        <div className="min-h-screen bg-gray-800 text-gray-100" style={{ minHeight: '100vh', background: 'gray', color: 'white'}}>
         <PortfolioNav/>
-	<div className="p-6 space-y-8">
+	<div className="p-6 space-y-8" style={{ padding: '1.5rem', paddingLeft: '2rem'}}>
 		{/* <header className="container flex items-center justify-between h-16 px-4 mx-auto rounded dark:bg-gray-900">
 			<a rel="noopener noreferrer" href="#" aria-label="Homepage">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-6 h-6 dark:text-lime-400">
@@ -117,9 +117,9 @@ const Present = () => {
 			</button>
 		</header> */}
 		<main>
-			<div className="container mx-auto space-y-16" style={{ maxWidth: 'auto', justifyContent: 'space-around', paddingTop: '2rem', paddingBottom: '2rem'}}>
-                            <section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '1.5rem', textAlign: 'center'}}>
-                                <div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '1.5rem', borderRadius: '1.5rem', gridColumn: 'span 2 / span 2'}}>
+			<div className="container mx-auto space-y-16" style={{ justifyContent: 'space-around', paddingTop: '2rem', paddingBottom: '2rem'}}>
+                            <section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr',gridTemplateRows: '1fr' , gap: '1.5rem', textAlign: 'center', gridTemplateAreas: 'Info, TripForm'}}>
+                                <div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '1.5rem', borderRadius: '1.5rem', gridArea: 'Info'}}>
                                     <span className="block mb-2 dark:text-lime-400" style={{ display: 'block'}}>Smart GAI Trip Planner</span>
                                     <h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>Itineraries Just a Click AwAI!</h1>
                                     <p className="my-8" style={{ margin: '2rem'}}>
@@ -146,7 +146,7 @@ const Present = () => {
                                         </button>
                                     </form>
                                 </div>
-                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '1.5rem'}}/>
+                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '1.5rem', gridArea: 'TripForm'}}/>
                             </section>
                             
                         </div>
