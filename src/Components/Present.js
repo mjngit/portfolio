@@ -99,11 +99,11 @@ setLoading(false)
                   <Button onClick={ submit } disabled={ !age || !minPrice || !maxPrice || !interest1 || !interest2}>Generate Birthday Present</Button>
                 </form> */}
 
-                <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32" style={{display: 'grid', gridTemplateColumns: 'repeat(1, minmax(0, 1fr))', maxWidth: '1280px', gap: '2rem', paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '4rem', paddingRight: '2rem', borderRadius: '1rem'}}>
-                    <div className="flex flex-col justify-between" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32" style={{display: 'grid', gridTemplateColumns: 'repeat(1, minmax(0, 1fr))', maxWidth: '1280px', gap: '2rem', paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '2rem', paddingRight: '2rem', borderRadius: '1rem'}}>
+                    <div className="flex flex-col justify-between" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                         <div className="space-y-2" style={{ paddingTop: '.5rem', paddingBottom: '.5rem'}}>
                             <h2 className="text-4xl font-bold leadi lg:text-5xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>Drawing a Blank?</h2>
-                            <div className="dark:text-gray-400" >Fill in the info about your friend or loved one and let AI do the rest! Keep in mind the present links are likely outdated but the ideas remain top notch and great starting points for your brainstorm!</div>
+                            <div className="dark:text-gray-400">Fill in the info about your friend or loved one and let AI do the rest! Keep in mind the present links are likely outdated but the ideas remain top notch and great starting points for your brainstorm!</div>
                         </div>
                         <img src="static/images/cakepresents.png" alt="Birthday Cake & Presents" className="p-6 h-52 md:h-64" style={{ padding: '1.5rem',height: '12rem'}} />
                     </div>
