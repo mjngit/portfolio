@@ -128,9 +128,9 @@ function HomeV2() {
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Nonumy</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Propriae</button>
                         </div> */}
-                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'start', gridTemplateColumns: '450px 450px' }}>
-                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '1rem'}}>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
+                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '4rem', paddingBottom: '16px', textAlign: 'start', gridTemplateColumns: '550px 550px' }}>
+                            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem' , color:'limegreen'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                                 </svg>
                                 <h5 className="text-xl font-semibold" style={{ fontSize: '1.125rem', lineHeight: '1.75rem'}}>Comprehensive Optimization</h5>
@@ -144,14 +144,14 @@ function HomeV2() {
                                 <p>I bridge the gap between technical and sales teams, translating complex concepts for nontechnical stakeholders. I can develop and deliver compelling technical presentations to clients, while collaborating with sales teams to understand client needs and propose tailored solutions.</p>
                             </div>
                             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem' , color:'limegreen'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
                                 </svg>
                                 <h5 className="text-xl font-semibold" style={{ fontSize: '1.125rem', lineHeight: '1.75rem'}}>Continuous Learning</h5>
                                 <p>I stay abreast of industry trends and advancements and have demonstrated adaptability by quickly learning and implementing new technologies</p>
                             </div>
                             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem' , color:'limegreen'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                                 </svg>
                                 <h5 className="text-xl font-semibold" style={{ fontSize: '1.125rem', lineHeight: '1.75rem'}}>Customer Service</h5>
@@ -167,8 +167,7 @@ function HomeV2() {
                         <h1 className="text-5xl font-bold leadi">Connect with me on LinkedIn</h1>
                         <p className="text-lg">Connect with me and shoot me a message to talk about anything and everything!</p>
                     </div>
-                    <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end"
-                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', alignSelf: 'center', justifyContent: 'center', flexShrink: '0', padding: ".75rem", marginLeft: '2rem' }}>
+                    <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', alignSelf: 'flex-end', justifyContent: 'center', flexShrink: '0', padding: ".75rem", marginLeft: '2rem' }}>
                     {/* <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-40 h-40 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
                                 <LinkedInIcon />
                     </a> */}
@@ -182,7 +181,7 @@ function HomeV2() {
             </section>
             <section>
                 <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12" style={{ maxWidth: '72rem', padding: '1rem' }}>
-                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{ display: 'block', maxWidth: '24rem', gap: '.75rem' }}>
+                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{ display: 'block', maxWidth: '24rem', gap: '.75rem', textDecoration: 'none' }}>
                         <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '16rem'   }} />
                         <div className="p-6 space-y-2 lg:col-span-5" style={{ padding: '1.5rem' }}>
                             <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>Capstone: C-Trade</h3>
