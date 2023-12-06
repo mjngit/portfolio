@@ -14,6 +14,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Signature from './Signature'
 import { Link } from 'react-router-dom';
 import { grey } from '@mui/material/colors';
+import { width } from '@mui/system';
 
 function HomeV2() {
     const [isDarkMode, setIsDarkMode] = useState(false)
@@ -76,7 +77,7 @@ function HomeV2() {
                         <div>Sales Engineer</div>
                         <span> Project Manager</span>
                     </h1>
-                    <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '72px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem', width: '60%' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
+                    <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '72px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem', width: '40%', justifyContent: 'center' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
                     <div className="flex flex-wrap justify-center" style={{ display: 'flex', flexDirection: 'wrap', justifyContent: 'center', paddingBottom: '4rem' }}>
                         <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/capstone/login'>Get started</Link></button>
                         <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button>
@@ -318,8 +319,8 @@ function HomeV2() {
                 </form>
             </div> */}
             <footer>
-                <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row" style={{ display: 'flex', flexDirection: 'column', padding: '1rem' }}>
-                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem', alignSelf: 'center', textAlign: 'center', display: 'flex', }}>
+                <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row" style={{ display: 'flex', flexDirection: 'row', padding: '1rem' }}>
+                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem', alignSelf: 'center', textAlign: 'center', display: 'flex', paddingLeft: '2rem' }}>
                         {/* <li className='dark:text-lime-400 dark:border-lime-400' href="#/java/about">About</li>
                         <li href="#/java/about">Blog</li> 
                         <li className='dark:text-lime-400 dark:border-lime-400' href="#/portfolio/home">Projects</li>
@@ -335,7 +336,7 @@ function HomeV2() {
                         </li>
                     </ul>
                     <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '1.5rem' }} >
-                        <div className="flex justify-center space-x-4" style={{ display: 'flex', justifyContent: 'center', paddingLeft: '1rem' }}>
+                        <div className="flex justify-center space-x-4" style={{ display: 'flex', justifyContent: 'center', paddingLeft: '2rem' }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
                                 <InstagramIcon />
                             </a>
