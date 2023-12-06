@@ -136,7 +136,7 @@ const Present = () => {
                                             <TextField label="Days" variant="filled" value={ days } onChange={ev => setDays(ev.target.value)} className="w-full rounded-md focus:ring focus:ri dark:border-gray-700 bg-white" style={{ width: '100%', background: 'white'}} /> 
                                         </div>
                                         {/* <button className="w-full py-2 font-semibold rounded dark:bg-lime-400 dark:text-gray-900">Plan My Trip!</button> */}
-                                        <button className="btn" style={{ width: '80%'}}>
+                                        <button className="btn" style={{ justifyContent: 'center', width: '60%'}}>
                                         <div>Plan My Trip!</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="20px" viewBox="5 0 24 24" fill="none" >
                                         <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>

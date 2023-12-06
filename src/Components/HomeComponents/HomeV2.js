@@ -128,7 +128,7 @@ function HomeV2() {
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Nonumy</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Propriae</button>
                         </div> */}
-                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'start', gridColumn: '1', gridTemplateColumns: `'350px' '350px'` }}>
+                        <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '1rem', paddingBottom: '16px', textAlign: 'start', gridTemplateColumns: '350px 350px' }}>
                             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-lime-400" style={{ width: '1.5rem', height: '1.5rem'}}>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
@@ -162,12 +162,13 @@ function HomeV2() {
                 </div>
             </section>
             <section className="py-6 dark:bg-gray-800 dark:text-gray-50" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem' }}>
-                <div className="container flex flex-col justify-center p-4 mx-auto space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', padding: ".75rem", marginLeft: '2rem' }}>
+                <div className="container flex flex-col justify-center p-4 mx-auto space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: ".75rem", marginLeft: '2rem' }}>
                     <div className="flex flex-col space-y-4 text-center lg:text-left">
                         <h1 className="text-5xl font-bold leadi">Connect with me on LinkedIn</h1>
                         <p className="text-lg">Connect with me and shoot me a message to talk about anything and everything!</p>
                     </div>
-                    <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end">
+                    <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end"
+                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', alignSelf: 'center', justifyContent: 'center', flexShrink: '0', padding: ".75rem", marginLeft: '2rem' }}>
                     {/* <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-40 h-40 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
                                 <LinkedInIcon />
                     </a> */}
