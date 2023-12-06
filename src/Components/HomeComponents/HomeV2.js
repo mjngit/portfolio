@@ -84,7 +84,7 @@ function HomeV2() {
                 </div>
             </section>
             <section className="p-6 dark:bg-gray-800 dark:text-gray-100" style={{ padding: '1.5rem'}}>
-                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `350px 350px`, textAlign: 'center' }}>
+                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `350px 350px 350px`, textAlign: 'center' }}>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>50+</p>
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Students Tutored</p>
@@ -120,7 +120,7 @@ function HomeV2() {
                         development teams to foster innovation and implement emerging technologies. I would love to bridge the gap between technical and sales teams, 
                         translating complex concepts for nontechnical stakeholders.  </p>
                     </div>
-                    <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: `'350px' '350px'`, padding: '8px' }}>
+                    <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: '500px 500px', padding: '8px' }}>
                         {/* <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
                             <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Mucius</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-lime-400 dark:text-gray-50">Fabellas</button>
