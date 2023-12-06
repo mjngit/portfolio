@@ -76,7 +76,7 @@ function HomeV2() {
                         <div>Sales Engineer</div>
                         <span> Project Manager</span>
                     </h1>
-                    <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '48px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
+                    <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '72px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
                     <div className="flex flex-wrap justify-center" style={{ display: 'flex', flexDirection: 'wrap', justifyContent: 'center'}}>
                         <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/capstone/login'>Get started</Link></button>
                         <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button>
@@ -111,7 +111,7 @@ function HomeV2() {
                     </div> */}
                 </div>
             </section>
-            <section className="py-8" style={{ paddingTop: '8px', paddingBottom: '8px'}}>
+            <section className="py-8" style={{ paddingTop: '4rem', paddingBottom: '4rem'}}>
                 <div className="container mx-auto">
                     <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl" style={{ padding: '4px', textAlign: 'center'}}>
                         <h2 className="text-2xl font-bold leadi sm:text-4xl" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: 'bold'}}>What can I offer to you?</h2>
@@ -120,7 +120,7 @@ function HomeV2() {
                         development teams to foster innovation and implement emerging technologies. I would love to bridge the gap between technical and sales teams, 
                         translating complex concepts for nontechnical stakeholders.  </p>
                     </div>
-                    <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: '500px 500px', padding: '8px' }}>
+                    <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: '500px 500px', padding: '8px', justifyContent: 'center' }}>
                         {/* <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
                             <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Mucius</button>
                             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-lime-400 dark:text-gray-50">Fabellas</button>
