@@ -84,7 +84,7 @@ function HomeV2() {
                 </div>
             </section>
             <section className="p-6 dark:bg-gray-800 dark:text-gray-100" style={{ padding: '1.5rem'}}>
-                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `'350px' '350px'`, textAlign: 'center' }}>
+                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `350px 350px`, textAlign: 'center' }}>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>50+</p>
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Students Tutored</p>
