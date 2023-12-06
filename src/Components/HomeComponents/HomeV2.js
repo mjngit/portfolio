@@ -77,7 +77,7 @@ function HomeV2() {
                         <div>Sales Engineer</div>
                         <span> Project Manager</span>
                     </h1>
-                    <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '72px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem', width: '40%', justifyContent: 'center' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
+                    <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '72px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem', width: '40%', display: 'flex', justifyContent: 'center' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
                     <div className="flex flex-wrap justify-center" style={{ display: 'flex', flexDirection: 'wrap', justifyContent: 'center', paddingBottom: '4rem' }}>
                         <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/capstone/login'>Get started</Link></button>
                         <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button>
@@ -163,8 +163,8 @@ function HomeV2() {
                 </div>
             </section>
             <section className="py-6 dark:bg-gray-800 dark:text-gray-50" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem' }}>
-                <div className="container flex flex-col justify-center p-4 mx-auto space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: ".75rem", marginLeft: '2rem', alignItems: 'center' }}>
-                    <div className="flex flex-col space-y-4 text-center lg:text-left" style={{ display: 'flex', flexDirection: 'column', padding: ".75rem", marginLeft: '2rem', textAlign: 'left' }}>
+                <div className="container flex flex-col justify-center p-4 mx-auto space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row" style={{ display: 'flex', flexDirection: 'column', padding: ".75rem", marginLeft: '2rem', alignItems: 'center' }}>
+                    <div className="flex flex-col space-y-4 text-center lg:text-left" style={{ display: 'flex', flexDirection: 'row', padding: ".75rem", marginLeft: '2rem', textAlign: 'left' }}>
                         <h1 className="text-5xl font-bold leadi">Connect with me on LinkedIn</h1>
                         <p className="text-lg" >Connect with me and shoot me a message to talk about anything and everything!</p>
                     </div>
@@ -191,7 +191,7 @@ function HomeV2() {
                             <p>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
                         </div>
                     </a>
-                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gap: '1.5rem', gridTemplateColumns: '350px, 350px 350px' }}>
+                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gap: '2rem', gridTemplateColumns: '450px, 450px ' }}>
                         <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ maxWidth: '24rem' }}>
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/fighter-stats.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }} />
                             <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
