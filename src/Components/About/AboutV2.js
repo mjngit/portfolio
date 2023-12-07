@@ -42,13 +42,13 @@ const AboutV2 = () => {
 							<span className="font-medium dark:text-gray-50" style={{ fontWeight: '500', color: 'lightgray' }}>Adventurer, Developer, Project Manager, Sales Engineer</span>
 						</p>
                         <div className='flex items-center justify-center' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime' , paddingLeft: '15px', paddingRight: '15px'}}>
+                            <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime' , padding: '30px'}}>
                                 <GitHubIcon />
                             </a>
-                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime', paddingLeft: '15px', paddingRight: '15px'}}>
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime', padding: '30px'}}>
                                 <LinkedInIcon />
                             </a>
-                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime' , paddingLeft: '15px', paddingRight: '15px'}}>
+                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime' , padding: '30px'}}>
                                 <GoogleIcon />  
                             </button>
                         </div>
@@ -73,8 +73,8 @@ const AboutV2 = () => {
 
         <section className="dark:bg-gray-800 dark:text-gray-100">
             <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem'}}>
-                <div className="grid gap-4 mx-4 sm:grid-cols-12">
-                    <div className="col-span-12 sm:col-span-3">
+                <div className="grid gap-4 mx-4 sm:grid-cols-12" style={{ display: 'grid', gap: '1rem', marginLeft: '1rem', marginRight: '1rem'}}>
+                    <div className="col-span-12 sm:col-span-3" style={{ }}>
                         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400">
                             <h3 className="text-3xl font-semibold">Major Events</h3>
                             <span className="text-sm font-bold tracki uppercase dark:text-gray-400">Key Moments & Achievements</span>
