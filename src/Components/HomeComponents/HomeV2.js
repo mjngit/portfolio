@@ -374,9 +374,11 @@ function HomeV2() {
                             <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem' }} >
                                 <LinkedInIcon />
                             </a>
+                            <a>
                             <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem' }} >
                                 <GoogleIcon />  
                             </button>
+                            </a>
                         </div>
                     </div>
                 </div>
