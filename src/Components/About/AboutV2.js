@@ -72,8 +72,8 @@ const AboutV2 = () => {
         </div>
 
         <section className="dark:bg-gray-800 dark:text-gray-100">
-            <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem'}}>
-                <div className="grid gap-4 mx-4 sm:grid-cols-12" style={{ display: 'grid', gap: '1rem', marginLeft: '1rem', marginRight: '1rem'}}>
+            <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem', }}>
+                <div className="grid gap-4 mx-4 sm:grid-cols-12" style={{ display: 'grid', gap: '1rem', marginLeft: '1rem', marginRight: '1rem', gridTemplateColumns: '200px 700px'}}>
                     <div className="col-span-12 sm:col-span-3" style={{ gridTemplateColumns: '250px 750px' }}>
                         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400" style={{textAlign: 'center', marginBottom: '3.5rem', }}>
                             <h3 className="text-3xl font-semibold" style={{ fontSize: '1.875rem', lineHeight:'2.25rem' }}>Major Events</h3>
@@ -182,7 +182,7 @@ const AboutV2 = () => {
                         <h2 className="text-3xl font-extrabold sm:text-4xl" style={{ fontSize: '1.875rem', lineHeight: '2.25rem', fontWeight: '700' }}>Career Highlights</h2>
                         <p className="mt-4 text-lg dark:text-gray-400" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem'}}>Here are a few of my personal achievements that I'm proud to have been a part of.</p>
                     </div>
-                    <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8" style={{ marginTop: '3rem', display: 'flex', justifyContent: 'space-around'}}>
+                    <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8" style={{ marginTop: '3rem', display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap'}}>
                         <div className="flex" style={{ display: 'flex'}}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
