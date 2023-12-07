@@ -188,8 +188,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>NAS Media Presence</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
+                                <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>NAS Media Presence</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem' , width: '200px'}}>Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -197,8 +197,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>HVAC Sales</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
+                                <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>HVAC Sales</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -206,8 +206,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Tutoring Business</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
+                                <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Tutoring Business</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -215,8 +215,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}> Technical Research Presentations</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
+                                <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}> Technical Research Presentations</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -224,8 +224,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Fullstack Academy Capstone & Wedding</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
+                                <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Fullstack Academy Capstone & Wedding</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -233,8 +233,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>2 World Tours</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
+                                <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>2 World Tours</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
                             </div>
                         </div>
                         {/* TODO: 2 More Career Achievements */}
