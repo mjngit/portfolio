@@ -187,71 +187,71 @@ const AboutV2 = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium">NAS Media Presence</dt>
                                 <dd className="mt-2 dark:text-gray-400">Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
                             </div>
                         </div>
-                        <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                        <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
                                 <dt className="text-lg font-medium">HVAC Sales</dt>
                                 <dd className="mt-2 dark:text-gray-400">Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
                             </div>
                         </div>
-                        <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                        <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
                                 <dt className="text-lg font-medium">Tutoring Business</dt>
                                 <dd className="mt-2 dark:text-gray-400">Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
                             </div>
                         </div>
-                        <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                        <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
                                 <dt className="text-lg font-medium"> Technical Research Presentations</dt>
                                 <dd className="mt-2 dark:text-gray-400">Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
                             </div>
                         </div>
-                        <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                        <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
                                 <dt className="text-lg font-medium">Fullstack Academy Capstone & Wedding</dt>
                                 <dd className="mt-2 dark:text-gray-400">Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
                             </div>
                         </div>
-                        <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                        <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
                                 <dt className="text-lg font-medium">2 World Tours</dt>
                                 <dd className="mt-2 dark:text-gray-400">Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
                             </div>
                         </div>
                         {/* TODO: 2 More Career Achievements */}
-                        {/* <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                        {/* <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
                                 <dt className="text-lg font-medium">Cras vel bibendum tellus</dt>
                                 <dd className="mt-2 dark:text-gray-400">Curabitur molestie neque ac massa pulvinar, nec sollicitudin nunc consequat. Donec mattis orci eros, vitae porttitor risus pretium eget.</dd>
                             </div>
                         </div>
-                        <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                        <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3">
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
                                 <dt className="text-lg font-medium">Dignissim magna</dt>
                                 <dd className="mt-2 dark:text-gray-400">Cras ac lectus erat. Curabitur condimentum luctus nisi, non lacinia ipsum.</dd>
                             </div>
