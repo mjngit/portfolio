@@ -74,13 +74,13 @@ const AboutV2 = () => {
         <section className="dark:bg-gray-800 dark:text-gray-100">
             <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem'}}>
                 <div className="grid gap-4 mx-4 sm:grid-cols-12" style={{ display: 'grid', gap: '1rem', marginLeft: '1rem', marginRight: '1rem'}}>
-                    <div className="col-span-12 sm:col-span-3" style={{ }}>
-                        <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400">
-                            <h3 className="text-3xl font-semibold">Major Events</h3>
-                            <span className="text-sm font-bold tracki uppercase dark:text-gray-400">Key Moments & Achievements</span>
+                    <div className="col-span-12 sm:col-span-3" style={{ gridTemplateColumns: '350px 350px 350px' }}>
+                        <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400" style={{textAlign: 'center', marginBottom: '3.5rem', }}>
+                            <h3 className="text-3xl font-semibold" style={{ fontSize: '1.875rem', lineHeight:'2.25rem' }}>Major Events</h3>
+                            <span className="text-sm font-bold tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight:'1.25rem' }}>Key Moments & Achievements</span>
                         </div>
                     </div>
-                    <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
+                    <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '1.5rem', paddingBottom: '1.5rem'}}>
                         <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:dark:bg-gray-700 before:bg-gray-700">
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
                                 <h3 className="text-xl font-semibold tracki">Elon University</h3>
@@ -188,8 +188,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium">NAS Media Presence</dt>
-                                <dd className="mt-2 dark:text-gray-400">Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
+                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>NAS Media Presence</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -197,8 +197,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium">HVAC Sales</dt>
-                                <dd className="mt-2 dark:text-gray-400">Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
+                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>HVAC Sales</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -206,8 +206,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium">Tutoring Business</dt>
-                                <dd className="mt-2 dark:text-gray-400">Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
+                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Tutoring Business</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -215,8 +215,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium"> Technical Research Presentations</dt>
-                                <dd className="mt-2 dark:text-gray-400">Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
+                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}> Technical Research Presentations</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -224,8 +224,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium">Fullstack Academy Capstone & Wedding</dt>
-                                <dd className="mt-2 dark:text-gray-400">Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
+                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Fullstack Academy Capstone & Wedding</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -233,8 +233,8 @@ const AboutV2 = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
-                                <dt className="text-lg font-medium">2 World Tours</dt>
-                                <dd className="mt-2 dark:text-gray-400">Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
+                                <dt className="text-lg font-medium" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>2 World Tours</dt>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem'}}>Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
                             </div>
                         </div>
                         {/* TODO: 2 More Career Achievements */}
@@ -264,46 +264,46 @@ const AboutV2 = () => {
         <h2 className="mb-8 text-4xl font-bold leadi text-center" style={{ marginBottom: '1rem', fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600', textAlign: 'center' }}>Other Hobbies</h2>
         <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', gap: '.75rem', gridTemplateColumns: '300px 300px 300px'}}>
             <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400" style={{ width: '1.25rem', height: '1.25rem', fill: 'currentColor'}}>
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Painting</span>
             </li>
             <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400" style={{ width: '1.25rem', height: '1.25rem', fill: 'currentColor'}}>
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Playing the drums </span>
             </li>
             <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400" style={{ width: '1.25rem', height: '1.25rem', fill: 'currentColor'}}>
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Hiking</span>
             </li>
             <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400" style={{ width: '1.25rem', height: '1.25rem', fill: 'currentColor'}}>
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Travel</span>
             </li>
             <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400" style={{ width: '1.25rem', height: '1.25rem', fill: 'currentColor'}}>
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Sports</span>
             </li>
             <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400" style={{ width: '1.25rem', height: '1.25rem', fill: 'currentColor'}}>
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
-                <span>Art </span>
+                <span>Art</span>
             </li>
         </ul>
     </div>
