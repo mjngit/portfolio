@@ -75,6 +75,7 @@ const CapRegister = ()=> {
           </form>
         </div>
       </div>
+      <div style={{ paddingTop: '100px'}}></div>
     <FooterNav/>
     </>
   );

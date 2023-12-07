@@ -183,13 +183,12 @@ function HomeV2() {
             <section>
                 <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12" style={{ width: '72rem', padding: '1rem', textDecoration: 'none' }}>
                     <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{ display: 'block', width: '24rem', gap: '.75rem', textDecoration: 'none' }}>
-                        <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '16rem'   }} />
-                        <div className="p-6 space-y-2 lg:col-span-5" style={{ padding: '1.5rem' }}>
-                            <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>Capstone: C-Trade</h3>
-                            <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>June 20, 2023</span>
-                            
-                            <p>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
-                        </div>
+                        <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/capstone-thumbnail.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
+                            <div className="p-6 space-y-2 lg:col-span-5" style={{ padding: '1.5rem' }}>
+                                <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>Capstone: C-Trade</h3>
+                                <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>June 20, 2023</span>
+                                <p>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
+                            </div>
                     </a>
                     <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', textDecoration: 'none', color: 'lightblue' }}>
                         <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ width: '24rem' }}>
@@ -217,12 +216,12 @@ function HomeV2() {
                             </div>
                         </a>
                         <a rel="noopener noreferrer" href="#/stackathon/trip" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900" style={{ maxWidth: '24rem' }}>
-                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/capstone-thumbnail.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
-                            <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
-                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>AI Trip Planner</h3>
-                                <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>May 15, 2023</span>
-                                <p>Plan Your Next Trip in StAIle</p>
-                            </div>
+                            <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '16rem'   }} />
+                                <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
+                                    <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>AI Trip Planner</h3>
+                                    <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>May 15, 2023</span>
+                                    <p>Plan Your Next Trip in StAIle</p>
+                                </div>
                         </a>
                         <a rel="noopener noreferrer" href="#/portfolio/happyNotes" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900" style={{ maxWidth: '24rem' }}>
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/happynotegrab.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
@@ -231,6 +230,7 @@ function HomeV2() {
                                 <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>Nov 15, 2023</span>
                                 <p>This is a place to spread happiness by sharing nice experiences with others and to appreciate joyful times</p>
                             </div>
+                            
                         </a>  
                     </div>
                     
