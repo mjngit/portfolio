@@ -36,9 +36,9 @@ const AboutV2 = () => {
     <div className="container mx-auto space-y-16" style={{ paddingTop: '1rem', paddingBottom: '1rem'}}>
 				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gap: '.75rem', textAlign: 'center', gridTemplateColumns: '30rem 40rem',  }}>
 					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '.75rem', borderRadius: '.5rem', backgroundColor: 'darkblue'}}>
-						<span className="block mb-2 dark:text-lime-400" style={{ color: 'lime'}}>The Life of</span>
+						<span className="block mb-2 dark:text-lime-400" style={{display: 'block', marginTop: '10rem', marginBottom: '1rem', color: 'lime'}}>The Life of</span>
 						<h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold', color: 'lightgray' }}>Michael Norris</h1>
-						<p className="my-8" style={{ marginTop: '1rem', marginBottom: '1rem'}}>
+						<p className="my-8" style={{ marginTop: '2rem', marginBottom: '2rem'}}>
 							<span className="font-medium dark:text-gray-50" style={{ fontWeight: '500', color: 'lightgray' }}>Adventurer, Developer, Project Manager, Sales Engineer</span>
 						</p>
                         <div className='flex items-center justify-center' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
