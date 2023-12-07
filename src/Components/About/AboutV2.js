@@ -74,60 +74,60 @@ const AboutV2 = () => {
         <section className="dark:bg-gray-800 dark:text-gray-100">
             <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem'}}>
                 <div className="grid gap-4 mx-4 sm:grid-cols-12" style={{ display: 'grid', gap: '1rem', marginLeft: '1rem', marginRight: '1rem'}}>
-                    <div className="col-span-12 sm:col-span-3" style={{ gridTemplateColumns: '350px 350px 350px' }}>
+                    <div className="col-span-12 sm:col-span-3" style={{ gridTemplateColumns: '250px 750px' }}>
                         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400" style={{textAlign: 'center', marginBottom: '3.5rem', }}>
                             <h3 className="text-3xl font-semibold" style={{ fontSize: '1.875rem', lineHeight:'2.25rem' }}>Major Events</h3>
                             <span className="text-sm font-bold tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight:'1.25rem' }}>Key Moments & Achievements</span>
                         </div>
                     </div>
                     <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '1.5rem', paddingBottom: '1.5rem'}}>
-                        <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:dark:bg-gray-700 before:bg-gray-700">
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">Elon University</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">January 2010</time>
-                                <p className="mt-3">Was chosen to be an Organic Chemistry Teaching Assistant where I led office hours and lab, graded assignments, and mentored students.</p>
-                                <p className="mt-3">This led me to begin my undergraduate research thesis in computational chemistry, I was able to hone my love of data analytics by studying the age old relationship between resonance vs. inductive effects on hydrogen bonding using computational models to analyze complex data.</p>
+                        <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:dark:bg-gray-700 before:bg-gray-700" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem'}}>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Elon University</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>January 2010</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Was chosen to be an Organic Chemistry Teaching Assistant where I led office hours and lab, graded assignments, and mentored students.</p>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>This led me to begin my undergraduate research thesis in computational chemistry, I was able to hone my love of data analytics by studying the age old relationship between resonance vs. inductive effects on hydrogen bonding using computational models to analyze complex data.</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">Boston Children's Hospital</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">January 2014</time>
-                                <p className="mt-3">Assisted research in the pain department for a new anesthetic hoping to alleviate nausea rates during longer surgeries</p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Boston Children's Hospital</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>January 2014</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Assisted research in the pain department for a new anesthetic hoping to alleviate nausea rates during longer surgeries</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">World Tour #1</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">January 2017</time>
-                                <p className="mt-3">Planned and executed a 10 month solo trip around the world (India to Southeast Asia to Australia to New Zealand to Chile) on a tight budget</p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>World Tour #1</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>January 2017</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Planned and executed a 10 month solo trip around the world (India to Southeast Asia to Australia to New Zealand to Chile) on a tight budget</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">Northeast Air Solutions</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">July 2018</time>
-                                <p className="mt-3">Started as a Sales Engineer for a manufacturer's representative in the HVAC industry in Boston. Sold many different technical products and helped mechanical engineers and sheetmetal contractors complete construction projects. Gave presentations to engineers on innovative technologies to develop new business and built relationships with existing business accounts as well.   </p>
-                                <p className="mt-3">Promoted to Head of Media and Marketing where along with keeping up my existing accounts and projects, I was in charge of creating the website and online presence of the company and attending conferences and trade shows as the representative of the company.</p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Northeast Air Solutions</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>July 2018</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Started as a Sales Engineer for a manufacturer's representative in the HVAC industry in Boston. Sold many different technical products and helped mechanical engineers and sheetmetal contractors complete construction projects. Gave presentations to engineers on innovative technologies to develop new business and built relationships with existing business accounts as well.   </p>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Promoted to Head of Media and Marketing where along with keeping up my existing accounts and projects, I was in charge of creating the website and online presence of the company and attending conferences and trade shows as the representative of the company.</p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">ModernGrid</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">April 2022</time>
-                                <p className="mt-3">Developed new business as the sole BDR for the team where I also assisted in building out their sales pipeline and onboarding materials </p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>ModernGrid</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>April 2022</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Developed new business as the sole BDR for the team where I also assisted in building out their sales pipeline and onboarding materials </p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">Fullstack Academy</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">November 2022</time>
-                                <p className="mt-3">Began working towards Fullstack Academy's Software Engineering Bootcamp Certification, building apps with React, Redux, Express, Node, and PostgreSQL. </p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Fullstack Academy</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>November 2022</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Began working towards Fullstack Academy's Software Engineering Bootcamp Certification, building apps with React, Redux, Express, Node, and PostgreSQL. </p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">Script for Java</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">April 2023</time>
-                                <p className="mt-3">Worked with 3 other developers to create an e-commerce website for a fictional coffee shop <Link to="/java/home">Script For Java</Link>  </p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Script for Java</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>April 2023</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Worked with 3 other developers to create an e-commerce website for a fictional coffee shop <Link to="/java/home">Script For Java</Link>  </p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">Stackathon</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">May 2023</time>
-                                <p className="mt-3">Solo Project: I created an app using a few different APIs including Open AI's Chat GPT so you can get AI generated birthday present ideas and personalized trip plans, as well as up to date statistics about the UFC fighters of the week  <Link to="/portfolio/capstone">Script For Java</Link>  </p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Stackathon</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>May 2023</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Solo Project: I created an app using a few different APIs including Open AI's Chat GPT so you can get AI generated birthday present ideas and personalized trip plans, as well as up to date statistics about the UFC fighters of the week  <Link to="/portfolio/capstone">Script For Java</Link>  </p>
                             </div>
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400">
-                                <h3 className="text-xl font-semibold tracki">C Trade, Graduation & Wedding</h3>
-                                <time className="text-xs tracki uppercase dark:text-gray-400">June 2023</time>
-                                <p className="mt-3">Led a team of 3 developers to create a stock research and trading community <Link to="/portfolio/capstone">app.</Link> Graduated from Fullstack Academy's Software Engineering Program and got married in the same week.  </p>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>C Trade, Graduation & Wedding</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>June 2023</time>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Led a team of 3 developers to create a stock research and trading community <Link to="/portfolio/capstone">app.</Link> Graduated from Fullstack Academy's Software Engineering Program and got married in the same week.  </p>
                             </div>
                             
                         </div>
@@ -183,13 +183,13 @@ const AboutV2 = () => {
                         <p className="mt-4 text-lg dark:text-gray-400" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem'}}>Here are a few of my personal achievements that I'm proud to have been a part of.</p>
                     </div>
                     <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8" style={{ marginTop: '3rem'}}>
-                        <div className="flex" style={{ display: 'flex'}}>
+                        <div className="flex" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>NAS Media Presence</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem' , width: '200px'}}>Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem' , width: '325px'}}>Connecting with key stakeholders to design and build the company's online presence, most notably the company website with interactive product catalog.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -198,7 +198,7 @@ const AboutV2 = () => {
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>HVAC Sales</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '325px'}}>Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -207,7 +207,7 @@ const AboutV2 = () => {
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Tutoring Business</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '325px'}}>Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -216,7 +216,7 @@ const AboutV2 = () => {
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}> Technical Research Presentations</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '325px'}}>Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -225,7 +225,7 @@ const AboutV2 = () => {
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>Fullstack Academy Capstone & Wedding</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '325px'}}>Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
                             </div>
                         </div>
                         <div className="flex" style={{ display: 'flex'}}>
@@ -234,7 +234,7 @@ const AboutV2 = () => {
                             </svg>
                             <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium" style={{ fontSize: '1.125rem' ,lineHeight:' 1.75rem', fontWeight: '500'}}>2 World Tours</dt>
-                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '200px'}}>Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
+                                <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '325px'}}>Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
                             </div>
                         </div>
                         {/* TODO: 2 More Career Achievements */}
