@@ -35,7 +35,7 @@ const AboutV2 = () => {
 
     <div className="container mx-auto space-y-16" style={{ paddingTop: '1rem', paddingBottom: '1rem'}}>
 				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gap: '.75rem', textAlign: 'center', gridTemplateColumns: '30rem 40rem',  }}>
-					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '.75rem', borderRadius: '.5rem', backgroundColor: 'darkgray'}}>
+					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '.75rem', borderRadius: '.5rem', backgroundColor: 'darkblue'}}>
 						<span className="block mb-2 dark:text-lime-400" style={{ color: 'lime'}}>The Life of</span>
 						<h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold', }}>Michael Norris</h1>
 						<p className="my-8" style={{ marginTop: '1rem', marginBottom: '1rem'}}>
@@ -45,7 +45,7 @@ const AboutV2 = () => {
                             <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime'}}>
                                 <GitHubIcon />
                             </a>
-                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime', paddingLeft: '15px', paddingRight: '15px'}}>
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime', paddingLeft: '35px', paddingRight: '35px'}}>
                                 <LinkedInIcon />
                             </a>
                             <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime'}}>
@@ -55,19 +55,19 @@ const AboutV2 = () => {
 					</div>
 					
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image" src="static/images/capri-boat.jpeg" />
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/capri-boat.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/chiang-mai.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/montenegro.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lake-bled.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/rafting.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/wedding.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/moto.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/surfer.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/waterfall.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/waterfallnz.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/ice.jpeg" style={{ className: 'hidden'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/auspillars.jpeg"style={{ className: 'hidden'}} />
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lombok.jpeg" style={{ className: 'hidden'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/capri-boat.jpeg" style={{ classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/chiang-mai.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/montenegro.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lake-bled.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/rafting.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/wedding.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/moto.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/surfer.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/waterfall.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/waterfallnz.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/ice.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/auspillars.jpeg"style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}} />
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lombok.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                 </section>
         </div>
 
