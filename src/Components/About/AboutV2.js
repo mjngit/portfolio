@@ -33,22 +33,22 @@ const AboutV2 = () => {
     <div>
     <PortfolioNav />
 
-    <div className="container mx-auto space-y-16">
-				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5">
-					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900">
-						<span className="block mb-2 dark:text-lime-400">The Life of</span>
-						<h1 className="text-5xl font-extrabold dark:text-gray-50">Michael Norris</h1>
-						<p className="my-8">
-							<span className="font-medium dark:text-gray-50">Adventurer, Developer, Project Manager, Sales Engineer</span>
+    <div className="container mx-auto space-y-16" style={{ paddingTop: '1rem', paddingBottom: '1rem'}}>
+				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gap: '.75rem', textAlign: 'center', gridTemplateColumns: 'repeat(5, minmax(0, 1fr))',  }}>
+					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '.75rem', borderRadius: '.5rem', backgroundColor: 'darkgray'}}>
+						<span className="block mb-2 dark:text-lime-400" style={{ color: 'lime'}}>The Life of</span>
+						<h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold', }}>Michael Norris</h1>
+						<p className="my-8" style={{ marginTop: '1rem', marginBottom: '1rem'}}>
+							<span className="font-medium dark:text-gray-50" style={{ fontWeight: '500' }}>Adventurer, Developer, Project Manager, Sales Engineer</span>
 						</p>
-                        <div className='flex items-center justify-center'>
-                        <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
+                        <div className='flex items-center justify-center' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime'}}>
                                 <GitHubIcon />
                             </a>
-                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime'}}>
                                 <LinkedInIcon />
                             </a>
-                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900">
+                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime'}}>
                                 <GoogleIcon />  
                             </button>
                         </div>
