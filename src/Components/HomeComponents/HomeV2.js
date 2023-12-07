@@ -181,8 +181,8 @@ function HomeV2() {
                 </div>
             </section>
             <section>
-                <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12" style={{ width: '72rem', padding: '1rem' }}>
-                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{ display: 'block', maxWidth: '24rem', gap: '.75rem', textDecoration: 'none' }}>
+                <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12" style={{ width: '72rem', padding: '1rem', textDecoration: 'none' }}>
+                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{ display: 'block', width: '24rem', gap: '.75rem', textDecoration: 'none' }}>
                         <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '16rem'   }} />
                         <div className="p-6 space-y-2 lg:col-span-5" style={{ padding: '1.5rem' }}>
                             <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>Capstone: C-Trade</h3>
@@ -336,7 +336,7 @@ function HomeV2() {
                         </li>
                     </ul>
                     <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingTop: '1.5rem', alignItems: 'flex-end' }} >
-                        <div className="flex justify-center space-x-4" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', paddingLeft: '2rem' }}>
+                        <div className="flex justify-center space-x-4" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'center', paddingLeft: '2rem' }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" >
                                 <InstagramIcon />
                             </a>
