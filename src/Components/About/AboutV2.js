@@ -196,7 +196,7 @@ const AboutV2 = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium">HVAC Sales</dt>
                                 <dd className="mt-2 dark:text-gray-400">Selling HVAC products and giving presentations to Engineers about emerging and innovative technologies. Facilitating the outfitting of HVAC product for high-end construction projects all throughout Boston.</dd>
                             </div>
@@ -205,7 +205,7 @@ const AboutV2 = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium">Tutoring Business</dt>
                                 <dd className="mt-2 dark:text-gray-400">Tutoring 50+ students toward academic success in the SAT, Math, English, and Science. My students have achieved a 90+% acceptance rate into the colleges of their choice.</dd>
                             </div>
@@ -214,7 +214,7 @@ const AboutV2 = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium"> Technical Research Presentations</dt>
                                 <dd className="mt-2 dark:text-gray-400">Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
                             </div>
@@ -223,7 +223,7 @@ const AboutV2 = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium">Fullstack Academy Capstone & Wedding</dt>
                                 <dd className="mt-2 dark:text-gray-400">Leading a small team of software developers to finish our capstone project from Fullstack Academy and present a few days before my wedding.</dd>
                             </div>
@@ -232,7 +232,7 @@ const AboutV2 = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>>
+                            <div className="ml-3" style={{marginLeft: '0.75rem'}}>
                                 <dt className="text-lg font-medium">2 World Tours</dt>
                                 <dd className="mt-2 dark:text-gray-400">Creating and executing the itinerary, budget, and logistics of 2 trips around the world, once solo and another with my wife.</dd>
                             </div>
@@ -262,7 +262,7 @@ const AboutV2 = () => {
 
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 dark:bg-gray-800 dark:text-gray-100" style={{paddingLeft: '.25rem', paddingRight: '.25rem', paddingTop: '2rem', paddingBottom: '2rem', marginLeft: 'auto', marginRight: 'auto'}}>
         <h2 className="mb-8 text-4xl font-bold leadi text-center" style={{ marginBottom: '1rem', fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600', textAlign: 'center' }}>Other Hobbies</h2>
-        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', gap: '.75rem', gridTemplateColumns: '200px 550px'}}>
+        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', gap: '.75rem', gridTemplateColumns: '300px 300px 300px'}}>
             <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
