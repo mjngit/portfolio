@@ -320,7 +320,7 @@ function HomeV2() {
             </div> */}
             <footer>
                 <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row" style={{ display: 'flex', flexDirection: 'row', padding: '1rem', justifyContent: 'space-around'}}>
-                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem', alignSelf: 'center', textAlign: 'center', display: 'flex', paddingLeft: '2rem' }}>
+                    <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem', alignSelf: 'center', textAlign: 'center', display: 'flex', paddingLeft: '2rem', justifyContent: 'space-around' }}>
                         {/* <li className='dark:text-lime-400 dark:border-lime-400' href="#/java/about">About</li>
                         <li href="#/java/about">Blog</li> 
                         <li className='dark:text-lime-400 dark:border-lime-400' href="#/portfolio/home">Projects</li>
@@ -336,7 +336,7 @@ function HomeV2() {
                         </li>
                     </ul>
                     <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'end', paddingTop: '1.5rem', alignItems: 'flex-end' }} >
-                        <div className="flex justify-center space-x-4" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end', paddingLeft: '2rem' }}>
+                        <div className="flex justify-center space-x-4" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', paddingLeft: '2rem' }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ paddingLeft: '8px'}}>
                                 <InstagramIcon />
                             </a>
