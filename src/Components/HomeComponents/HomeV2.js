@@ -191,8 +191,8 @@ function HomeV2() {
                             <p>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
                         </div>
                     </a>
-                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gap: '2rem', gridTemplateColumns: '450px, 450px' }}>
-                        <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ width: '350px' }}>
+                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', gap: '3rem', gridTemplateColumns: '450px, 450px' }}>
+                        <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ width: '450px' }}>
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/fighter-stats.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }} />
                             <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>UFC Stat Tool</h3>
@@ -335,7 +335,7 @@ function HomeV2() {
                             <a rel="noopener noreferrer" href="#/java/about/contact" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">Contact</a>
                         </li>
                     </ul>
-                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingTop: '1.5rem' }} >
+                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingTop: '1.5rem', alignSelf: 'end' }} >
                         <div className="flex justify-center space-x-4" style={{ display: 'flex', justifyContent: 'flex-end', paddingLeft: '2rem' }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ paddingLeft: '8px'}}>
                                 <InstagramIcon />
@@ -356,10 +356,10 @@ function HomeV2() {
                                 <GitHubIcon />                               
                             </a>
 
-                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ paddingLeft: '2rem'}}>
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ paddingLeft: '8px'}}>
                                 <LinkedInIcon />
                             </a>
-                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ paddingLeft: '2rem'}}>
+                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ paddingLeft: '8px'}}>
                                 <GoogleIcon />  
                             </button>
                         </div>
