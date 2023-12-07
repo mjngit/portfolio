@@ -37,18 +37,18 @@ const AboutV2 = () => {
 				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gap: '.75rem', textAlign: 'center', gridTemplateColumns: '30rem 40rem',  }}>
 					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '.75rem', borderRadius: '.5rem', backgroundColor: 'darkblue'}}>
 						<span className="block mb-2 dark:text-lime-400" style={{ color: 'lime'}}>The Life of</span>
-						<h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold', }}>Michael Norris</h1>
+						<h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold', color: 'lightgray' }}>Michael Norris</h1>
 						<p className="my-8" style={{ marginTop: '1rem', marginBottom: '1rem'}}>
-							<span className="font-medium dark:text-gray-50" style={{ fontWeight: '500' }}>Adventurer, Developer, Project Manager, Sales Engineer</span>
+							<span className="font-medium dark:text-gray-50" style={{ fontWeight: '500', color: 'lightgray' }}>Adventurer, Developer, Project Manager, Sales Engineer</span>
 						</p>
                         <div className='flex items-center justify-center' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime'}}>
+                            <a rel="noopener noreferrer" href="https://github.com/mjngit" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime' , paddingLeft: '15px', paddingRight: '15px'}}>
                                 <GitHubIcon />
                             </a>
-                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime', paddingLeft: '35px', paddingRight: '35px'}}>
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mike-j-norris/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime', paddingLeft: '15px', paddingRight: '15px'}}>
                                 <LinkedInIcon />
                             </a>
-                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime'}}>
+                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '1rem', height: '1rem', borderRadius: '.5rem', backgroundColor: 'lime' , paddingLeft: '15px', paddingRight: '15px'}}>
                                 <GoogleIcon />  
                             </button>
                         </div>
@@ -72,7 +72,7 @@ const AboutV2 = () => {
         </div>
 
         <section className="dark:bg-gray-800 dark:text-gray-100">
-            <div className="container max-w-5xl px-4 py-12 mx-auto">
+            <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem'}}>
                 <div className="grid gap-4 mx-4 sm:grid-cols-12">
                     <div className="col-span-12 sm:col-span-3">
                         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400">
