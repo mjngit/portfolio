@@ -71,7 +71,7 @@ function HomeV2() {
             <Signature />
             <section>
                 <div className="container flex flex-col items-center px-4 py-8 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl" style={{ display: 'flex', flexDirection: 'column', paddingLeft: '4px', paddingRight: '4px', paddingTop: '8px', paddingBottom: '8px', textAlign: 'center' }}>
-                    <h1 className="text-4xl font-bold leadi sm:text-5xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }} >
+                    <h1 className="text-4xl font-bold leadi sm:text-5xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold', paddingTop: '2rem' }} >
                         <div>Michael Norris </div>
                         <span className="dark:text-lime-400" style={{ color: 'lime'}}>Developer </span>
                         <div>Sales Engineer</div>
@@ -191,7 +191,7 @@ function HomeV2() {
                             <p>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
                         </div>
                     </a>
-                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', gap: '3rem', gridTemplateColumns: '450px, 450px' }}>
+                    <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
                         <a rel="noopener noreferrer" href="#/stackathon/fighters" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ width: '450px' }}>
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/fighter-stats.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }} />
                             <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
@@ -319,7 +319,7 @@ function HomeV2() {
                 </form>
             </div> */}
             <footer>
-                <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row" style={{ display: 'flex', flexDirection: 'row', padding: '1rem' }}>
+                <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row" style={{ display: 'flex', flexDirection: 'row', padding: '1rem', justifyContent: 'space-around'}}>
                     <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem', alignSelf: 'center', textAlign: 'center', display: 'flex', paddingLeft: '2rem' }}>
                         {/* <li className='dark:text-lime-400 dark:border-lime-400' href="#/java/about">About</li>
                         <li href="#/java/about">Blog</li> 
@@ -335,8 +335,8 @@ function HomeV2() {
                             <a rel="noopener noreferrer" href="#/java/about/contact" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">Contact</a>
                         </li>
                     </ul>
-                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingTop: '1.5rem', alignSelf: 'end' }} >
-                        <div className="flex justify-center space-x-4" style={{ display: 'flex', justifyContent: 'flex-end', paddingLeft: '2rem' }}>
+                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'end', paddingTop: '1.5rem', alignItems: 'flex-end' }} >
+                        <div className="flex justify-center space-x-4" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end', paddingLeft: '2rem' }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ paddingLeft: '8px'}}>
                                 <InstagramIcon />
                             </a>
