@@ -177,14 +177,14 @@ const AboutV2 = () => {
         </Typography> */}
 
             <div className="dark:bg-gray-800 dark:text-gray-100">
-                <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl font-extrabold sm:text-4xl">Career Highlights</h2>
-                        <p className="mt-4 text-lg dark:text-gray-400">Here are a few of my personal achievements that I'm proud to have been a part of.</p>
+                <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8" style={{ paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem'}}>
+                    <div className="max-w-3xl mx-auto text-center" style={{ maxWidth: '48rem', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
+                        <h2 className="text-3xl font-extrabold sm:text-4xl" style={{ fontSize: '1.875rem', lineHeight: '2.25rem', fontWeight: '700' }}>Career Highlights</h2>
+                        <p className="mt-4 text-lg dark:text-gray-400" style={{ marginTop: '1rem', fontSize: '1.125rem' ,lineHeight:' 1.75rem'}}>Here are a few of my personal achievements that I'm proud to have been a part of.</p>
                     </div>
-                    <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-                        <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400">
+                    <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8" style={{ marginTop: '3rem'}}>
+                        <div className="flex" style={{ display: 'flex'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <div className="ml-3">
@@ -260,45 +260,45 @@ const AboutV2 = () => {
                 </div>
             </div>
 
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 dark:bg-gray-800 dark:text-gray-100">
-        <h2 className="mb-8 text-4xl font-bold leadi text-center">Other Hobbies</h2>
-        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-            <li className="flex items-center space-x-2">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 dark:bg-gray-800 dark:text-gray-100" style={{paddingLeft: '.25rem', paddingRight: '.25rem', paddingTop: '2rem', paddingBottom: '2rem', marginLeft: 'auto', marginRight: 'auto'}}>
+        <h2 className="mb-8 text-4xl font-bold leadi text-center" style={{ marginBottom: '1rem', fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600', textAlign: 'center' }}>Other Hobbies</h2>
+        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3" style={{ display: 'grid', gap: '.75rem', gridTemplateColumns: '200px 550px'}}>
+            <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Painting</span>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Playing the drums </span>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Hiking</span>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Travel</span>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
                 <span>Sports</span>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2" style={{ display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current dark:text-lime-400">
                     <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                     <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
