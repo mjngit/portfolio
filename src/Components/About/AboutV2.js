@@ -113,19 +113,19 @@ const Carousel = () => {
         swipeOptions={{ continuous: false }}
         ref={el => (reactSwipeEl = el)}
       >
-        <div><img src="static/images/capri-boat.jpeg"/></div>          
-        <div> <img  src="static/images/chiang-mai.jpeg" /></div>
-        <div> <img  src="static/images/montenegro.jpeg" /></div>
-        <div> <img  src="static/images/lake-bled.jpeg" /></div>
-        <div> <img  src="static/images/rafting.jpeg" /></div>
-        {/* <div> <img  src="static/images/wedding.jpeg" /></div> */}
-        {/* <div> <img  src="static/images/moto.jpeg" /></div> */}
-        <div> <img  src="static/images/surfer.jpeg" /></div>
-        {/* <div> <img  src="static/images/waterfall.jpeg" /></div>
-        <div> <img  src="static/images/waterfallnz.jpeg" /></div> */}
-        <div> <img  src="static/images/ice.jpeg" /></div>
-        {/* <div> <img  src="static/images/auspillars.jpeg" /></div> */}
-        <div> <img  src="static/images/lombok.jpeg" /></div>
+        <div><img src="static/images/capri-boat.jpeg" style={{height: '30rem', width: '45rem'}}/></div>          
+        <div> <img  src="static/images/chiang-mai.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
+        <div> <img  src="static/images/montenegro.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
+        <div> <img  src="static/images/lake-bled.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
+        <div> <img  src="static/images/rafting.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
+        {/* <div> <img  src="static/images/wedding.jpeg" style={{height: '30rem', width: '45rem'}} /></div> */}
+        {/* <div> <img  src="static/images/moto.jpeg" style={{height: '30rem', width: '45rem'}} /></div> */}
+        <div> <img  src="static/images/surfer.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
+        {/* <div> <img  src="static/images/waterfall.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
+        <div> <img  src="static/images/waterfallnz.jpeg" style={{height: '30rem', width: '45rem'}} /></div> */}
+        <div> <img  src="static/images/ice.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
+        {/* <div> <img  src="static/images/auspillars.jpeg" style={{height: '30rem', width: '45rem'}} /></div> */}
+        <div> <img  src="static/images/lombok.jpeg" style={{height: '30rem', width: '45rem'}} /></div>
       </ReactSwipe>
        
         {/* <button onClick={() => reactSwipeEl.prev()}>Previous</button>
