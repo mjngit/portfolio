@@ -73,7 +73,7 @@ const AboutV2 = () => {
 
         <section className="dark:bg-gray-800 dark:text-gray-100">
             <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem', }}>
-                <div className="grid gap-4 mx-4 sm:grid-cols-12" style={{ display: 'grid', gap: '1rem', marginLeft: '1rem', marginRight: '1rem', gridTemplateColumns: '200px 700px'}}>
+                <div className="grid gap-4 mx-4 sm:grid-cols-12" style={{ display: 'grid', gap: '1rem', marginLeft: '1rem', marginRight: '1rem', gridTemplateColumns: '400px 1000px'}}>
                     <div className="col-span-12 sm:col-span-3" style={{ gridTemplateColumns: '250px 750px' }}>
                         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400" style={{textAlign: 'center', marginBottom: '3.5rem', }}>
                             <h3 className="text-3xl font-semibold" style={{ fontSize: '1.875rem', lineHeight:'2.25rem' }}>Major Events</h3>
