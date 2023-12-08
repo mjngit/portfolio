@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import GoogleIcon from '@mui/icons-material/Google';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 
 
@@ -24,8 +25,79 @@ const AboutV2 = () => {
         }
         carouselImages[currentImageIndex].classList.remove('hidden')
         
-    }, 3500);   
+    }, 3500);  
+    
+    const sliderRef = useRef(null);
+    const scrollAmount = 100;
 
+    const images = [
+        {
+          id: 1,
+          url: "static/images/capri-boat.jpeg"
+        },
+        {
+          id: 2,
+          url: "static/images/capri-boat.jpeg"
+        },
+        {
+          id: 3,
+          url: "static/images/chiang-mai.jpeg"
+        },
+        {
+          id: 4,
+          url: "static/images/montenegro.jpeg"
+        },
+        {
+          id: 5,
+          url: "static/images/lake-bled"
+        },
+        {
+          id: 6,
+          url:
+            "static/images/rafting.jpeg"
+        },
+        {
+          id: 7,
+          url:
+            "static/images/wedding.jpeg"
+        },
+        {
+          id: 8,
+          url:
+            "static/images/moto.jpeg"
+        },
+        {
+          id: 9,
+          url:
+            "static/images/surfer.jpeg"
+        },
+        {
+          id: 10,
+          url:
+            "static/images/waterfall.jpeg"
+        },
+        {
+          id: 11,
+          url:
+            "static/images/waterfallnz.jpeg"
+        },
+        {
+          id: 12,
+          url:
+            "static/images/ice.jpeg"
+        },
+        {
+          id: 13,
+          url:
+            "static/images/auspillars.jpeg"
+        },
+        {
+          id: 14,
+          url:
+            "static/images/lombok.jpeg"
+        }
+      ];
+     
   return (
 
    
@@ -54,7 +126,7 @@ const AboutV2 = () => {
                         </div>
 					</div>
 					
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image" src="static/images/capri-boat.jpeg" style={{ classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    {/* <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image" src="static/images/capri-boat.jpeg" style={{ classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/capri-boat.jpeg" style={{ classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/chiang-mai.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/montenegro.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
@@ -67,9 +139,48 @@ const AboutV2 = () => {
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden h-3/4" src="static/images/waterfallnz.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/ice.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/auspillars.jpeg"style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}} />
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lombok.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lombok.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/> */}
+
+                    <div className="imgCarousel">
+                        <button
+                            className="nav-btn"
+                            onClick={() => {
+                            const container = sliderRef.current;
+                            container.scrollLeft -= scrollAmount;
+                            }}
+                        >
+                            <ChevronLeftIcon />
+                        </button>
+                        <div className="images-container" ref={sliderRef}>
+                            {images.map((image) => {
+                            return (
+                                <img
+                                className="image"
+                                alt="sliderImage"
+                                key={image?.id}
+                                src={image?.url}
+                                />
+                            );
+                            })}
+                        </div>
+                        <button
+                            className="nav-btn"
+                            onClick={() => {
+                            const container = sliderRef.current;
+                            container.scrollLeft += scrollAmount;
+                            }}
+                        >
+                            <ChevronRightIcon />
+                        </button>
+                    </div>
+
+
+
+
+
                 </section>
         </div>
+
 
         <section className="dark:bg-gray-800 dark:text-gray-100">
             <div className="container max-w-5xl px-4 py-12 mx-auto" style={{ maxWidth: '64rem', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '4rem', paddingBottom: '4rem', }}>
