@@ -110,32 +110,32 @@ setLoading(false)
                     <form onSubmit={ submit } novalidate="" className="space-y-6" style={{ marginLeft:' 1.5rem', width: '25rem', column: '2'}} >
                         <div>
                             <label for="name" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Age</label>
-                            <input value={ age } onChange={ev => setAge(ev.target.value)} id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem', fontSize: '16'}} />
+                            <input value={ age } onChange={ev => setAge(ev.target.value)} id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '24'}} />
                             {/* <TextField label="Age" variant="outlined" value={ age } onChange={ev => setAge(ev.target.value)} /> */}
                         </div>
                         <div>
                             <label for="minPrice" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Min Price</label>
-                            <input value={ minPrice } onChange={ev => setMinPrice(ev.target.value)} id="minPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem'}} />
+                            <input value={ minPrice } onChange={ev => setMinPrice(ev.target.value)} id="minPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '24'}} />
 
                             <label for="maxPrice" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Max Price</label>
-                            <input value={ maxPrice } onChange={ev => setMaxPrice(ev.target.value)} id="maxPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem'}} />
+                            <input value={ maxPrice } onChange={ev => setMaxPrice(ev.target.value)} id="maxPrice" type="number" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '24'}} />
                             {/* <TextField label="Min Price" variant="outlined" value={ minPrice } onChange={ev => setMinPrice(ev.target.value)} style={{ justifyContent: 'space-between', width: "50%" }}/>
                   
                             <TextField label="Max Price" variant="outlined" value={ maxPrice } onChange={ev => setMaxPrice(ev.target.value)} style={{ justifyContent: 'space-between',  width: "50%" }}/> */}
                         </div>
                         <div>
                             <label for="interest1" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Interest 1</label>
-                            <textarea value={ interest1 } onChange={ev => setInterest1(ev.target.value)} id="interest1" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem'}}></textarea>
+                            <textarea value={ interest1 } onChange={ev => setInterest1(ev.target.value)} id="interest1" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '24'}}></textarea>
                         </div>
                         <div>
                             <label for="interest2" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Interest 2</label>
-                            <textarea value={ interest2 } onChange={ev => setInterest2(ev.target.value)} id="interest2" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem'}}></textarea>
+                            <textarea value={ interest2 } onChange={ev => setInterest2(ev.target.value)} id="interest2" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '24'}}></textarea>
                         </div>
                         <div>
                             <label for="interest3" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Interest 3</label>
-                            <textarea value={ interest3 } onChange={ev => setInterest3(ev.target.value)} id="interest3" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem'}}></textarea>
+                            <textarea value={ interest3 } onChange={ev => setInterest3(ev.target.value)} id="interest3" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '24'}}></textarea>
                         </div>
-                        <button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-lime-400 dark:text-gray-900" style={{ width: '100%', padding: '1rem', borderRadius: '.25rem', fontSize: '0.875rem', lineHeight: '1.25rem', fontWeight: 'bold'}}>Generate Gift Ideas</button>
+                        <button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-lime-400 dark:text-gray-900" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '0.875rem', lineHeight: '1.25rem', fontWeight: 'bold'}}>Generate Gift Ideas</button>
                     </form>
                 </div> 
                     <div style={{ display: 'flex', alignItems: "center", justifyContent: "center" }}>
