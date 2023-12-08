@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Typography } from '@mui/material'
 import SubNavAbout from './SubNavAbout'
 import PortfolioNav from '../PortfolioNav'
@@ -28,7 +28,7 @@ const AboutV2 = () => {
     }, 3500);  
     
     const sliderRef = useRef(null);
-    const scrollAmount = 100;
+    const scrollAmount = 400;
 
     const images = [
         {
@@ -37,7 +37,7 @@ const AboutV2 = () => {
         },
         {
           id: 2,
-          url: "static/images/capri-boat.jpeg"
+          url: "static/images/lombok.jpeg"
         },
         {
           id: 3,
@@ -91,11 +91,6 @@ const AboutV2 = () => {
           url:
             "static/images/auspillars.jpeg"
         },
-        {
-          id: 14,
-          url:
-            "static/images/lombok.jpeg"
-        }
       ];
      
   return (
@@ -106,7 +101,7 @@ const AboutV2 = () => {
     <PortfolioNav />
 
     <div className="container mx-auto space-y-16" style={{ paddingTop: '1rem', paddingBottom: '1rem'}}>
-				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gap: '.75rem', textAlign: 'center', gridTemplateColumns: '30rem 40rem',  }}>
+				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gap: '.75rem', textAlign: 'center', gridTemplateColumns: '30rem 70rem',  }}>
 					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '.75rem', borderRadius: '.5rem', backgroundColor: 'darkblue'}}>
 						<span className="block mb-2 dark:text-lime-400" style={{display: 'block', marginTop: '10rem', marginBottom: '1rem', color: 'lime'}}>The Life of</span>
 						<h1 className="text-5xl font-extrabold dark:text-gray-50" style={{ fontSize: '2.75rem', lineHeight: '3rem', fontWeight: 'bold', color: 'lightgray' }}>Michael Norris</h1>
@@ -127,7 +122,7 @@ const AboutV2 = () => {
 					</div>
 					
                     {/* <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image" src="static/images/capri-boat.jpeg" style={{ classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
-                    <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/capri-boat.jpeg" style={{ classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
+                    
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/chiang-mai.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/montenegro.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lake-bled.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
@@ -141,14 +136,14 @@ const AboutV2 = () => {
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/auspillars.jpeg"style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}} />
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lombok.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/> */}
 
-                    <div className="imgCarousel">
+                    <div className="imgCarousel" style={{ height: '70rem', width: '45rem'}}>
                         <button
                             className="nav-btn"
                             onClick={() => {
                             const container = sliderRef.current;
                             container.scrollLeft -= scrollAmount;
                             }}
-                        >
+                        > 
                             <ChevronLeftIcon />
                         </button>
                         <div className="images-container" ref={sliderRef}>

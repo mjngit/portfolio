@@ -1208,20 +1208,20 @@ tooltip {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  
 }
 
 .images-container {
   display: flex;
-  max-width: 500px;
+  max-width: 70rem;
   overflow: scroll;
   scroll-behavior: smooth;
-  transition: scroll 0.3s ease-in-out;
+  transition: scroll 1s ease-in-out;
 }
 
 .image {
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 700px;
   margin: 5px;
   border-radius: 8px;
 }
@@ -1235,7 +1235,7 @@ tooltip {
   outline: inherit;
   background-color: #c3c3c3;
   border-radius: 6px;
-  height: 200px;
+  height: 500px;
   width: 30px;
   margin: 5px;
 }
