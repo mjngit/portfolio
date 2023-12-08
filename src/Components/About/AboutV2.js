@@ -80,7 +80,7 @@ const AboutV2 = () => {
                             <span className="text-sm font-bold tracki uppercase dark:text-gray-400" style={{width: '200px', fontSize: '0.875rem', lineHeight:'1.25rem' }}>Key Moments & Achievements</span>
                         </div>
                     </div>
-                    <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '1.5rem', paddingBottom: '1.5rem', borderLeft: '5px'}}>
+                    <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem', paddingBottom: '1.5rem', borderLeft: '5px'}}>
                         <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:dark:bg-gray-700 before:bg-gray-700" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem'}}>
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
                                 <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Elon University</h3>
@@ -122,7 +122,7 @@ const AboutV2 = () => {
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
                                 <h3 className="text-xl font-semibold tracki" style={{ marginTop: '1.5rem', fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Stackathon</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>May 2023</time>
-                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Solo Project: I created an app using a few different APIs including Open AI's Chat GPT so you can get AI generated birthday present ideas and personalized trip plans, as well as up to date statistics about the UFC fighters of the week  <Link to="/portfolio/capstone">Script For Java</Link>  </p>
+                                <p className="mt-3" style={{ marginTop: '.75rem'}}>Solo Project: I created an app using a few different APIs including Open AI's Chat GPT so you can get AI generated birthday present ideas and personalized trip plans, as well as up to date statistics about the UFC fighters of the week  <Link to="/stackathon/present">Birthday Present Generator</Link>  </p>
                             </div>
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
                                 <h3 className="text-xl font-semibold tracki" style={{ marginTop: '1.5rem', fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>C Trade, Graduation & Wedding</h3>
@@ -219,7 +219,7 @@ const AboutV2 = () => {
                                 <dd className="mt-2 dark:text-gray-400" style={{ marginTop: '.5rem', width: '325px'}}>Presenting my computational chemistry research thesis at two American Chemical Society conferences.</dd>
                             </div>
                         </div>
-                        <div className="flex" style={{ display: 'flex'}}>
+                        <div className="flex" style={{ display: 'flex', marginTop: '15px'}}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="flex-shrink-0 w-6 h-6 dark:text-lime-400" style={{ flexShrink: '0', width: '1.5rem', height: '1.5rem' }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
