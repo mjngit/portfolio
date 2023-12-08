@@ -1,16 +1,24 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import SubNavAbout from './SubNavAbout'
 import PortfolioNav from '../PortfolioNav'
 import FooterNav from '../FooterNav'
 import { Link } from 'react-router-dom'
+
+import ReactSwipe from 'react-swipe';
+
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+
+// import { Navigation } from 'swiper/modules';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import GoogleIcon from '@mui/icons-material/Google';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
 
 
 const AboutV2 = () => {
@@ -92,6 +100,42 @@ const AboutV2 = () => {
             "static/images/auspillars.jpeg"
         },
       ];
+
+
+ 
+const Carousel = () => {
+  let reactSwipeEl;
+ 
+  return (
+    <div>
+      <ReactSwipe
+        className="carousel"
+        swipeOptions={{ continuous: false }}
+        ref={el => (reactSwipeEl = el)}
+      >
+        <div><img src="static/images/capri-boat.jpeg"/></div>          
+        <div> <img  src="static/images/chiang-mai.jpeg" /></div>
+        <div> <img  src="static/images/montenegro.jpeg" /></div>
+        <div> <img  src="static/images/lake-bled.jpeg" /></div>
+        <div> <img  src="static/images/rafting.jpeg" /></div>
+        {/* <div> <img  src="static/images/wedding.jpeg" /></div> */}
+        {/* <div> <img  src="static/images/moto.jpeg" /></div> */}
+        <div> <img  src="static/images/surfer.jpeg" /></div>
+        {/* <div> <img  src="static/images/waterfall.jpeg" /></div>
+        <div> <img  src="static/images/waterfallnz.jpeg" /></div> */}
+        <div> <img  src="static/images/ice.jpeg" /></div>
+        {/* <div> <img  src="static/images/auspillars.jpeg" /></div> */}
+        <div> <img  src="static/images/lombok.jpeg" /></div>
+      </ReactSwipe>
+       
+        {/* <button onClick={() => reactSwipeEl.prev()}>Previous</button>
+        <button onClick={() => reactSwipeEl.next()}>Next</button> */}
+
+        <Button onClick={() => reactSwipeEl.prev()}>Previous</Button>
+        <Button onClick={() => reactSwipeEl.next()}>Next</Button>
+    </div>
+  );
+};
      
   return (
 
@@ -135,7 +179,7 @@ const AboutV2 = () => {
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/ice.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/>
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/auspillars.jpeg"style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}} />
                     <img className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500 carousel-image hidden" src="static/images/lombok.jpeg" style={{classList: 'hidden', objectFit: 'cover', width: '100%', height: '100%'}}/> */}
-
+{/* 
                     <div className="imgCarousel" style={{ height: '70rem', width: '45rem'}}>
                         <button
                             className="nav-btn"
@@ -167,12 +211,10 @@ const AboutV2 = () => {
                         >
                             <ChevronRightIcon />
                         </button>
-                    </div>
-
-
-
-
-
+                    </div> */}
+                        <div style={{ height: '30rem', width: '45rem'}}>
+                            <Carousel  />
+                        </div>
                 </section>
         </div>
 
