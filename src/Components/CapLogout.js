@@ -44,8 +44,8 @@ const CapLogout = ()=> {
                     <h1 className="text-center font-bold text-3xl text-white" style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.875rem', lineHeight: '2.25rem' }}>Are You Sure?</h1>
 
                     <h4 className="text-center text-xl text-white py-5"> Logged in as {auth.username}</h4>
-                        
-                    <button onClick={(user)=> (_logout(user))} className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]" style={{ backgroundColor: 'blue', color: 'white', fontWeight: 'bold', padding: '.5rem', marginTop: '.75rem', borderRadius: '.5rem'}}>Logout</button>
+
+                    <button onClick={(user)=> (_logout(user))} className="bg-blue-600 hover:bg-blue-500 text-white font-semibold p-2 mt-3 rounded w-[100%]" style={{ backgroundColor: 'blue', color: 'white', fontWeight: 'bold', padding: '.5rem', marginTop: '.75rem', borderRadius: '.5rem', alignItems: 'center', justifyContent: 'center'}}>Logout</button>
 
                 </div>
                 </div>
