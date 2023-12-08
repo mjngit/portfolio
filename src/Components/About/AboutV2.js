@@ -77,13 +77,13 @@ const AboutV2 = () => {
                     <div className="col-span-12 sm:col-span-3" style={{ gridTemplateColumns: '250px 750px' }}>
                         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-lime-400" style={{textAlign: 'center', marginBottom: '3.5rem', }}>
                             <h3 className="text-3xl font-semibold" style={{ fontSize: '1.875rem', lineHeight:'2.25rem' }}>Major Events</h3>
-                            <span className="text-sm font-bold tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight:'1.25rem' }}>Key Moments & Achievements</span>
+                            <span className="text-sm font-bold tracki uppercase dark:text-gray-400" style={{width: '200px', fontSize: '0.875rem', lineHeight:'1.25rem' }}>Key Moments & Achievements</span>
                         </div>
                     </div>
-                    <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '1.5rem', paddingBottom: '1.5rem'}}>
+                    <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '1.5rem', paddingBottom: '1.5rem', borderLeft: '5px'}}>
                         <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:dark:bg-gray-700 before:bg-gray-700" style={{ position: 'relative', paddingLeft: '1rem', paddingRight: '1rem'}}>
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-lime-400 before:bg-green-400" style={{ display: 'flex', flexDirection: 'column', }}>
-                                <h3 className="text-xl font-semibold tracki" style={{ marginTop: '1.5rem', fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Elon University</h3>
+                                <h3 className="text-xl font-semibold tracki" style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600'}}>Elon University</h3>
                                 <time className="text-xs tracki uppercase dark:text-gray-400" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>January 2010</time>
                                 <p className="mt-3" style={{ marginTop: '.75rem'}}>Was chosen to be an Organic Chemistry Teaching Assistant where I led office hours and lab, graded assignments, and mentored students.</p>
                                 <p className="mt-3" style={{ marginTop: '.75rem'}}>This led me to begin my undergraduate research thesis in computational chemistry, I was able to hone my love of data analytics by studying the age old relationship between resonance vs. inductive effects on hydrogen bonding using computational models to analyze complex data.</p>
