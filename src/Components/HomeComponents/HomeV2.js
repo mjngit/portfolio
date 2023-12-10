@@ -29,22 +29,22 @@ function HomeV2() {
             {/* TODO: DARK MODE AND LIGHT MODE backgroundColor: 'darkgray'. color: 'white' */}
             <header className="p-4" style={{padding: '2rem'}}>
                 <div className="container flex justify-between h-16 mx-auto" id='container' style={{ display: 'flex', justifyContent:'space-between', height:'16px' }}>
-                    <a rel="noopener noreferrer" href="#/portfolio/homeV2" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2' }}>
+                    <a rel="noopener noreferrer" href="#/portfolio/homeV2" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2', color: 'lightblue' }}>
                         <CottageIcon />
                     </a>
-                     <a rel="noopener noreferrer" href="/#/java/home" aria-label="Back to homepage" className="flex items-center p-2">
+                     <a rel="noopener noreferrer" href="/#/java/home" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2', color: 'lightblue' }}>
                         <EmojiFoodBeverageIcon />
                     </a>
-                     <a rel="noopener noreferrer" href="#/stackathon/fighters" aria-label="Back to homepage" className="flex items-center p-2">
+                     <a rel="noopener noreferrer" href="#/stackathon/fighters" aria-label="Back to homepage" className="flex items-center p-2 " style={{display: 'flex', alignItems: 'center', padding: '2', color: 'lightblue' }}>
                         <SportsKabaddiIcon />
                     </a>
-                     <a rel="noopener noreferrer" href="#/stackathon/trip" aria-label="Back to homepage" className="flex items-center p-2">
+                     <a rel="noopener noreferrer" href="#/stackathon/trip" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2', color: 'lightblue' }}>
                         <FlightTakeoffIcon />
                     </a>
-                     <a rel="noopener noreferrer" href="#/stackathon/present" aria-label="Back to homepage" className="flex items-center p-2">
+                     <a rel="noopener noreferrer" href="#/stackathon/present" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2', color: 'lightblue' }}>
                         <CardGiftcardIcon />
                     </a>
-                     <a rel="noopener noreferrer" href="#/capstone/home" aria-label="Back to homepage" className="flex items-center p-2">
+                     <a rel="noopener noreferrer" href="#/capstone/home" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2', color: 'lightblue' }}>
                         <ShowChartIcon />
                     </a>
                     <ul className="items-stretch hidden space-x-3 md:flex" style={{ display: 'flex', alignItems: 'stretch',  marginLeft: '12px'}}>
