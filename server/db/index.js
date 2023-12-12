@@ -104,15 +104,15 @@ const options3 = {
 
 try {
 	const response = await axios.request(options);
-	console.log(response.data);
+	// console.log(response.data);
   for(let i = 0; i < response.data.length; i++) {
     let stock = response.data[i]
+    console.log(stock.shortName)
     await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
   }
 } catch (error) {
 	console.error(error);
 }
-
 
 
 
@@ -195,6 +195,17 @@ try {
   
   try {
     const response = await axios.request(options3);
+    //console.log(response.data);
+    for(let i = 0; i < response.data.length; i++) {
+      let stock = response.data[i]
+      await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
+    }
+  } catch (error) {
+    console.error(error);
+  }
+
+  try {
+    const response = await axios.request(options2);
     //console.log(response.data);
     for(let i = 0; i < response.data.length; i++) {
       let stock = response.data[i]
@@ -411,16 +422,7 @@ const reviews = [
   },
 ];
 
-try {
-	const response = await axios.request(options2);
-	//console.log(response.data);
-  for(let i = 0; i < response.data.length; i++) {
-    let stock = response.data[i]
-    await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
-  }
-} catch (error) {
-	console.error(error);
-}
+
 
 await Promise.all(reviews.map(async (review) => {
   const newReview = await Review.create(review);
