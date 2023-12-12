@@ -246,7 +246,7 @@ const options = {
 
   const tickerAPICall =  async () => {
     try {
-        setGraph('fiveDay')
+        setGraph('twoYear')
         let lastTwoMonthsArrayForGraph = []
         let lastMonthArrayForGraph = []
         let lastTwoWeeksArrayForGraph = []
@@ -684,7 +684,7 @@ const options = {
 
   return (
     <div>
-
+      <PortfolioNav />
       {
         auth.id ? (
             <div>
