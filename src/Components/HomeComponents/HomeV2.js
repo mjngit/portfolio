@@ -62,8 +62,8 @@ function HomeV2() {
                         <span className='flex items-center' style={{ display: 'flex', alignItems: 'center'}}>Darkmode?</span>
                         <label className="rocker rocker-small" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                             <input type="checkbox" onClick={toggleDarkMode}/>
-                            <span class="switch-left">Yes</span>
-                            <span class="switch-right">No</span>
+                            <span className="switch-left">Yes</span>
+                            <span className="switch-right">No</span>
                         </label>
                     </div>
                 </div>
