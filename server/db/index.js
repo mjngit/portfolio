@@ -195,8 +195,8 @@ try {
   try {
     const response = await axios.request(options3);
     //console.log(response.data);
-    for(let i = 0; i < response.data.length; i++) {
-      let stock = response.data[i]
+    for(let i = 0; i < response.data.body.length; i++) {
+      let stock = response.data.body[i]
       await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
     }
   } catch (error) {
@@ -205,9 +205,9 @@ try {
 
   try {
     const response = await axios.request(options2);
-    //console.log(response.data);
-    for(let i = 0; i < response.data.length; i++) {
-      let stock = response.data[i]
+    //console.log(response.data.body);
+    for(let i = 0; i < response.data.body.length; i++) {
+      let stock = response.data.body[i]
       await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
     }
   } catch (error) {
