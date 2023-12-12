@@ -589,13 +589,13 @@ const options = {
   const getTop25Trending = async () => {
         try {
         const getTop25TrendingResponse = await axios.request(getTop25TrendingStocksOptions);
-        console.log(getTop25TrendingResponse.data);
+        //console.log(getTop25TrendingResponse.data);
         const top25quotes = getTop25TrendingResponse.data.finance.result[0].quotes
-        console.log(getTop25TrendingResponse.data.finance.result[0].quotes)
-        console.log(top25quotes)
+        //console.log(getTop25TrendingResponse.data.finance.result[0].quotes)
+       // console.log(top25quotes)
        setTop25Ticker(top25quotes)
 
-       console.log(top25Ticker)
+       //console.log(top25Ticker)
     } catch (error) {
         console.error(error);
     }   

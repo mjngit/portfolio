@@ -104,7 +104,7 @@ const options3 = {
 
 try {
 	const response = await axios.request(options);
-	//console.log(response.data);
+	console.log(response.data);
   for(let i = 0; i < response.data.length; i++) {
     let stock = response.data[i]
     await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
@@ -113,27 +113,9 @@ try {
 	console.error(error);
 }
 
-try {
-	const response = await axios.request(options2);
-	//console.log(response.data);
-  for(let i = 0; i < response.data.length; i++) {
-    let stock = response.data[i]
-    await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
-  }
-} catch (error) {
-	console.error(error);
-}
 
-try {
-	const response = await axios.request(options3);
-	//console.log(response.data);
-  for(let i = 0; i < response.data.length; i++) {
-    let stock = response.data[i]
-    await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
-  }
-} catch (error) {
-	console.error(error);
-}
+
+
 
   try {
     const fighterResponse = await axios.request(fighterOptions);
@@ -211,6 +193,17 @@ try {
     ])
   }
   
+  try {
+    const response = await axios.request(options3);
+    //console.log(response.data);
+    for(let i = 0; i < response.data.length; i++) {
+      let stock = response.data[i]
+      await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
+    }
+  } catch (error) {
+    console.error(error);
+  }
+
   const JavaMug = await Product.create({ 
     name: "Java Mug", 
     imageUrl: "https://images.unsplash.com/photo-1546379753-abb7fd8cfb93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3464&q=80", 
@@ -417,6 +410,17 @@ const reviews = [
     productId: Tshirt.id
   },
 ];
+
+try {
+	const response = await axios.request(options2);
+	//console.log(response.data);
+  for(let i = 0; i < response.data.length; i++) {
+    let stock = response.data[i]
+    await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
+  }
+} catch (error) {
+	console.error(error);
+}
 
 await Promise.all(reviews.map(async (review) => {
   const newReview = await Review.create(review);

@@ -41,10 +41,10 @@ const FightersOfTheWeek = () => {
         notes[redCorn.matchupId] = matchupArray
         let redCornFightTimeSeconds = redCorn.avgFightTime ? Number(redCorn.avgFightTime.split(':')[0]) * 60 + Number(redCorn.avgFightTime.split(':')[1]) : null
         let blueCornFightTimeSeconds = blueCorn.avgFightTime ? Number(blueCorn.avgFightTime.split(':')[0]) * 60 + Number(blueCorn.avgFightTime.split(':')[1]) : null
-        console.log(redCorn.avgFightTime, blueCorn.avgFightTime)
+        
         let redCornAge = redCorn.dob ? 2023 - Number(redCorn.dob.split(', ')[1]) : null
         let blueCornAge = blueCorn.dob ? 2023 - Number(blueCorn.dob.split(', ')[1]) : null
-        console.log(blueCornAge, redCornAge)
+        
 
         if(redCorn.height){
             let redHeight = `${redCorn.height}`
