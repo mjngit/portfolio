@@ -928,12 +928,253 @@ const options = {
             </div>
         
         )  : (
+          <>
             <div>
-                <h1>Can't Check Out Graphs If You're Not Logged In!</h1>
+                <h1>Log In for full functionality! U: moe PW: 123</h1>
                 <div>
-                    <Link to={`/register`}>Register Here</Link> or <Link to='/login'> Login </Link>
+                    <Link to={`/register`}> Or Register Here</Link> or <Link to='/login'> Login </Link>
                 </div>
             </div>
+            <div>
+                <div className='ticker-tape' style={{padding: 'none', margin: 'none', height: 100}}>
+                    <div className='ticker'>
+                        { top25Ticker ? top25Ticker.map((ticker, idx) => {
+                            return (
+                                <div className='ticker__item' key={idx}>{ticker.symbol}: {ticker.regularMarketPrice}</div>
+                            )
+                        }) : ''}
+                    </div>
+                </div>
+                {/* <Button onClick={ getTop25Trending } >Fill The Ticker!</Button> */}
+                <Card >
+                  <h1 style={{display: 'flex', justifyContent:'center', alignItems:'center'}}> { stock.name } </h1>
+                  <h2 style={{display: 'flex', justifyContent:'center', alignItems:'center'}}> { stockTicker } </h2>
+                  <h3 style={{display: 'flex', justifyContent:'center', alignItems:'center'}}> { stockPrice.toFixed(2) } </h3>
+                </Card>
+                <div>
+                  
+                {/* <form onSubmit={ tickerAPICall } style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
+                  <div style={{ marginBottom: 8 }}/>
+                  <div style={{ display:'flex', flexDirection: 'row', justifyContent:'center' }}>           
+    
+                  <div style={{alignSelf: 'center', fontSize: '24'}}> I want to call the API for the following stock ticker:</div> 
+                  <TextField label="Stock Ticker" variant="outlined" value={ stockTicker } onChange={ev => setStockTicker(ev.target.value)} style={{display: 'flex', alignSelf: 'start', width: "20%", marginLeft:'1%', marginRight:'1%' }} /> 
+                  </div>
+
+                  <Button onClick={ tickerAPICall } disabled={ !stockTicker}>Get Ticker API Call!</Button>
+                </form>  */}
+                {
+                  !hasAssessment ?
+                  <Link to={`/riskAssessment/${auth.id}`} style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>Click Here to Complete Risk Assessment</Link> 
+                  :
+                  <div style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
+                    <Button onClick={handleOpen}>Buy { stockTicker }</Button>
+                    <Button disabled ={portfolio[stockTicker] ? false : true} onClick={handleOpenSell}>Sell { stockTicker }</Button>
+                  </div>
+                }
+
+                <Modal
+                  open={open}
+                  onClose={handleClose}
+                  aria-labelledby="buy-stock"
+                  aria-describedby="buy-stock-description"
+                >
+
+                  <Box sx={style}>
+                    <form>
+                        <Typography style={{display: 'flex', justifyContent: 'center'}} sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                          { stockTicker }
+                        </Typography>
+                        <Typography variant="h5" component="div">
+                          Current Price: ${ stock.currentPrice }
+                        </Typography>
+                          <div style={{ marginBottom: 8 }}/>
+                        <TextField style={{ width: 200}} label='Shares' onChange={ ev => update(ev.target.value) } defaultValue={ quantity } type='number'></TextField>
+                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                          Total Value: ${ totalValue.toFixed(2) }
+                        </Typography>
+                        <Typography variant="body2">
+                          Available Funds: ${ auth.tradingFunds ? auth.tradingFunds.toFixed(2) : 0}
+                          {console.log(auth.tradingFunds)}
+                        </Typography>
+                        <CardActions style={{display: 'flex', justifyContent: 'center'}}>
+                          <Button disabled={ auth.tradingFunds < totalValue }  onClick={ buy }>Buy { stockTicker }</Button>
+                        </CardActions>
+                         { auth.tradingFunds < totalValue ?  <Alert severity="error">Not Enough Funds, Yikes!</Alert> : null}
+                    </form>
+                  </Box>
+                </Modal>
+                
+                <Modal
+                  open={openSell}
+                  onClose={handleCloseSell}
+                  aria-labelledby="sell-stock"
+                  aria-describedby="sell-stock-description"
+                >
+                                  <Box sx={style}>
+                    <form>
+                        <Typography style={{display: 'flex', justifyContent: 'center'}} sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                          { stockTicker }
+                        </Typography>
+                        <Typography variant="h5" component="div">
+                          Current Price: { stock.currentPrice }
+                        </Typography>
+                          <div style={{ marginBottom: 8 }}/>
+                        <TextField style={{ width: 200}} label='Shares' onChange={ ev => update(ev.target.value) } defaultValue={ quantity } type='number'></TextField>
+                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                          Total Value: { Math.abs(totalValue.toFixed(2)) }
+                         
+                        </Typography>
+                        <Typography variant="body2">
+                          {/* Available Shares: { portfolio[stockTicker] !== undefined && shares ? shares : null } */}
+
+                          {/* {portfolio.length ? `Available Shares: ${ portfolio[Object.keys(portfolio)[0]].Shares === 0 ? 0 : portfolio[Object.keys(portfolio)[0]].Shares }` : null} */}
+                          {/* Available Shares: { portfolio[Object.keys(portfolio)[0]].Shares === 0 ? 0 : portfolio[Object.keys(portfolio)[0]].Shares } */}
+
+
+                          {/* Available Shares: { Object.keys(portfolio).length === 0  ? 0 : portfolio[Object.keys(portfolio)[0]].Shares } */}
+                          Available Shares: { !portfolio[stockTicker] ? 0 : portfolio[stockTicker].Shares }
+                          {/* Available Shares: { portfolio[Object.keys(portfolio)[0]].Shares  ? 0 : portfolio[Object.keys(portfolio)[0]].Shares } */}
+
+                          {/* Available Shares: { shares === '0' ? shares : 0 } */}
+                          {/* {console.log(shares)} */}
+                          {/* portfolio.AAPL.Shares */}
+
+
+
+                          {/* { console.log(portfolio[stockTicker])} */}
+                          {/* { typeof shares !== "undefined" ? console.log(shares) : console.log('no shares')} */}
+                        </Typography>
+                        <CardActions style={{display: 'flex', justifyContent: 'center'}}>
+                          { portfolio[stockTicker] ? <Button disabled={ !portfolio[stockTicker] ? false : quantity > portfolio[stockTicker].Shares} onClick={ sell }>Sell { stockTicker }</Button> : null}
+                          {/* <Button disabled={ !portfolio[stockTicker] ? false : quantity > portfolio[stockTicker].Shares} onClick={ sell }>Sell { stockTicker }</Button> */}
+                        </CardActions>
+                        {/* { quantity > portfolio.stockTicker.Shares  ?  <Alert severity="error">Can't Sell Shares You Don't Have Buddy!</Alert> : null} */}
+                        {/* disabled={ portfolioArr.includes(stockTicker)} */}
+                    </form>
+                  </Box>
+                </Modal>
+                </div>
+              <div style={{display: 'flex'}}>
+                <div style={{height:800,width:1200}}>
+                <Button size="small" onClick={ ()=> fiveDayClick() }>5-day</Button> 
+                <Button size="small" onClick={ ()=> twoWeekClick() }>2-week</Button>
+                <Button size="small" onClick={ ()=> oneMonthClick() }>1-month</Button>
+                <Button size="small" onClick={ ()=> twoMonthClick() }>2-month</Button>
+                <Button size="small" onClick={ ()=> yTDClick() }>YTD</Button>
+                <Button size="small" onClick={ ()=> twoYearClick() }>2-year</Button>
+                <Button size="small" onClick={ ()=> threeYearClick() }>3-year</Button>
+                <Button size="small" onClick={ ()=> fiveYearClick() }>5-year</Button>
+                    {/* { data.length ? <MyResponsiveLine data={data}></MyResponsiveLine> : '' }   */}
+                    {data1Month.length && graph === 'month' ? <MyResponsiveLine data={data1Month}></MyResponsiveLine> : 
+                    data1Month.length && graph === 'twoWeek' ? <MyResponsiveLine data={data2Week}></MyResponsiveLine> : 
+                    data1Month.length && graph === 'fiveDay' ? <MyResponsiveLine data={data5Day}></MyResponsiveLine> : 
+                    data1Month.length && graph === 'twoMonth' ? <MyResponsiveLine data={data2Month}></MyResponsiveLine> : 
+                    data1Month.length && graph === 'YTD' ? <MyResponsiveLine data={dataYTD}></MyResponsiveLine> : 
+                    data1Month.length && graph === 'twoYear' ? <MyResponsiveLine data={data2Year}></MyResponsiveLine> : 
+                    data1Month.length && graph === 'threeYear' ? <MyResponsiveLine data={data3Year}></MyResponsiveLine> : 
+                    data5Year.length && graph === 'fiveYear' ? <MyResponsiveLine data={data5Year}></MyResponsiveLine> : ''} 
+
+                </div>
+
+                 
+
+                <div>
+                {currentTicker ? <Card sx={{ maxWidth: 345 }}>
+                
+                    <img style={{width: 345}} src={`${logo}?apiKey=${POLYGON_API_KEY}`} />   
+                
+                      <CardContent>
+                          <Typography gutterBottom variant="h5" component="div">
+                            {currentTicker.name}
+                          </Typography>
+                          
+                          <Typography variant="body2" color="text.secondary">
+                            {currentTicker.description}
+                          </Typography>
+                      </CardContent>
+
+                    <CardActions>
+                        <Button size="small" onClick={ tickerOutlookAPICall }>Get Outlook</Button>
+                        <Button size="small" onClick={ tickerNewsAPICall }>Get More News</Button>
+                    </CardActions>
+                    </Card> : null} 
+                  </div>
+                  
+                  </div>
+                  <div>
+                    {outlook.length ?  <Card style={{ width: 1200 }}>
+                                  <CardContent>
+                                    <Typography variant="h5" component="div">
+                                      Currently {innovationTrend}
+                                    </Typography>
+
+                                    <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                                      Score: {innovationScore}
+                                    </Typography>
+
+                                    <Typography variant="body2">
+                                      {stockTicker} is {innovationPerformance}
+                                    
+                                    </Typography>
+                                  </CardContent>
+                                
+                                </Card> 
+                                
+                                : null}
+                  </div>
+                  { outlook.map((story, idx) => {
+                      return (
+                      <div key={idx} style={{ width: 1200}}>
+                      <Accordion key={idx} expanded={expanded === `panel${idx}`} onChange={handleChange(`panel${idx}`)}>
+                          <AccordionSummary aria-controls={`panel${idx}-content`} id={`panel${idx}-header`}>
+                            <Typography>Trending Story #{idx + 1}</Typography>
+                          </AccordionSummary>
+
+                          <AccordionDetails>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                              {story.date}
+                            </Typography>
+                            <Typography>
+                              {story.headline}
+                            </Typography>
+                          </AccordionDetails>
+                        </Accordion>
+                      </div> 
+                      )
+                    })
+                  } 
+
+                  {news.length ? <div>
+                                    { news.map((_story, idx) => {
+                                        return (
+                                        <div key={idx} style={{ width: 1200}}>
+                                        <Accordion key={idx} expanded={expanded === `panel${idx}`} onChange={handleChange(`panel${idx}`)}>
+                                            <AccordionSummary aria-controls={`panel${idx}-content`} id={`panel${idx}-header`}>
+                                              <Typography>{_story.article_title}</Typography>
+                                            </AccordionSummary>
+
+                                            <AccordionDetails>
+                                              {/* <Typography  sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                                <a>{_story.article_url}</a>
+                                              </Typography> */}
+                                              <Typography
+                                              href={_story.article_url}
+                                              >
+                                                {_story.source}
+                                              </Typography>
+                                              <img style={{width: 345}} src={_story.article_photo_url} />  
+                                            </AccordionDetails>
+                                          </Accordion>
+                                        </div> 
+                                        )
+                                      })
+                                    } 
+                                  </div> 
+                  : null}
+                  
+            </div>
+          </>
           )
         } 
      <FooterNav/>
