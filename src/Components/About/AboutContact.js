@@ -79,7 +79,7 @@ const AboutContact = () => {
 
           <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0 " 
           style={{ width: '200px', height: '200px', padding: '.1rem', borderRadius: '1rem' }}>
-            <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500 " style={{ width: '100%', display: 'flex', background: 'white', justifyContent: 'center', padding: '.25rem', borderRadius: '.25rem', objectFit: 'cover' }}>
+            <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500 " style={{  display: 'flex', background: 'white', justifyContent: 'center', padding: '.25rem', borderRadius: '.25rem' }}>
             <img className='object-contain' src='/static/images/CircleSelfie.png' style={{ objectFit: 'contain'}}></img>
               
             </div>
