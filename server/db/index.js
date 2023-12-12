@@ -104,10 +104,9 @@ const options3 = {
 
 try {
 	const response = await axios.request(options);
-	console.log(response.data[0]);
+	console.log(response.data);
   for(let i = 0; i < response.data.length; i++) {
     let stock = response.data[i]
-    console.log(stock.shortName)
     await Stock.create({ currentPrice: `${stock.ask}` , ticker: `${stock.symbol}`, name: `${stock.shortName}` })
   }
 } catch (error) {
