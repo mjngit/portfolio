@@ -104,7 +104,7 @@ const options3 = {
 
 try {
 	const response = await axios.request(options);
-	// console.log(response.data);
+	console.log(response.data[0]);
   for(let i = 0; i < response.data.length; i++) {
     let stock = response.data[i]
     console.log(stock.shortName)
