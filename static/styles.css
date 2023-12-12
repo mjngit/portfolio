@@ -889,10 +889,12 @@ input:checked:focus + .switch-left + .switch-right {
   color: #fff; /* Adjust text color for dark mode */
 }
 
-.dark-mode li {
+.dark-mode li h3 a span p {
   background-color: #333;
   color: #fff; /* Adjust text color for dark mode */
 }
+
+
 
 .book {
   position: relative;
