@@ -26,32 +26,13 @@ const Checkout = ()=> {
 
   const [customer, setCustomer] = useState('')
   const { auth } = useSelector(state => state);
-  
-  const _removeFromCart = (product, quantityToRemove) => {
-    dispatch(removeFromCart(product, quantityToRemove))
-  }
-
-  const _addToCart = (product, quantity) => {
-    dispatch(addToCart(product, quantity))
-  }
-
-  const getTotal = () => {
-    let sum = 0
-    products.forEach(product => {
-      sum += product.product.price * product.quantity
-    })
-    return sum
-  }
-
-
 
   const pay = async(ev)=> {
     ev.preventDefault();
     const orderNum = Math.floor(Math.random()*1000000)
     products.forEach(product => {
-      dispatch(removeFromCart(product,product.quantity))
+      dispatch(removeFromCart(product.product, product.quantity))
     })
-
     navigate(`/java/order/${orderNum}`)
   };
   

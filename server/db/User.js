@@ -492,8 +492,6 @@ User.prototype.removeFromCart = async function({ product, quantityToRemove}){
 };
 
 
-
-
 User.authenticateGithub = async function(code){
   let response = await axios.post(
     'https://github.com/login/oauth/access_token',

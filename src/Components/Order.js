@@ -24,7 +24,8 @@ const Order = () => {
        }}>
         Thank you for your order!
         Your order number is {location.pathname.slice(12)}<br/>
-        <Link to='/'>Home</Link>
+        <Link to='/java/home'>Script For Java</Link>
+        <Link to='/'>Portfolio Home</Link>
     </Typography>
     <FooterNav/>
     </div>

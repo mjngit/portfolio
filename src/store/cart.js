@@ -50,6 +50,21 @@ export const removeFromCart = (product, quantityToRemove) => {
   }
 }
 
+// export const emptyCart = () => {
+//   return async(dispatch)=> {
+//     const token = window.localStorage.getItem('token');
+//     const response = await axios.put('/api/orders/cart',{
+//       product,
+//       quantityToRemove
+//     }, {
+//       headers: {
+//         authorization: token
+//       }
+//     });
+//     dispatch({ type: 'SET_CART', cart: response.data });
+//   }
+// }
+
 
 
 
