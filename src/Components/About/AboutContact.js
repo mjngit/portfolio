@@ -41,7 +41,7 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button className="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '2rem', top:'5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button className="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '-1rem', top:'5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <a href="https://www.instagram.com/numerounoabuelo/">
                 <InstagramIcon/>
@@ -49,7 +49,7 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '2rem', top: '5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '-1rem', top: '5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <GoogleIcon/>
             </span>
