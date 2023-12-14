@@ -22,10 +22,12 @@ const Home = ()=> {
       <div >   
 
         <div id="homepage"> 
-          <h2>Welcome! Please log in to place an order, but feel free to browse!</h2>
-        <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
+          <h2>Welcome! Please log in as U: moe PW: 123 or register for the best experience, but feel free to browse!</h2>
+        
         </div>
-
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2rem' }}>
+            <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
+          </div>
         <div id="homepageImage"/>
       
       </div>
