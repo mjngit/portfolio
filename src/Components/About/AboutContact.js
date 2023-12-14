@@ -22,7 +22,7 @@ const AboutContact = () => {
             <p class="text-amber-300 font-thin">- Fullstack Developer -</p>
           </div>
         </div> */}
-      <div className="relative h-full w-full flex items-center justify-center" style={{ position: 'relative', height: '100%', width: '100%', display: 'flex', alignItems: 'center'}}>
+      <div className="relative h-full w-full flex items-center justify-center" style={{ position: 'relative', height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50" style={{ position: 'relative', padding: '2.5rem', borderWidth: '2px', borderStyle: "dashed", borderRadius: '9999px', borderSpacing: '1rem 1rem'  }}>
           <button href="https://github.com/mjngit" className="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '45px', top: '4px', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1"
@@ -41,7 +41,7 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button className="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '1rem', top:'5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button className="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '1.25rem', top:'5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <a href="https://www.instagram.com/numerounoabuelo/">
                 <InstagramIcon/>
@@ -49,13 +49,13 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '1rem', top: '5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '1.25rem', top: '5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <GoogleIcon/>
             </span>
           </button>
 
-          <button className="profile_item bottom-8 -left-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '0%', bottom: '2rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button className="profile_item bottom-8 -left-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '10%', bottom: '2rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span  className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <a href="https://www.linkedin.com/in/mike-j-norris/">
                 <LinkedInIcon/>
@@ -63,7 +63,7 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button className="profile_item bottom-8 -right-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '0%', bottom: '2rem' ,borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button className="profile_item bottom-8 -right-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '10%', bottom: '2rem' ,borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <a href="#/capstone/home" >
                 <ShowChartIcon/>
@@ -71,7 +71,7 @@ const AboutContact = () => {
             </span> 
           </button>
 
-          <button alt='Phone: 617-610-1869' className="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500 tooltip" style={{ position: 'absolute', right: '40%', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button alt='Phone: 617-610-1869' className="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500 tooltip" style={{ position: 'absolute', bottom: '1rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1 ">
               <PhoneAndroidIcon/>
             </span>
