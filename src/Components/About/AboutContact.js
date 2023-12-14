@@ -41,7 +41,7 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button className="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '1.25rem', top:'5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button className="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', left: '2rem', top:'5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <a href="https://www.instagram.com/numerounoabuelo/">
                 <InstagramIcon/>
@@ -49,7 +49,7 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '1.25rem', top: '5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '2rem', top: '5rem', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <GoogleIcon/>
             </span>
@@ -79,7 +79,7 @@ const AboutContact = () => {
 
           <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0 " 
           style={{ width: '200px', height: '200px', padding: '.1rem', borderRadius: '1rem' }}>
-            <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500 " style={{  display: 'flex', background: 'white', justifyContent: 'center', padding: '999rem', borderRadius: '999rem' }}>
+            <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500 " style={{  display: 'flex', background: 'white', justifyContent: 'center', padding: '.5rem', borderRadius: '999rem' }}>
             <img className='object-contain' src='/static/images/CircleSelfie.png' style={{ objectFit: 'contain', width: '195px', height: '195px'}}></img>
               
             </div>
