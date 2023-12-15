@@ -350,7 +350,7 @@ function HomeV2() {
                             <a rel="noopener noreferrer" href="#/java/about/contact" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">Contact</a>
                         </li>
                     </ul> */}
-                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingTop: '1.5rem', alignItems: 'flex-end' }} >
+                    <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingTop: '1.5rem',paddingBottom: '1rem', alignItems: 'flex-end' }} >
                         <div className="flex justify-center space-x-4" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem' }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem', color: '#03b1fc' }} >
                                 <InstagramIcon />

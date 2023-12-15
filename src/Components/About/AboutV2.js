@@ -145,7 +145,7 @@ const Carousel = () => {
     <div>
     <PortfolioNav />
 
-    <div className="container mx-auto space-y-16" style={{ paddingTop: '1rem', paddingBottom: '1rem'}}>
+    <div className="container mx-auto space-y-16" style={{ paddingTop: '1rem', paddingBottom: '1rem', paddingLeft: '2rem'}}>
 				<section className="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5" style={{ display: 'grid', gap: '.75rem', textAlign: 'center', gridTemplateColumns: '30rem 70rem',  }}>
 					<div className="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900" style={{ width: '100%', padding: '.75rem', borderRadius: '.5rem', backgroundColor: 'darkblue'}}>
 						<span className="block mb-2 dark:text-lime-400" style={{display: 'block', marginTop: '10rem', marginBottom: '1rem', color: 'lime'}}>The Life of</span>
