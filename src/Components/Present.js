@@ -135,7 +135,7 @@ setLoading(false)
                             <label for="interest3" className="text-sm" style={{fontSize: '0.875rem', lineHeight: '1.25rem'}}>Interest 3</label>
                             <textarea value={ interest3 } onChange={ev => setInterest3(ev.target.value)} id="interest3" rows="1" className="w-full p-3 rounded dark:bg-gray-800 text-white" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '24'}}></textarea>
                         </div>
-                        <button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-lime-400 dark:text-gray-900" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '0.875rem', lineHeight: '1.25rem', fontWeight: 'bold'}}>Generate Gift Ideas</button>
+                        <button type="submit" className="loginButton w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-lime-400 dark:text-gray-900" style={{ width: '100%', padding: '.5rem', borderRadius: '.25rem', fontSize: '0.875rem', lineHeight: '1.25rem', fontWeight: 'bold', background: 'blue'}}>Generate Gift Ideas</button>
                     </form>
                 </div> 
                     <div style={{ display: 'flex', alignItems: "center", justifyContent: "center" }}>

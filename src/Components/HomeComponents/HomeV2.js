@@ -375,9 +375,9 @@ function HomeV2() {
                                 <LinkedInIcon />
                             </a>
                             <a>
-                            <button rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem', color: '#03b1fc' }} >
+                            <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem', color: '#03b1fc' }} >
                                 <GoogleIcon />  
-                            </button>
+                            </a>
                             </a>
                         </div>
                     </div>
