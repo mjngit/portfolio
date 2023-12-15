@@ -601,12 +601,6 @@ const options = {
     }   
   }
 
-
-    // <div className={classList}>
-    //   <button onClick={handleButtonClick}>Change Class</button>
-    //   {/* Rest of your JSX */}
-    // </div>
-
   useEffect(() => {
     if(stock){
       setTotalValue(stock.currentPrice * quantity)
@@ -614,11 +608,6 @@ const options = {
     
   }, [stock, quantity]);
 
-  // useEffect(() => {
-  //   if(portfolio){
-  //     fetchPortfolio()
-  //   }
-  // }, [transaction])
 
   useEffect(() => {
     console.log(portfolio)
@@ -653,10 +642,6 @@ const options = {
   if(!stock){
     return null;
   }
-
-  // setTimeout((stockPrice) => {
-  //   setStockPrice(stockPrice + Math.random());
-  // }, 5000);
 
   const update = (updatedQuantity) => {
     setQuantity(+updatedQuantity);
