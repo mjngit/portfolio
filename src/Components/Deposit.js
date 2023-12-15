@@ -15,9 +15,6 @@ const Deposit = ()=> {
   const [tradingFunds, setTradingFunds] = useState(0)
   const { auth } = useSelector(state => state);
 
-  
-
-
 //   const deposit = async(ev)=> {
 //     ev.preventDefault();
 //     setTradingFunds(tradingFunds + depositFunds)
@@ -40,16 +37,12 @@ const Deposit = ()=> {
       <h2 style={{display: 'flex', justifyContent:'center'}}>Deposit Funds</h2>
       <div style={{display: 'flex', justifyContent:'center'}}>
       <form>
-     
-      {/* <TextField  label="Add to Funds For Trading" variant="outlined" value={ depositFunds } onChange={ev => setDepositFunds(ev.target.value)}  style={{width: 300}}/>
-      <Button style={{ width: 300 }} onClick={ deposit } disabled={ !depositFunds }>Deposit</Button> */}
 
        <TextField  label="Deposit Funds For Trading" variant="outlined" value={ tradingFunds } onChange={ev => setTradingFunds(ev.target.value)}  />
        <Button style={{ width: 400 }} onClick={ deposit } disabled={ !tradingFunds }>Deposit</Button>
-      
 
-    
-        <Link style={{ paddingLeft: 65}} to={`/register`} >Not a Member? Register Here</Link>
+       <Link to={`/capstone/register`}><button className="loginButton"> Not a Member? Register Here</button></Link> 
+                       
       </form>
       </div>
       <FooterNav/>
