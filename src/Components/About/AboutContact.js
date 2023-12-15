@@ -71,14 +71,13 @@ const AboutContact = () => {
             </span> 
           </button>
 
-          <button alt='Phone: 617-610-1869' className="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500 tooltip" style={{ position: 'absolute', bottom: '-.25rem', right: '50%' , borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button alt='Phone: 617-610-1869' className="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500 tooltip" style={{ position: 'absolute', bottom: '-.5rem', right: '45%' , borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1 ">
               <PhoneAndroidIcon/>
             </span>
           </button>
 
-          <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0 " 
-          style={{ width: '200px', height: '200px', padding: '.1rem', borderRadius: '1rem' }}>
+          <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0 " style={{ width: '200px', height: '200px', padding: '.1rem' }}>
             <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500 " style={{  display: 'flex', background: 'white', justifyContent: 'center', padding: '.5rem', borderRadius: '999rem' }}>
             <img className='object-contain' src='/static/images/CircleSelfie.png' style={{ objectFit: 'contain', width: '190px', height: '190px'}}></img>
               

@@ -146,7 +146,7 @@ const Present = () => {
                                         </button>
                                     </form>
                                 </div>
-                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" style={{ objectFit: 'cover', width: '40rem', height: '100%', borderRadius: '1.5rem'}}/>
+                                <img src="static/images/lombok.jpeg" alt="Lombok, Indonesia" className="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" style={{ objectFit: 'cover', width: '50rem', height: '100%', borderRadius: '1.5rem'}}/>
                             </section>
                             
                         </div>
