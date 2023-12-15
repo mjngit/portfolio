@@ -33,7 +33,7 @@ const AboutContact = () => {
             </span>
           </button>
 
-          <button href="#/portfolio/homeV2" className="profile_item right-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '48px', top: '4px', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button href="#/portfolio/homeV2" className="profile_item right-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"  style={{ position: 'absolute', right: '50px', top: '4px', borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
               <a href="#/portfolio/homeV2">
                 <CottageIcon/>
@@ -71,7 +71,7 @@ const AboutContact = () => {
             </span> 
           </button>
 
-          <button alt='Phone: 617-610-1869' className="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500 tooltip" style={{ position: 'absolute', bottom: '-.25rem', right: '20%' , borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
+          <button alt='Phone: 617-610-1869' className="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500 tooltip" style={{ position: 'absolute', bottom: '-.25rem', right: '50%' , borderRadius: '999rem', className: 'tooltip', background: 'cover', cursor: 'pointer'}}>
             <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1 ">
               <PhoneAndroidIcon/>
             </span>
