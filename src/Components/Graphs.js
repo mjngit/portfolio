@@ -930,9 +930,17 @@ const options = {
         )  : (
           <>
             <div>
-                <h1>Log In for full functionality! U: moe PW: 123</h1>
-                <div>
-                    <Link to={`/register`}> Or Register Here</Link> or <Link to='/login'> Login </Link>
+                
+            <h1 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.25rem', lineHeight: '1.75rem'}}>Log In for full functionality! U: moe PW: 123</h1>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                  
+                    <div style={{ padding: '2rem'}}>
+                    <Link to={`/capstone/register`}><button className="loginButton">Register</button></Link> 
+                    </div>
+
+                    <div>
+                    <Link to={`/capstone/login`}><button className="loginButton">Login</button></Link>
+                    </div>
                 </div>
             </div>
             <div>
