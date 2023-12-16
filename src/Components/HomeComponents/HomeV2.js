@@ -185,7 +185,7 @@ function HomeV2() {
                     <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{  display: 'block', width: '20rem', gap: '.75rem', textDecoration: 'none', color: '#8b94e0' }}>
                         <div style={{ display: 'flex'}}>
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/capstone-thumbnail.jpeg" style={{ objectFit: 'cover', width: '60rem', borderRadius: '0.25rem', height: '14rem'   }}  />
-                                <div className="p-6 space-y-2 lg:col-span-5" style={{ paddingLeft: '1.5rem', width: '200px'}}>
+                                <div className="p-6 space-y-2 lg:col-span-5" style={{ paddingLeft: '1.5rem', width: '200px', paddingBottom: '2rem'}}>
                                     <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600', width: '400px'}}>Capstone: C-Trade</h3>
                                     <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>June 20, 2023</span>
                                     <p style={{ minWidth: '30rem' }}>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
