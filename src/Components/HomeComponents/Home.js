@@ -25,9 +25,22 @@ const Home = ()=> {
           <h2>Welcome! Please log in as U: moe PW: 123 or register for the best experience, but feel free to browse!</h2>
         
         </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2rem' }}>
-            <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
-          </div>
+
+        {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2rem' }}>
+          <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
+        </div> */}
+
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2rem' }}>
+                  
+                  <div style={{ padding: '2rem'}}>
+                  <Link to={`/capstone/register`}><button className="loginButton">Register</button></Link> 
+                  </div>
+
+                  <div>
+                  <Link to={`/capstone/login`}><button className="loginButton">Login</button></Link>
+                  </div>
+              </div>
+
         <div id="homepageImage"/>
       
       </div>
