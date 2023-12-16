@@ -255,8 +255,8 @@ const PortHome = ()=> {
             <article className="pcard">
                 <Link to='/stackathon/trip'>
                   <CardMedia
-                    sx={{ height: 400 }}
-                    image="/static/images/trip-planner.jpeg"
+                    sx={{ height: '40px' }}
+                    image="/static/images/trip-plannerNew.jpeg"
                   title="trip-planner-thumbnail"
                   />
                 </Link>
@@ -292,7 +292,7 @@ const PortHome = ()=> {
                 <Link to='/stackathon/present'>
                   <CardMedia
                     sx={{ height: 400 }}
-                    image="/static/images/bday-present.jpeg"
+                    image="/static/images/bday-presentNew.jpeg"
                     title="present-generator-thumbnail"
                   />
                 </Link>
@@ -402,8 +402,8 @@ const PortHome = ()=> {
               <article className="pcard">
                 <Link to='/stackathon/trip'>
                   <CardMedia
-                    sx={{ height: 400 }}
-                    image="/static/images/trip-planner.jpeg"
+                    sx={{ height: '40px' }}
+                    image="/static/images/trip-plannerNew.jpeg"
                   title="trip-planner-thumbnail"
                   />
                 </Link>
@@ -439,7 +439,7 @@ const PortHome = ()=> {
                 <Link to='/stackathon/present'>
                   <CardMedia
                     sx={{ height: 400 }}
-                    image="/static/images/bday-present.jpeg"
+                    image="/static/images/bday-presentNew.jpeg"
                     title="present-generator-thumbnail"
                   />
                 </Link>

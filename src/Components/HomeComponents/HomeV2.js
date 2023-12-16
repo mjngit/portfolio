@@ -202,7 +202,7 @@ function HomeV2() {
                             </div>
                         </a>
                         <a rel="noopener noreferrer" href="#/stackathon/present" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900" style={{ maxWidth: '20rem', textDecoration: 'none', color: '#8b94e0'  }}>
-                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/bday-present.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
+                            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/bday-presentNew.jpeg" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '12rem'   }}  />
                             <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>AI Birthday Present Generator</h3>
                                 <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>May 15, 2023</span>
@@ -218,7 +218,7 @@ function HomeV2() {
                             </div>
                         </a>
                         <a rel="noopener noreferrer" href="#/stackathon/trip" className="max-w-sm mx-auto group hover:no-underline focus:no-underline hidden sm:block dark:bg-gray-900" style={{ maxWidth: '20rem', textDecoration: 'none', color: '#8b94e0'  }}>
-                            <img src="/static/images/trip-planner.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '16rem'   }} />
+                            <img src="/static/images/trip-plannerNew.jpeg" alt="Trip Planner Thumbnail" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" style={{ objectFit: 'cover', width: '100%', borderRadius: '0.25rem', height: '16rem'   }} />
                                 <div className="p-6 space-y-2" style={{ padding: '1.5rem' }}>
                                     <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600'}}>AI Trip Planner</h3>
                                     <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>May 15, 2023</span>
