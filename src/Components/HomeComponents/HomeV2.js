@@ -85,7 +85,7 @@ function HomeV2() {
                 </div>
             </section>
             <section className="p-6 dark:bg-gray-800 dark:text-gray-100" style={{ padding: '1.5rem'}}>
-                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `350px 350px 350px`, textAlign: 'center' }}>
+                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `400px 400px 400px`, textAlign: 'center' }}>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>50+</p>
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Students Tutored</p>
@@ -182,10 +182,10 @@ function HomeV2() {
             </section>
             <section>
                 <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12" style={{ padding: '1rem', textDecoration: 'none' }}>
-                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{  display: 'block', width: '20rem', gap: '.75rem', textDecoration: 'none', color: '#8b94e0' }}>
+                    <a rel="noopener noreferrer" href="#/capstone/home" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900" style={{  display: 'block', width: '20rem', gap: '.75rem', textDecoration: 'none', color: '#8b94e0', paddingBottom: '2rem' }}>
                         <div style={{ display: 'flex'}}>
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="/static/images/capstone-thumbnail.jpeg" style={{ objectFit: 'cover', width: '60rem', borderRadius: '0.25rem', height: '14rem'   }}  />
-                                <div className="p-6 space-y-2 lg:col-span-5" style={{ paddingLeft: '1.5rem', width: '200px', paddingBottom: '2rem'}}>
+                                <div className="p-6 space-y-2 lg:col-span-5" style={{ paddingLeft: '1.5rem', width: '200px'}}>
                                     <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600', width: '400px'}}>Capstone: C-Trade</h3>
                                     <span className="text-xs dark:text-gray-400" style={{ fontSize: '0.75rem', lineHeight: '1rem'}}>June 20, 2023</span>
                                     <p style={{ minWidth: '30rem' }}>This is my capstone project where I worked with 2 other people to design and build a trading community to research, discuss, buy, and sell stocks. I was the lead engineer on this project.</p>
