@@ -85,7 +85,7 @@ function HomeV2() {
                 </div>
             </section>
             <section className="p-6 dark:bg-gray-800 dark:text-gray-100" style={{ padding: '1.5rem'}}>
-                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `400px 400px 400px`, textAlign: 'center' }}>
+                <div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3" style={{ display: 'grid', justifyContent: 'center', gridTemplateColumns: `400px 400px 400px`, textAlign: 'center', padding: '1rem' }}>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>50+</p>
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Students Tutored</p>
@@ -95,16 +95,20 @@ function HomeV2() {
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Sales in HVAC Industry</p>
                     </div>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
-                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>100+</p>
+                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>75</p>
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Newsletters Published</p>
                     </div>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>6</p>
-                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Projects</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Software Engineering Projects</p>
+                    </div>
+                    <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
+                        <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>100+</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>HVAC Projects</p>
                     </div>
                     <div className="flex flex-col justify-start m-2 lg:m-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', margin: '0.5rem'}}>
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>12</p>
-                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Years of overall experience</p>
+                        <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Years of experience</p>
                     </div>
                     {/* <div className="flex flex-col justify-start m-2 lg:m-6">
                         <p className="text-4xl font-bold leadi lg:text-6xl">10+</p>
