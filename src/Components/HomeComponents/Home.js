@@ -26,7 +26,7 @@ const Home = ()=> {
         <div id="homepage"> 
           <h2>Welcome! Please log in as U: moe PW: 123 or register for the best experience, but feel free to browse!</h2>
         
-        <div>
+        <div style={{ paddingTop: '1rem'}}>
           <Link to={`/java/menu`}><button className="loginButton">Menu</button></Link>
         </div>  
           
@@ -36,9 +36,9 @@ const Home = ()=> {
           <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
         </div> */}
 
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2rem' }}>
+        <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', paddingTop: '0rem', left: '5%' }}>
                   
-                  <div style={{ padding: '2rem'}}>
+                  <div>
                   <Link to={`/capstone/register`}><button className="loginButton">Register</button></Link> 
                   </div>
 
