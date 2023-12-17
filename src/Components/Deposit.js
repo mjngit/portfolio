@@ -35,14 +35,15 @@ const Deposit = ()=> {
     <div>
       <PortfolioNav/>
       <h2 style={{display: 'flex', justifyContent:'center'}}>Deposit Funds</h2>
-      <div style={{display: 'flex', justifyContent:'center'}}>
+      <div style={{padding: '2rem', display: 'flex', justifyContent:'center'}}>
       <form>
 
-       <TextField  label="Deposit Funds For Trading" variant="outlined" value={ tradingFunds } onChange={ev => setTradingFunds(ev.target.value)}  />
+       <TextField  label="Deposit Funds For Trading" variant='filled' value={ tradingFunds } onChange={ev => setTradingFunds(ev.target.value)}  />
        <Button style={{ width: 400 }} onClick={ deposit } disabled={ !tradingFunds }>Deposit</Button>
 
-       <Link to={`/capstone/register`}><button className="loginButton"> Not a Member? Register Here</button></Link> 
-                       
+        <div style={{ padding: '8rem', display: 'flex', justifyContent:'center'}}>
+          <Link to={`/capstone/register`}><button className="loginButton"> Not a Member? Register Here</button></Link> 
+        </div>               
       </form>
       </div>
       <FooterNav/>
