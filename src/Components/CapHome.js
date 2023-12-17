@@ -235,7 +235,7 @@ const CapHome = ()=> {
                                     <Typography gutterBottom variant="h5" component="div">
                                       {trend.name}
                                     </Typography>
-                                    <Typography component='a' href={`/#/stocks/${trend.symbol.split(':')[0]}`} variant="body2" color="text.secondary">
+                                    <Typography component='a' href={`/#/capstone/stocks/${trend.symbol.split(':')[0]}`} variant="body2" color="text.secondary">
                                       {trend.symbol.split(':')[0]}
                                     </Typography>
                                     <Typography gutterBottom variant="h6" component="div">
@@ -326,7 +326,7 @@ const CapHome = ()=> {
                                     <Typography gutterBottom variant="h5" component="div">
                                       {trend.name}
                                     </Typography>
-                                    <Typography component='a' href={`/#/stocks/${trend.symbol.split(':')[0]}`} variant="body2" color="text.secondary">
+                                    <Typography component='a' href={`/#/capstone/stocks/${trend.symbol.split(':')[0]}`} variant="body2" color="text.secondary">
                                       {trend.symbol.split(':')[0]}
                                     </Typography>
                                     <Typography gutterBottom variant="h6" component="div">
