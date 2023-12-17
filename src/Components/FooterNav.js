@@ -186,7 +186,7 @@ export default function FooterNav() {
   );
 
   const messagesUnread = (ev) => {
-    console.log(ev)
+    // console.log(ev)
     //let unread =  messages.filter(message => message.toId === auth.id)
     let unread =  messages.filter(message => message.toId === auth.id && message.createdAt.split('T')[0].split('-')[0] * 1000 + Number(message.createdAt.split('T')[0].split('-')[1]) * 31 + Number(message.createdAt.split('T')[0].split('-')[2]) > clickedDate && timeInDay < Number(message.createdAt.split('T')[1].split('.')[0].split(':')[0] + message.createdAt.split('T')[1].split('.')[0].split(':')[1]))
     return unread.length
@@ -197,9 +197,9 @@ export default function FooterNav() {
     var formattedDate = now.getFullYear() +'-0'+(now.getMonth()+1)+'-'+now.getDate()
     let time = now.getHours() * 100 + now.getMinutes()
     let currDateNum = Number(now.getFullYear() * 1000 + (now.getMonth()+1) * 31 + now.getDate())
-    console.log(currDateNum)
-    console.log(formattedDate)
-    console.log(time)
+    // console.log(currDateNum)
+    // console.log(formattedDate)
+    // console.log(time)
     // let messageDateNum = messages[0].createdAt.split('T')[0].split('-')[0] * 1000 + Number(messages[0].createdAt.split('T')[0].split('-')[1]) * 31 + Number(messages[0].createdAt.split('T')[0].split('-')[2])
     // let messageTime = Number(messages[0].createdAt.split('T')[1].split('.')[0].split(':')[0] + messages[0].createdAt.split('T')[1].split('.')[0].split(':')[1])
     // console.log(messages[0].createdAt.split('T')[0].split('-')[0] * 1000 + Number(messages[0].createdAt.split('T')[0].split('-')[1]) * 31 + Number(messages[0].createdAt.split('T')[0].split('-')[2]))
@@ -212,8 +212,8 @@ export default function FooterNav() {
     setTimeInDay(time)
 
     let unread =  messages.filter(message => message.toId === auth.id && message.createdAt.split('T')[0].split('-')[0] * 1000 + Number(message.createdAt.split('T')[0].split('-')[1]) * 31 + Number(message.createdAt.split('T')[0].split('-')[2]) > currDateNum)
-    console.log(unread)
-    console.log(unread.length)
+    // console.log(unread)
+    // console.log(unread.length)
     navigate('/capstone/chats')
   }
 

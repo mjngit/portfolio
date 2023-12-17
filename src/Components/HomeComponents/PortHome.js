@@ -71,18 +71,29 @@ const PortHome = ()=> {
       <div id="portfolio-home" style={{ padding: '20px', textAlign: 'center' }}>
 
         <div>
-          <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Welcome to My Portfolio!</h2>
+          <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Welcome to Michael Norris' Portfolio!</h2>
+          <h4>Login (U: moe PW: 123) for full functionality</h4>
           <div style={{ marginBottom: '20px' }}>
-            <Button variant='outlined' style={{ fontSize: '1.2rem', fontWeight: '500', marginRight: '10px' }}>
+            {/* <Button variant='outlined' style={{ fontSize: '1.2rem', fontWeight: '500', marginRight: '10px' }}>
               <Link to={`/capstone/register`}>Register Here</Link>
             </Button>
             <span style={{ fontSize: '1.2rem', fontWeight: '500' }}>or</span>
             <Button variant='outlined' style={{ fontSize: '1.2rem', fontWeight: '500', marginLeft: '10px' }}>
               <Link to='/capstone/login'>Login</Link>
-            </Button>
+            </Button> */}
+
+            <div style={{ padding: '2rem'}}>
+              <Link style={{ paddingRight: '8rem'}} to={`/capstone/register`}><button className="loginButton">Register</button></Link> 
+            
+              <Link to={`/capstone/login`}><button className="loginButton">Login</button></Link>
+            </div>
+
+            <div>
+              
+          </div>
           </div>
           <h4 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>
-            Have a look at a few of my projects! An Ecommerce Platform, a Stock Trading App, and an AI and UFC Stat tool!
+            Have a look at a few of my projects: An Ecommerce Platform, a Stock Trading App, and an AI and UFC Stat tool!
           </h4>
         </div>
 
@@ -255,7 +266,7 @@ const PortHome = ()=> {
             <article className="pcard">
                 <Link to='/stackathon/trip'>
                   <CardMedia
-                    sx={{ height: '40px' }}
+                    sx={{ height: 400 }}
                     image="/static/images/trip-plannerNew.jpeg"
                   title="trip-planner-thumbnail"
                   />
@@ -402,7 +413,7 @@ const PortHome = ()=> {
               <article className="pcard">
                 <Link to='/stackathon/trip'>
                   <CardMedia
-                    sx={{ height: '40px' }}
+                    sx={{ height: 400 }}
                     image="/static/images/trip-plannerNew.jpeg"
                   title="trip-planner-thumbnail"
                   />

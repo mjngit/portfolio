@@ -25,7 +25,7 @@ const CapLogin = ()=> {
   const login = (ev)=> {
     ev.preventDefault();
     dispatch(attemptLogin(credentials));
-    navigate('/capstone/home');
+    navigate('/java/home');
   };
   return (
     <>

@@ -13,7 +13,9 @@ const Home = ()=> {
   return (
     <>
       <PortfolioNav/>
-      <img src='static\images\coffee_cup_illustration_blue.jpeg' style={{width: '110%'}}></img>   
+      <Link to='../java/menu'>
+      <img src='static\images\coffee_cup_illustration_blue.jpeg' style={{width: '110%'}}></img>  
+      </Link>
       <SubNavHome/>
 
       
@@ -24,6 +26,10 @@ const Home = ()=> {
         <div id="homepage"> 
           <h2>Welcome! Please log in as U: moe PW: 123 or register for the best experience, but feel free to browse!</h2>
         
+        <div>
+          <Link to={`/java/menu`}><button className="loginButton">Menu</button></Link>
+        </div>  
+          
         </div>
 
         {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2rem' }}>
@@ -49,13 +55,18 @@ const Home = ()=> {
 
           
         <div id="homepage">           
-          <h1>Welcome, {auth.username}!</h1>
-            <div>
+          <h1 style={{ paddingBottom: '2rem'}}>Welcome, {auth.username}!</h1>
+
+          <div>
+            <Link to={`/java/menu`}><button className="loginButton">Menu</button></Link>
+          </div>  
+
+            <div style={{ padding: '8rem'}}>
               
                 {
-                  auth.adminStatus === true? 
-                  (<div><Link to='/admin'>Admin Tools</Link></div>): 
-                  (<div className='py-40'>
+                  auth.adminStatus === true ? 
+                  (<div><Link to='/admin'>Admin Tools</Link></div>) : 
+                  (<div >
                     Please browse amongst our delicious selection of drinks or our fashionable merch.
                     <br/>
                     <Link to='/java/reviews'>Create And See Your Reviews</Link>
