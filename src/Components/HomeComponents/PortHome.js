@@ -92,12 +92,12 @@ const PortHome = ()=> {
               
           </div>
           </div>
-          <h4 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>
+          {/* <h4 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>
             Have a look at a few of my projects: An Ecommerce Platform, a Stock Trading App, and an AI and UFC Stat tool!
-          </h4>
+          </h4> */}
         </div>
 
-        <div className='port-display-box' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div className='port-display-box' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', justifyContent: 'space-around' }}>
                   
             {/* <Card 
               sx={{ 
