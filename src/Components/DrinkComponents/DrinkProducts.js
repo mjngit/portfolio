@@ -41,7 +41,7 @@ const DrinkProducts = () => {
       display: 'flex', 
       flexDirection: 'column' 
       }}>
-        <Link to={`${drink.id}`}>
+        <Link to={`/java/menu/${drink.id}`}>
         <CardMedia
           component="img"
           image={drink.imageUrl}
