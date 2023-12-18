@@ -105,7 +105,7 @@ setLoading(false)
                             <h2 className="text-4xl font-bold leadi lg:text-5xl" style={{ fontSize: '2.25rem', lineHeight: '2.5rem', fontWeight: 'bold' }}>Drawing a Blank?</h2>
                             <h4 className="dark:text-gray-400" style={{ fontSize: '1.5rem', lineHeight: '1.75rem'}}>Fill in the info about your friend or loved one and let AI do the rest! Keep in mind the present links are likely outdated but the ideas remain top notch and great starting points for your brainstorm!</h4>
                         </div>
-                        <img src="static/images/cakepresents.png" alt="Birthday Cake & Presents" className="p-6 h-52 md:h-64" style={{ display: 'flex', padding: '1.5rem', height: '12rem', width: '60%', height: '60%', alignItems: 'center', justifyContent: 'center', alignSelf: 'center'}} />
+                        <img src="static/images/gift-genius.jpeg" alt="Birthday Cake & Presents" className="p-6 h-52 md:h-64" style={{ display: 'flex', padding: '1.5rem', height: '12rem', width: '60%', height: '60%', alignItems: 'center', justifyContent: 'center', alignSelf: 'center'}} />
                     </div>
                     <form onSubmit={ submit } novalidate="" className="space-y-6" style={{ marginLeft:' 1.5rem', width: '40rem', column: '2'}} >
                         <div>
