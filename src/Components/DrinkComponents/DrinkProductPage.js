@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { useSelector, useDispatch} from "react-redux";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -75,10 +75,12 @@ const DrinkProductPage = () =>{
 
      <Card>
       <CardHeader
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
+        action={ 
+          <Link to={`/java/menu`}>
+            <IconButton aria-label="settings">
+              Menu
+            </IconButton>
+          </Link>
         }
         title={ drink.name }
         subheader= {'Price: $' + drink.price }

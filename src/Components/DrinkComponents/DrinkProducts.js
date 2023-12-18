@@ -62,7 +62,7 @@ const DrinkProducts = () => {
             {drink.description}
           </Typography>
         </CardContent>
-          <CardActionArea onClick={(ev) => _moreDetails(drink)} sx={{textAlign:'center', alignItems:'center'}} >
+          <CardActionArea  sx={{textAlign:'center', alignItems:'center'}} >
         <Button component='span' onClick={(ev) => _moreDetails(drink)} size="small"
         sx={{ 
           fontSize: 15,
