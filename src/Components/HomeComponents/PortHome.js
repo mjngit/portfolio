@@ -290,8 +290,8 @@ const PortHome = ()=> {
                   />
                 </Link>
                 <div className="pcard_content">
-                    <span className="pcard_title">UFC Fighters of The Week Stat Tool</span>
-                        <span className="pcard_subtitle pb-5">This is another part of my first solo project, stackathon, at Fullstack Academy </span>
+                    <span className="pcard_title">UFC By The Numbers</span>
+                        <span className="pcard_subtitle pb-5">This is another part of my stackathon solo project where I leveraged multiple APIs to get up to date data for UFC fighters </span>
                         <p className="pcard_description">Need help identifying stat discrepencies in the matchups for this week? Here is a perfect starting point for your research. Now go beat down those bookies! It utilizes a few different UFC stat API's according to UFCstats.com</p>
                     
                 </div>
@@ -309,9 +309,8 @@ const PortHome = ()=> {
                 </Link>
                 <div className="pcard_content">
                     <span className="pcard_title">AI Birthday Present Generator</span>
-                        <span className="pcard_subtitle pb-5">This is the third part of my first solo project, stackathon, at Fullstack Academy </span>
+                        <span className="pcard_subtitle pb-5">I use AI to come up with examples of good birthday presents</span>
                         <p className="pcard_description">Birthday coming up for a special someone and need some gift ideas? Let Chat-GPT help you out (keep in mind links might be outdated but the ideas remain helpful!) It utilizes Open AI's ChatGPT3.5 API</p>
-                    
                 </div>
               </article>
 
@@ -326,8 +325,8 @@ const PortHome = ()=> {
                 </Link>
                 <div className="pcard_content">
                     <span className="pcard_title">Script for Java Coffee Shop</span>
-                        <span className="pcard_subtitle pb-5">This is my first group project at Fullstack Academy where we made an E-commerce website. </span>
-                        <p className="pcard_description">Take a stroll through our E-commerce coffee shop. Have a look at all the coffees, smoothies, and other merchandise to fill your heart, and your cart!</p>
+                        <span className="pcard_subtitle pb-5">This is my first group project where I led a group of 4 engineers at Fullstack Academy to start an E-commerce website. </span>
+                        <p className="pcard_description">Take a stroll through the coffee shop. Have a look at all the coffees, smoothies, and other merchandise to fill your heart, and your cart!</p>
                     
                 </div>
                 </article>

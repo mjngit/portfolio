@@ -18,15 +18,29 @@ const Order = () => {
         fontSize: '1.5rem',
         fontWeight: '500',
         mx: 'auto',
-        marginTop: '2rem',
+        marginTop: '6rem',
         marginBottom: '1rem',
         maxWidth: '70%'
        }}>
         Thank you for your order!
         Your order number is {location.pathname.slice(12)}<br/>
-        <Link to='/java/home'>Script For Java</Link>
-        <Link to='/'>Portfolio Home</Link>
+
+        <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', paddingTop: '10rem', paddingBottom: '10rem', left: '5%' }}>
+                  
+                  <div>
+                    <Link to={`/java/home`}><button className="loginButton">Script For Java</button></Link> 
+                  </div>
+
+                  <div>
+                    <Link to={`/`}><button className="loginButton">Portfolio Home</button></Link>
+                  </div>
+
+                  <div>
+                    <Link to={`/portfolio/home`}><button className="loginButton">More Projects</button></Link>
+                  </div>
+        </div>
     </Typography>
+    <div style={{ paddingTop: '10rem'}}></div>
     <FooterNav/>
     </div>
   )

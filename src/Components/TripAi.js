@@ -8,7 +8,7 @@ import { Audio } from  'react-loader-spinner'
 import FooterNav from './FooterNav';
 import PortfolioNav from './PortfolioNav';
 
-const Present = () => {
+const Trip = () => {
     const [plans, setPlans] = useState([])
     const [days, setDays] = useState('')
     const [city, setCity] = useState('')
@@ -219,4 +219,4 @@ const Present = () => {
     )
 }
 
-export default Present;
+export default Trip;

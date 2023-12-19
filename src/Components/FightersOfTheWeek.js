@@ -15,6 +15,7 @@ import { Typography } from '@mui/material';
 
 import FooterNav from './FooterNav';
 import PortfolioNav from './PortfolioNav';
+import FightHistory from './FightHistory';
 
 const FightersOfTheWeek = () => {
     const { fighters } = useSelector(state => state)
@@ -419,6 +420,7 @@ const FightersOfTheWeek = () => {
           
     </List>
     <Divider /> */}
+        <FightHistory />
     <FooterNav/>
     </>
    

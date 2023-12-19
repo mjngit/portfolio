@@ -39,13 +39,13 @@ const Home = ()=> {
         <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', paddingTop: '0rem', left: '5%' }}>
                   
                   <div>
-                  <Link to={`/capstone/register`}><button className="loginButton">Register</button></Link> 
+                    <Link to={`/capstone/register`}><button className="loginButton">Register</button></Link> 
                   </div>
 
                   <div>
-                  <Link to={`/capstone/login`}><button className="loginButton">Login</button></Link>
+                    <Link to={`/capstone/login`}><button className="loginButton">Login</button></Link>
                   </div>
-              </div>
+        </div>
 
         <div id="homepageImage"/>
       
