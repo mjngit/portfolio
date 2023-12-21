@@ -31,7 +31,8 @@ const FantasyWidget = () => {
           };
      
               const response = await axios.request(options);
-              const fightHistory = response.data.body.fight_history
+              console.log(response.data.fight_history)
+              const fightHistory = response.data.fight_history
               setFightHistory(fightHistory)
               setLoading(false)
        } catch (error) {
@@ -101,22 +102,23 @@ const FantasyWidget = () => {
                     ></img> : ''} 
                     </div>
                 </div>
-                    {fightHistory ? fightHistory.map((fight, idx) => 
+                    {fightHistory ? fightHistory.map((f, idx) => 
                         <div key={idx}>{
-                            `${fight.event}`
-                            `${fight.method} against ${fight.opponent}`
-                            (fight.result === 'win' ? `Won fight` : ' Lost Fight')
-                            `Strikes ${fight.STR}: ${fight.STR / 2} points` 
-                            `Takedowns${fight.TD}: ${fight.TD * 5} points`
-                            `Knocks${fight.KD}: ${fight.KD * 12} points`
-                            `${fight.STR / 2 + fight.TD * 5 + fight.KD * 12} total points before win bonus of:`
-                            (fight.result === 'win' & fight.round === '1' ? `1th Round Win: 50 Points` : '')
-                            (fight.result === 'win' & fight.round === '2' ? `2th Round Win: 40 Points` : '')
-                            (fight.result === 'win' & fight.round === '3' & fight.time !== '5:00' ? `3th Round Win: 30 Points` : '')
-                            (fight.result === 'win' & fight.round === '3' & fight.title_fight === '0' & fight.time === '5:00' ? `3rd rd Decision Win: 10 Points?` : '')
-                            (fight.result === 'win' & fight.round === '4' ? `4th Round Win: 20 Points` : '')
-                            (fight.result === 'win' & fight.round === '5' & fight.time !== '5:00' ? `5th Round Win: 10 Points` : '')
-                            (fight.result === 'win' & fight.round === '5' & fight.title_fight === '1' & fight.time === '5:00' ? `Decision Win: 10 Points` : '')
+                            `Event: ${f.event} 
+                            ${f.method} against ${f.opponent}
+                            ${f.result === 'win' ? `Won fight` : `Lost fight`}
+                            Strikes ${f.STR}: ${f.STR / 2} points 
+                            Takedowns ${f.TD}: ${f.TD * 5} points
+                            Sub Attmpts ${f.SUB}: ${f.SUB * 6}
+                            Knocks ${f.KD}: ${f.KD * 12} points \n
+                            ${f.STR / 2 + f.TD * 5 + f.KD * 12} total points before win bonus of:
+                            ${f.result === 'win' & f.round === '1' ? `1st Round Win: 50 Points` : ''}
+                            ${f.result === 'win' & f.round === '2' ? `2th Round Win: 40 Points` : ''}
+                            ${f.result === 'win' & f.round === '3' & f.time !== '5:00' ? `3th Round Win: 30 Points` : ''}
+                            ${f.result === 'win' & f.round === '3' & f.title_fight === '0' & f.time === '5:00' ? `3rd rd Decision Win: 10 Points` : ''}
+                            ${f.result === 'win' & f.round === '4' ? `4th Round Win: 20 Points` : ''}
+                            ${f.result === 'win' & f.round === '5' & f.time !== '5:00' ? `5th Round Win: 20 Points` : ''}
+                            ${f.result === 'win' & f.round === '5' & f.title_fight === '1' & f.time === '5:00' ? `Decision Win: 10 Points` : ''}`
                         }
                         {/* <ul>
                             {plan.activities.map((activity, idx1) => {

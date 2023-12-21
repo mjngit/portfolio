@@ -29,6 +29,7 @@ import Logout from './Logout';
 import Review from './Review'
 import ReviewsAll from './ReviewsAll';
 import HomeV2 from './HomeComponents/HomeV2';
+import ProjectsHome from './HomeComponents/ProjectsHome';
 
 import FightersOfTheWeek from './FightersOfTheWeek'
 import Present from './Present'
@@ -152,7 +153,7 @@ const App = ()=> {
 
             <Routes>
               <Route path='/' element={ <HomeV2 /> } />
-              <Route path='/portfolio/home' element={ <PortHome /> } />
+              <Route path='/portfolio/home' element={ <ProjectsHome /> } />
               <Route path='/portfolio/account' element={ <CapAccount /> } />
               <Route path='/portfolio/cart' element={ <Cart /> } />
               <Route path='/portfolio/login' element={ <CapLogin /> } />
@@ -194,7 +195,8 @@ const App = ()=> {
               <Route path='/capstone/logout' element={ <CapLogout /> } />
               <Route path='/capstone/home' element={ <CapHome /> } />
               <Route path='/portfolio/capstone' element={ <CapHome /> } />
-              <Route path='/portfolio/homev2' element={ <PortHome /> } />
+              <Route path='/portfolio/homev2' element={ <ProjectsHome /> } />
+              <Route path='/portfolio/projects' element={ <ProjectsHome /> } />
               {/* SWITCH BACK TO HOMEV2 ONCE TAILWIND BACK */}
 
               {/* <Route path='/home' element={ <Home /> } /> */}

@@ -35,12 +35,12 @@ app.put('/:id', async(req, res, next) => {
   }
 })
 
-// app.delete('/:id', async(req, res, next) => {
-//     try {
-//         const happyNote = await HappyNote.findByPk(req.params.id);
-//         await happyNote.destroy();
-//         res.sendStatus(204)
-//     } catch (error) {
-//         next(error)
-//     }
-// })
+app.delete('/:id', async(req, res, next) => {
+    try {
+        const happyNote = await HappyNote.findByPk(req.params.id);
+        await happyNote.destroy();
+        res.sendStatus(204)
+    } catch (error) {
+        next(error)
+    }
+})

@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useDispatch, useSelector } from 'react-redux';
-import { addHappy } from '../store';
+import { addHappy, deleteHappyNote } from '../store';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -17,7 +17,7 @@ import PortfolioNav from './PortfolioNav';
 
 
 const HappyNotes = () => {
-    const { happyNotes, users } = useSelector(state => state)
+    const { happyNotes, users, auth } = useSelector(state => state)
     const [isDisabled, setIsDisabled] = useState(false); 
     const dispatch = useDispatch();
 
@@ -25,6 +25,10 @@ const HappyNotes = () => {
         setIsDisabled(true)
         await dispatch(addHappy(happyNote))
 
+    }
+
+    const deleteHappy = async(happyNote) => {
+        await dispatch(deleteHappyNote(happyNote))
     }
 
     const styles = {
@@ -53,6 +57,7 @@ const HappyNotes = () => {
                             <CardContent>
                                 <Typography variant="h6" color="text.primary" gutterBottom>
                                     {happyNote.subject}
+                                    {happyNote.userId === auth.id ? <button onClick={() => deleteHappy(happyNote)}>      Delete My Happy Note</button> : ''}
                                 </Typography>
                                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                     Posted by {user ? user.username : 'unknown'} on {new Date(happyNote.createdAt).toLocaleDateString()}

@@ -128,7 +128,7 @@ const DrinkProducts = () => {
         <form onSubmit={ ev => ev.preventDefault() } style={{position: 'absolute', left: '10%' , maxWidth: 275 }}>
             <input value={ filter.name ? filter.name : '' } autoComplete='off' name='name' onChange={ search } placeholder='Search'/>
         </form>
-        <img src='static\images\SFJ-beans.jpeg' style={{width: '110%', height: '50%'}}></img> 
+        <img src='static\images\SFJ-banner.jpeg' style={{width: '110%', height: '25%'}}></img> 
       </div>
         <Box
           sx={{

@@ -65,7 +65,7 @@ const DrinksSmoothies = () =>{
             {drink.description}
           </Typography>
         </CardContent>
-          <CardActionArea onClick={(ev) => _moreDetails(drink)} sx={{textAlign:'center', alignItems:'center'}} >
+          <CardActionArea sx={{textAlign:'center', alignItems:'center'}} >
         <Button component='span' onClick={(ev) => _moreDetails(drink)} size="small"
         sx={{ 
           fontSize: 15,
@@ -127,9 +127,12 @@ const DrinksSmoothies = () =>{
     <>
       <PortfolioNav/>
       < SubNavDrinks />          
-        <form onSubmit={ ev => ev.preventDefault() } style={{padding: "1rem", maxWidth: 275 }}>
+      <div>
+        <form onSubmit={ ev => ev.preventDefault() } style={{position: 'absolute', left: '10%' , maxWidth: 275 }}>
             <input value={ filter.name ? filter.name : '' } autoComplete='off' name='name' onChange={ search } placeholder='Search'/>
         </form>
+        <img src='static\images\SFJ-banner.jpeg' style={{width: '110%', height: '25%'}}></img> 
+      </div>
         <Box
           sx={{
             m: 5,

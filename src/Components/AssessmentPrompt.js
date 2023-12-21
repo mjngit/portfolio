@@ -25,7 +25,7 @@ const AssessmentPrompt = ({ question, prompt, option1, option2, option3, option4
 
   return (
     <>
-    <PortfolioNav />
+    
     <Card sx={{ padding: '10px',
       ':hover':{
         boxShadow: "10px 10px 10px green"
@@ -80,7 +80,6 @@ const AssessmentPrompt = ({ question, prompt, option1, option2, option3, option4
         </div>
       </div>
     </Card>
-    <FooterNav/>
     </>
   );
 };

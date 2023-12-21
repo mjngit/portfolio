@@ -34,7 +34,7 @@ const PostAdd = () => {
        
                <div> 
                 <h2>Welcome! Please log in to post a Happy Note!</h2>
-                <Button variant='outlined'><Link to={`/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
+                <Button variant='outlined'><Link to={`/capstone/register`} style={{fontSize: '1.2rem', fontWeight:'500'}}>Register Here</Link></Button> or <Button variant='outlined'> <Link to='/capstone/login' style={{fontSize: '1.2rem', fontWeight:'500'}}> Login </Link></Button>
                </div>
        
               
@@ -76,7 +76,7 @@ const PostAdd = () => {
                                     variant='standard'
                                 />
                             </Box>
-                            <Button onClick={ createNote } className="btn btn-outline-primary">Add Your Post!</Button> 
+                            <button style={{ width: '10rem' }} onClick={ createNote } className="loginButton">Add Your Post!</button> 
                         </form>
                     </div>
                 </div>
