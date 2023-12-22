@@ -102,24 +102,24 @@ const FantasyWidget = () => {
                     ></img> : ''} 
                     </div>
                 </div>
-                    {fightHistory ? fightHistory.map((f, idx) => 
+                    {/* {fightHistory ? fightHistory.map((f, idx) => 
                         <div key={idx}>{
                             `Event: ${f.event} 
                             ${f.method} against ${f.opponent}
                             ${f.result === 'win' ? `Won fight` : `Lost fight`}
                             Strikes ${f.STR}: ${f.STR / 2} points 
                             Takedowns ${f.TD}: ${f.TD * 5} points
-                            Sub Attmpts ${f.SUB}: ${f.SUB * 6}
-                            Knocks ${f.KD}: ${f.KD * 12} points \n
-                            ${f.STR / 2 + f.TD * 5 + f.KD * 12} total points before win bonus of:
-                            ${f.result === 'win' & f.round === '1' ? `1st Round Win: 50 Points` : ''}
-                            ${f.result === 'win' & f.round === '2' ? `2th Round Win: 40 Points` : ''}
-                            ${f.result === 'win' & f.round === '3' & f.time !== '5:00' ? `3th Round Win: 30 Points` : ''}
-                            ${f.result === 'win' & f.round === '3' & f.title_fight === '0' & f.time === '5:00' ? `3rd rd Decision Win: 10 Points` : ''}
-                            ${f.result === 'win' & f.round === '4' ? `4th Round Win: 20 Points` : ''}
-                            ${f.result === 'win' & f.round === '5' & f.time !== '5:00' ? `5th Round Win: 20 Points` : ''}
-                            ${f.result === 'win' & f.round === '5' & f.title_fight === '1' & f.time === '5:00' ? `Decision Win: 10 Points` : ''}`
-                        }
+                            Sub Attempts ${f.SUB}: ${f.SUB * 6} points
+                            Knocks ${f.KD}: ${f.KD * 12} points 
+                            ${f.STR / 2 + f.TD * 5 + f.KD * 12} total before bonus of:
+                            ${f.result === 'win' & f.round === '1' ? `Rnd 1 W: 50 Points` : ''}
+                            ${f.result === 'win' & f.round === '2' ? `Rnd 2 W: 40 Points` : ''}
+                            ${f.result === 'win' & f.round === '3' & f.time !== '5:00' ? `Rnd 3 W: 30 Points` : ''}
+                            ${f.result === 'win' & f.round === '3' & f.title_fight === '0' & f.time === '5:00' ? `3rd rd DEC W: 10 Points` : ''}
+                            ${f.result === 'win' & f.round === '4' ? `Rnd 4 W: 20 Points` : ''}
+                            ${f.result === 'win' & f.round === '5' & f.time !== '5:00' ? `Rnd 5 W: 20 Points` : ''}
+                            ${f.result === 'win' & f.round === '5' & f.title_fight === '1' & f.time === '5:00' ? `DEC W: 10 Points` : ''}`
+                        } */}
                         {/* <ul>
                             {plan.activities.map((activity, idx1) => {
                                 return (
@@ -127,13 +127,36 @@ const FantasyWidget = () => {
                                 )
                             })}
 
-                            KD:"1" Opp_KD:"0" Opp_STR:"49" Opp_SUB:"0" Opp_TD:"0" STR:"41" SUB:"0" 
-                            TD:"0" date:"Apr. 08, 2023" event:"UFC 287: Pereira vs. Adesanya 2" method:"KO/TKO"
-                            opponent:"Alex Pereira" result:"win" round:"2" time:"4:21" title_fight:"1"
+                    
                         </ul> */}
-                </div>) 
-                
-                    : ''}
+                    <ul>
+                        {fightHistory ? fightHistory.map((f, idx) => {
+                            return (
+                                <>
+                                <li  key={idx}>Event: {f.event}</li>
+                                <li key={idx+1} >{f.method} against {f.opponent} Result: {f.result === 'win' ? `Won fight` : `Lost fight`}</li>
+                                <li key={idx+2}>Strikes {f.STR}: {f.STR / 2} points </li>
+                                <li key={idx+3}>Takedowns {f.TD}: {f.TD * 5} points </li>
+                                <li key={idx+4}>Sub Attempts {f.SUB}: {f.SUB * 6} points </li>
+                                <li key={idx+5}>Knocks {f.KD}: {f.KD * 12} points </li>
+                                <li key={idx+6} style={{ fontWeight: 'bold'}}> {f.STR / 2 + f.TD * 5 + f.KD * 12} total before bonus of
+                                {f.result === 'win' & f.round === '1' ? `50 Points - Rnd 1 W` : ''}
+                                {f.result === 'win' & f.round === '2' ? `40 Points - Rnd 2 W` : ''}
+                                {f.result === 'win' & f.round === '3' & f.time !== '5:00' ? `30 Points Rnd 3 W` : ''}
+                                {f.result === 'win' & f.round === '3' & f.title_fight === '0' & f.time === '5:00' ? `10 Points - 3rd rd DEC W` : ''}
+                                {f.result === 'win' & f.round === '4' ? `20 Points - Rnd 4 W` : ''}
+                                {f.result === 'win' & f.round === '5' & f.time !== '5:00' ? `20 Points - Rnd 5 W` : ''}
+                                {f.result === 'win' & f.round === '5' & f.title_fight === '1' & f.time === '5:00' ? `10 Points DEC W` : ''}</li>
+                                <li> </li>
+                                </>
+                                )
+                            }): ''}
+                    </ul>
+                    
+                        
+               
+                   
+                    
                     </main>
                     
                 </div>
@@ -144,3 +167,31 @@ const FantasyWidget = () => {
 }
 
 export default FantasyWidget;
+
+
+// KD:"1" Opp_KD:"0" Opp_STR:"49" Opp_SUB:"0" Opp_TD:"0" STR:"41" SUB:"0" 
+//                             TD:"0" date:"Apr. 08, 2023" event:"UFC 287: Pereira vs. Adesanya 2" method:"KO/TKO"
+//                             opponent:"Alex Pereira" result:"win" round:"2" time:"4:21" title_fight:"1"
+
+
+
+{/* {fightHistory ? fightHistory.map((f, idx) => {
+                            return (
+                                <>
+                                <li  key={idx}>Event: {f.event}</li>
+                                <li key={idx+1} >{f.method} against {f.opponent} Result: {f.result === 'win' ? `Won fight` : `Lost fight`}</li>
+                                <li key={idx+2}>Strikes {f.STR}: {f.STR / 2} points </li>
+                                <li key={idx+3}>Takedowns {f.TD}: {f.TD * 5} points </li>
+                                <li key={idx+4}>Sub Attempts {f.SUB}: {f.SUB * 6} points </li>
+                                <li key={idx+5}>Knocks {f.KD}: {f.KD * 12} points </li>
+                                <li> {f.STR / 2 + f.TD * 5 + f.KD * 12} total before bonus of:
+                                {f.result === 'win' & f.round === '1' ? `Rnd 1 W: 50 Points` : ''}
+                                {f.result === 'win' & f.round === '2' ? `Rnd 2 W: 40 Points` : ''}
+                                {f.result === 'win' & f.round === '3' & f.time !== '5:00' ? `Rnd 3 W: 30 Points` : ''}
+                                {f.result === 'win' & f.round === '3' & f.title_fight === '0' & f.time === '5:00' ? `3rd rd DEC W: 10 Points` : ''}
+                                {f.result === 'win' & f.round === '4' ? `Rnd 4 W: 20 Points` : ''}
+                                {f.result === 'win' & f.round === '5' & f.time !== '5:00' ? `Rnd 5 W: 20 Points` : ''}
+                                {f.result === 'win' & f.round === '5' & f.title_fight === '1' & f.time === '5:00' ? `DEC W: 10 Points` : ''}</li>
+                                </>
+                                )
+                            }): ''} */}
