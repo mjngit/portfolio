@@ -163,7 +163,7 @@ const FantasyWidget = () => {
 
                     
                         </ul> */}
-                        <div>
+                        {/* <div>
                             {firstFightScore ? firstFightScore : ''}
                         </div>
                         <div>
@@ -177,7 +177,7 @@ const FantasyWidget = () => {
                         </div>
                         <div>
                             {fifthFightScore ? fifthFightScore : ''}
-                        </div>
+                        </div> */}
                         <div style={{fontWeight: 'bold'}}>
                             {firstFightScore ? `Last 5 Avg: ${(firstFightScore + secondFightScore + thirdFightScore + fourthFightScore + fifthFightScore) / 5}`  : ''}
                         </div>
