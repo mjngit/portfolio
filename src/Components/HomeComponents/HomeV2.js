@@ -11,10 +11,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GoogleIcon from '@mui/icons-material/Google';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+// import {}
+
 import Signature from './Signature'
 import { Link } from 'react-router-dom';
-import { grey } from '@mui/material/colors';
-import { width } from '@mui/system';
+
 
 function HomeV2() {
     const [isDarkMode, setIsDarkMode] = useState(false)
@@ -183,6 +184,34 @@ function HomeV2() {
                         {/* TODO: NEED TO ADD A CONNECT WITH ME ON LINKED IN LINK THERE OR SOMETHING LIKE THAT */}
                     </div>
                 </div>
+                {/* <div>
+                    <a href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download>Download Developer CV</a>
+                    
+                </div> */}
+
+                {/* <div style={{display: 'flex', justifyContent: 'center'}}>
+                    <button className="buttonDownload" style={{ display: 'inline-block', position: 'relative', padding: '10px 25px', backgroundColor: '#4CC713', color: 'white', fontFamily: 'sans-serif', textDecoration: 'none', fontSize: '0.9em', textAlign: 'center', textIndent: '15px', border: 'none'}} >Download</button>
+                </div> */}
+
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <span style={{ paddingRight: '2rem'}}>Download Developer CV:</span>
+                <a href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download>
+                    <button class="Btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 384 512"
+                            class="svgIcon"
+                        >
+                            <path
+                            d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                            ></path>
+                        </svg>
+                        <span class="icon2"></span>
+                    </button>
+                </a>
+                </div>
+
             </section>
             <section>
                 <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12" style={{ padding: '1rem', textDecoration: 'none' }}>
