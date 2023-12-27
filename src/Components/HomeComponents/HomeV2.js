@@ -58,6 +58,9 @@ function HomeV2() {
                         <li className="flex" style={{ display: 'flex'}}>
                             <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>Email Me</a>
                         </li>
+                        <li className="flex" style={{ display: 'flex'}}>
+                            <a rel="noopener noreferrer" href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>CV</a>
+                        </li>
                     </ul>
                     <div style={{ display: 'flex', alignItems: 'center'}}>
                         <span className='flex items-center' style={{ display: 'flex', alignItems: 'center'}}>Darkmode?</span>
@@ -194,22 +197,22 @@ function HomeV2() {
                 </div> */}
 
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <span style={{ paddingRight: '2rem'}}>Download Developer CV:</span>
-                <a href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download>
-                    <button class="Btn">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="1em"
-                            viewBox="0 0 384 512"
-                            class="svgIcon"
-                        >
-                            <path
-                            d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-                            ></path>
-                        </svg>
-                        <span class="icon2"></span>
-                    </button>
-                </a>
+                    <span className="text-lg" style={{fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600', paddingRight: '2rem'}}>Download Developer CV:</span>
+                    <a href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download>
+                        <button class="Btn">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 384 512"
+                                class="svgIcon"
+                            >
+                                <path
+                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                                ></path>
+                            </svg>
+                            <span class="icon2"></span>
+                        </button>
+                    </a>
                 </div>
 
             </section>
