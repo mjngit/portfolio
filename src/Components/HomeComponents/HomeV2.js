@@ -11,8 +11,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GoogleIcon from '@mui/icons-material/Google';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-// import {}
-
 import Signature from './Signature'
 import { Link } from 'react-router-dom';
 
@@ -56,7 +54,7 @@ function HomeV2() {
                             <a rel="noopener noreferrer" href="#/portfolio/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>Projects</a>
                         </li>
                         <li className="flex" style={{ display: 'flex'}}>
-                            <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>Email Me</a>
+                            <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc', cursor: 'pointer' }}>Email Me</a>
                         </li>
                         <li className="flex" style={{ display: 'flex'}}>
                             <a rel="noopener noreferrer" href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>CV</a>
@@ -114,10 +112,6 @@ function HomeV2() {
                         <p className="text-4xl font-bold leadi lg:text-6xl" style={{ fontSize: '3rem', lineHeight: '2.25rem', fontWeight: 'bold' }}>12</p>
                         <p className="text-sm sm:text-base" style={{ fontSize: '0.875rem', lineHeight: '1.25rem'}}>Years of experience</p>
                     </div>
-                    {/* <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leadi lg:text-6xl">10+</p>
-                        <p className="text-sm sm:text-base">Workshops</p>
-                    </div> */}
                 </div>
             </section>
             <section className="py-8" style={{ paddingTop: '4rem', paddingBottom: '4rem'}}>
@@ -131,11 +125,11 @@ function HomeV2() {
                     </div>
                     <div className="grid grid-cols-5 p-4 md:p-8" style={{ display: 'grid', gridTemplateColumns: '500px 500px', padding: '8px', justifyContent: 'center' }}>
                         {/* <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
-                            <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Mucius</button>
-                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-lime-400 dark:text-gray-50">Fabellas</button>
-                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Aperiam</button>
-                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Nonumy</button>
-                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Propriae</button>
+                            <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Test 1</button>
+                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-lime-400 dark:text-gray-50">Test 2</button>
+                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Test 3</button>
+                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Test 4</button>
+                            <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-300 dark:text-gray-400">Test 5</button>
                         </div> */}
                         <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left" style={{ display: 'grid', gap: '3rem', paddingTop: '4rem', paddingBottom: '16px', textAlign: 'start', gridTemplateColumns: '550px 550px' }}>
                             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start" style={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start', marginTop: '1rem'}}>
@@ -371,21 +365,7 @@ function HomeV2() {
                          </li>
                      </ul>
                 </div>
-                {/* <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start dark:text-lime-400 dark:border-lime-400" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem', alignSelf: 'center', textAlign: 'center', display: 'flex', paddingLeft: '2rem', justifyContent: 'space-around' }}>
-                        {/* <li className='dark:text-lime-400 dark:border-lime-400' href="#/java/about">About</li>
-                        <li href="#/java/about">Blog</li> 
-                        <li className='dark:text-lime-400 dark:border-lime-400' href="#/portfolio/home">Projects</li>
-                        <li className='dark:text-lime-400 dark:border-lime-400'> <Link to="/java/about/contact">Contact</Link></li> 
-                        <li className="flex" style={{ display: 'flex'}}>
-                            <a rel="noopener noreferrer" href="#/java/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">About</a>
-                        </li>
-                        <li className="flex"  style={{ display: 'flex'}}>
-                            <a rel="noopener noreferrer" href="#/portfolio/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">Projects</a>
-                        </li>
-                        <li className="flex"  style={{ display: 'flex'}}>
-                            <a rel="noopener noreferrer" href="#/java/about/contact" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 text-blue-400">Contact</a>
-                        </li>
-                    </ul> */}
+    
                     <div className="flex flex-col justify-center pt-6 lg:pt-0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end' }} >
                         <div className="flex justify-center space-x-4" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem' }}>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/numerounoabuelo/" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-lime-400 dark:text-gray-900" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: '2rem', color: '#03b1fc' }} >
