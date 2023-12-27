@@ -25,7 +25,6 @@ function HomeV2() {
   return (
     <>
         <div className={isDarkMode ? 'dark-mode space-y-12 dark:bg-gray-800 dark:text-gray-100' : 'light-mode space-y-12 dark:bg-gray-800 dark:text-gray-100'}  >
-            {/* TODO: DARK MODE AND LIGHT MODE backgroundColor: 'darkgray'. color: 'white' */}
             <header className="p-4" style={{padding: '2rem'}}>
                 <div className="container flex justify-between h-16 mx-auto" id='container' style={{ display: 'flex', justifyContent:'space-between', height:'16px' }}>
                     <a rel="noopener noreferrer" href="#/portfolio/homeV2" aria-label="Back to homepage" className="flex items-center p-2" style={{display: 'flex', alignItems: 'center', padding: '2', color: '#03b1fc' }}>
