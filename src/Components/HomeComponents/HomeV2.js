@@ -118,7 +118,7 @@ function HomeV2() {
                     <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl" style={{ padding: '4px', textAlign: 'center'}}>
                         <h2 className="text-2xl font-bold leadi sm:text-4xl" style={{ fontSize: '1.5rem', lineHeight: '2rem', fontWeight: 'bold', color: '#03b1fc'}}>What can I offer to you?</h2>
                         <p className="px-8 my-4" style={{ paddingLeft: '32px', paddingRight: '32px', marginBottom: '48px', marginTop: '16px', marginBottom: '16px'}}>I will effectively lead and/or manage projects from conception to completion while implementing 
-                        best practives to ensure timely delivery and resource optimization. I will provide technical leadership and guidance to 
+                        best practices to ensure timely delivery and resource optimization. I will provide technical leadership and guidance to 
                         development teams to foster innovation and implement emerging technologies. I would love to bridge the gap between technical and sales teams, 
                         translating complex concepts for nontechnical stakeholders.  </p>
                     </div>
