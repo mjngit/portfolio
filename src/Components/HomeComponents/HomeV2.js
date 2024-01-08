@@ -46,9 +46,9 @@ function HomeV2() {
                         <ShowChartIcon />
                     </a>
                     <ul className="items-stretch hidden space-x-3 md:flex" style={{ display: 'flex', alignItems: 'stretch',  marginLeft: '12px'}}>
-                        <li className="flex" style={{ display: 'flex'}}>
+                        {/* <li className="flex" style={{ display: 'flex'}}>
                             <a rel="noopener noreferrer" href="#/java/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 " style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>About</a>
-                        </li>
+                        </li> */}
                         <li className="flex" style={{ display: 'flex'}}>
                             <a rel="noopener noreferrer" href="#/portfolio/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>Projects</a>
                         </li>
@@ -81,7 +81,7 @@ function HomeV2() {
                     <p className="px-8 mt-8 mb-12 text-lg" style={{paddingLeft: '32px', paddingRight: '32px', marginBottom: '72px', marginTop: '32px', fontSize: '1.125rem', lineHeight: '1,75rem', width: '40%', display: 'flex', justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>Versatile Tech Leader: Elevating Projects with Expertise in Software Engineering, Project Management, and Sales Engineering Excellence</p>
                     <div className="flex flex-wrap justify-center" style={{ display: 'flex', flexDirection: 'wrap', justifyContent: 'center', paddingBottom: '4rem' }}>
                         <button  className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-lime-400 dark:text-gray-900" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/capstone/login'>Get started</Link></button>
-                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button>
+                        {/* <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700" style={{margin: '8px', paddingLeft: '32px', paddingRight: '32px', margin: '0.5rem', fontSize: '1.125rem', fontWeight: '600', borderRadius: '0.25rem'  }}><Link to='/java/about'>Learn more</Link></button> */}
                     </div>
                 </div>
             </section>
@@ -353,9 +353,9 @@ function HomeV2() {
                 <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row" style={{ display: 'flex', flexDirection: 'row', padding: '1rem', justifyContent: 'space-around'}}>
                 <div className="container flex justify-between h-16 mx-auto" id='container' style={{ display: 'flex', justifyContent:'space-between', height:'16px' }}> 
                      <ul className="items-stretch hidden space-x-3 md:flex" style={{ display: 'flex', alignItems: 'stretch',  marginLeft: '12px'}}>
-                         <li className="flex" style={{ display: 'flex'}}>
+                         {/* <li className="flex" style={{ display: 'flex'}}>
                              <a rel="noopener noreferrer" href="#/java/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400 " style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>About</a>
-                         </li>
+                         </li> */}
                          <li className="flex" style={{ display: 'flex'}}>
                              <a rel="noopener noreferrer" href="#/portfolio/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>Projects</a>
                          </li>
