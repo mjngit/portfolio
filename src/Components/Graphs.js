@@ -173,7 +173,7 @@ const Graphs = ()=> {
   const stock = stocks.find(s => s.ticker === stockTicker);
   const [quantity, setQuantity] = useState(1);
   const [totalValue, setTotalValue] = useState(0);
-  const[shares, setShares] = useState(0);
+  const [shares, setShares] = useState(0);
   const [stockPrice, setStockPrice] = useState(0);
 
   const style = {
@@ -320,19 +320,19 @@ const options = {
           )
         }
 
-        for(let i = times.length - 44; i < times.length; i++){
-          lastTwoMonthsArrayForGraph.push(
-              {
-              "x": times[i].split('23-0')[1],
-              "y": tickerResponse.data['Time Series (Daily)'][`${times[i]}`]['4. close']
-            }
-          )
-        }
+        // for(let i = times.length - 44; i < times.length; i++){
+        //   lastTwoMonthsArrayForGraph.push(
+        //       {
+        //       "x": times[i].split('23-0')[1],
+        //       "y": tickerResponse.data['Time Series (Daily)'][`${times[i]}`]['4. close']
+        //     }
+        //   )
+        // }
 
         for(let i = times.length - 44; i < times.length; i++){
           lastTwoMonthsArrayForGraph.push(
               {
-              "x": times[i].split('23-0')[1],
+              "x": times[i].split('24-0')[1],
               "y": tickerResponse.data['Time Series (Daily)'][`${times[i]}`]['4. close']
           }
           )
@@ -341,7 +341,7 @@ const options = {
         for(let i = times.length - 22; i < times.length; i++){
           lastMonthArrayForGraph.push(
               {
-              "x": times[i].split('23-0')[1],
+              "x": times[i].split('24-0')[1],
               "y": tickerResponse.data['Time Series (Daily)'][`${times[i]}`]['4. close']
           }
           )
@@ -351,7 +351,7 @@ const options = {
           
           lastTwoWeeksArrayForGraph.push(
               {
-              "x": times[i].split('23-0')[1],
+              "x": times[i].split('24-0')[1],
               "y": tickerResponse.data['Time Series (Daily)'][`${times[i]}`]['4. close']
           }
           )
@@ -361,13 +361,13 @@ const options = {
          
           last5daysArrayForGraph.push(
               {
-              "x": times[i].split('23-0')[1],
+              "x": times[i].split('24-0')[1],
               "y": tickerResponse.data['Time Series (Daily)'][`${times[i]}`]['1. open']
           }
           )
           last5daysArrayForGraph.push(
             {
-            "x": times[i].split('23-0')[1] + ' 12:00',
+            "x": times[i].split('24-0')[1] + ' 12:00',
             "y": tickerResponse.data['Time Series (Daily)'][`${times[i]}`]['4. close']
             }
           )
@@ -763,24 +763,9 @@ const options = {
                          
                         </Typography>
                         <Typography variant="body2">
-                          {/* Available Shares: { portfolio[stockTicker] !== undefined && shares ? shares : null } */}
-
-                          {/* {portfolio.length ? `Available Shares: ${ portfolio[Object.keys(portfolio)[0]].Shares === 0 ? 0 : portfolio[Object.keys(portfolio)[0]].Shares }` : null} */}
-                          {/* Available Shares: { portfolio[Object.keys(portfolio)[0]].Shares === 0 ? 0 : portfolio[Object.keys(portfolio)[0]].Shares } */}
-
-
-                          {/* Available Shares: { Object.keys(portfolio).length === 0  ? 0 : portfolio[Object.keys(portfolio)[0]].Shares } */}
+                         
                           Available Shares: { !portfolio[stockTicker] ? 0 : portfolio[stockTicker].Shares }
-                          {/* Available Shares: { portfolio[Object.keys(portfolio)[0]].Shares  ? 0 : portfolio[Object.keys(portfolio)[0]].Shares } */}
-
-                          {/* Available Shares: { shares === '0' ? shares : 0 } */}
-                          {/* {console.log(shares)} */}
-                          {/* portfolio.AAPL.Shares */}
-
-
-
-                          {/* { console.log(portfolio[stockTicker])} */}
-                          {/* { typeof shares !== "undefined" ? console.log(shares) : console.log('no shares')} */}
+                         
                         </Typography>
                         <CardActions style={{display: 'flex', justifyContent: 'center'}}>
                           { portfolio[stockTicker] ? <Button disabled={ !portfolio[stockTicker] ? false : quantity > portfolio[stockTicker].Shares} onClick={ sell }>Sell { stockTicker }</Button> : null}
@@ -796,8 +781,8 @@ const options = {
                 <div style={{height:800,width:1200}}>
                 <Button size="small" onClick={ ()=> fiveDayClick() }>5-day</Button> 
                 <Button size="small" onClick={ ()=> twoWeekClick() }>2-week</Button>
-                <Button size="small" onClick={ ()=> oneMonthClick() }>1-month</Button>
-                <Button size="small" onClick={ ()=> twoMonthClick() }>2-month</Button>
+                {/* <Button size="small" onClick={ ()=> oneMonthClick() }>1-month</Button>
+                <Button size="small" onClick={ ()=> twoMonthClick() }>2-month</Button> */}
                 <Button size="small" onClick={ ()=> yTDClick() }>YTD</Button>
                 <Button size="small" onClick={ ()=> twoYearClick() }>2-year</Button>
                 <Button size="small" onClick={ ()=> threeYearClick() }>3-year</Button>
