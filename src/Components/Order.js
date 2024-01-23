@@ -25,7 +25,29 @@ const Order = () => {
         Thank you for your order!
         Your order number is {location.pathname.slice(12)}<br/>
 
-        <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', paddingTop: '10rem', paddingBottom: '10rem', left: '5%' }}>
+        <div className="loader" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <div className="coffee-container">
+            <div className="coffee-header">
+              <div className="coffee-header__buttons coffee-header__button-one"></div>
+              <div className="coffee-header__buttons coffee-header__button-two"></div>
+              <div className="coffee-header__display"></div>
+              <div className="coffee-header__details"></div>
+            </div>
+            <div className="coffee-medium">
+              <div className="coffe-medium__exit"></div>
+              <div className="coffee-medium__arm"></div>
+              <div className="coffee-medium__liquid"></div>
+              <div className="coffee-medium__smoke coffee-medium__smoke-one"></div>
+              <div className="coffee-medium__smoke coffee-medium__smoke-two"></div>
+              <div className="coffee-medium__smoke coffee-medium__smoke-three"></div>
+              <div className="coffee-medium__smoke coffee-medium__smoke-for"></div>
+              <div className="coffee-medium__cup"></div>
+            </div>
+            <div className="coffee-footer"></div>
+          </div>
+        </div>
+
+        <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', paddingTop: '20rem', paddingBottom: '5rem', left: '5%' }}>
                   
                   <div>
                     <Link to={`/java/home`}><button className="loginButton">Script For Java</button></Link> 
