@@ -382,9 +382,9 @@ const FightersOfTheWeek = () => {
     </List>
     <Divider />
 
-    {/* <h3>Fight 12: {fightersOfTheWeek[22] ? fightersOfTheWeek[22].name + " (" + (fightersOfTheWeek[22].record) + ')' : ''} vs. {fightersOfTheWeek[23] ? fightersOfTheWeek[23].name + " (" + (fightersOfTheWeek[23].record) + ')' : ''}</h3>
+    <h3>Fight 12: {fightersOfTheWeek[22] ? fightersOfTheWeek[22].name + " (" + (fightersOfTheWeek[22].record) + ')' : ''} vs. {fightersOfTheWeek[23] ? fightersOfTheWeek[23].name + " (" + (fightersOfTheWeek[23].record) + ')' : ''}</h3>
     <List>
-        {notes[12] ? notes[12].map((note, idx) => {
+        {notes[11] ? notes[11].map((note, idx) => {
             return (
             <ListItem disablePadding key={idx}>
               <ListItemText primary={note} />
@@ -397,7 +397,7 @@ const FightersOfTheWeek = () => {
 
     <h3>Fight 13: {fightersOfTheWeek[24] ? fightersOfTheWeek[24].name + " (" + (fightersOfTheWeek[24].record) + ')' : ''} vs. {fightersOfTheWeek[25] ? fightersOfTheWeek[25].name + " (" + (fightersOfTheWeek[25].record) + ')' : ''}</h3>
     <List>
-        {notes[13] ? notes[13].map((note, idx) => {
+        {notes[12] ? notes[12].map((note, idx) => {
             return (
             <ListItem disablePadding key={idx}>
               <ListItemText primary={note} />
@@ -408,7 +408,7 @@ const FightersOfTheWeek = () => {
     </List>
     <Divider />
 
-    <h3>Fight 14: {fightersOfTheWeek[26] ? fightersOfTheWeek[26].name + " (" + (fightersOfTheWeek[26].record) + ')' : ''} vs. {fightersOfTheWeek[27] ? fightersOfTheWeek[27].name + " (" + (fightersOfTheWeek[27].record) + ')' : ''}</h3>
+    {/* <h3>Fight 14: {fightersOfTheWeek[26] ? fightersOfTheWeek[26].name + " (" + (fightersOfTheWeek[26].record) + ')' : ''} vs. {fightersOfTheWeek[27] ? fightersOfTheWeek[27].name + " (" + (fightersOfTheWeek[27].record) + ')' : ''}</h3>
     <List>
         {notes[14] ? notes[14].map((note, idx) => {
             return (
