@@ -315,10 +315,10 @@ export default function FooterNav() {
             <Typography
               variant="subtitle2"
               component="a"
-              href="/#/java/about"
+              href="/#/crush"
               sx={{ display: { xs: 'none', sm: 'flex' }, textDecoration: 'none', marginRight: .5, color: "white" }}
             >
-              About
+              Wanna Date?
             </Typography>
             {/* <Typography
               variant="subtitle2"

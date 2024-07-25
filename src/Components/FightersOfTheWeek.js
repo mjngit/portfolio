@@ -420,6 +420,7 @@ const FightersOfTheWeek = () => {
           
     </List>
     <Divider /> */}
+    
         <FightHistory />
     <FooterNav/>
     </>

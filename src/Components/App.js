@@ -66,12 +66,16 @@ import NavBar from './NavBar';
 import Portfolio from './Portfolio';
 import Deposit from './Deposit';
 
+import Crush from './Crush';
+import Crushyes from './Crushyes';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { loginWithToken, fetchAssessments, fetchOnlineUsers, fetchMessages, fetchStocks, fetchUsers,fetchPortfolio, fetchTransactions, fetchFriends, fetchHypes } from '../store';
 import { Link, Routes, Route } from 'react-router-dom';
 
 import { fetchCart, fetchDrinks, fetchMerches, fetchUserReviews, fetchFighters } from '../store';
 import { fetchHappyNotes } from '../store/happyNotes';
+
 
 
 
@@ -217,6 +221,9 @@ const App = ()=> {
               <Route path='/capstone/chats' element={ <Chats />} />
               <Route path='/capstone/portfolio' element={ <Portfolio />} />
               <Route path='/capstone/deposit' element={ <Deposit />} />
+
+              <Route path='/crush' element={ <Crush />} />
+              <Route path='/crush/yes' element={ <Crushyes />} />
               
 
     {
