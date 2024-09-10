@@ -36,7 +36,7 @@ Assessment.belongsTo(User);
 
 const fighterOptions = {
   method: 'GET',
-  url: 'https://mma-stats.p.rapidapi.com/July_20_2024',
+  url: 'https://mma-stats.p.rapidapi.com/September_14_2024',
   params: {offset: '0', limit: '15'},
   headers: {
     'X-RapidAPI-Key': process.env.UFC_API_KEY,
