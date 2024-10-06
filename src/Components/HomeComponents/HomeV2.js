@@ -56,7 +56,7 @@ function HomeV2() {
                             <a rel="noopener noreferrer" onClick={() => window.location = 'mailto:mnorris6@elon.edu'} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc', cursor: 'pointer' }}>Email Me</a>
                         </li>
                         <li className="flex" style={{ display: 'flex'}}>
-                            <a rel="noopener noreferrer" href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>CV</a>
+                            <a rel="noopener noreferrer" href="static/Michael.Norris.Sales.Engineer.docx.pdf" download className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-lime-400 dark:border-lime-400" style={{display: 'flex', alignItems: 'center', paddingLeft: '16px', paddingRight: '16px', borderWidth: '2px', color: '#03b1fc' }}>CV</a>
                         </li>
                     </ul>
                     <div style={{ display: 'flex', alignItems: 'center'}}>
@@ -191,7 +191,7 @@ function HomeV2() {
 
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <span className="text-lg" style={{fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '600', paddingRight: '2rem'}}>Download Developer CV:</span>
-                    <a href="static/Michael.Norris.FullStack.Developer.Resume.pdf" download>
+                    <a href="static/Michael.Norris.Sales.Engineer.docx.pdf" download>
                         <button class="Btn">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
